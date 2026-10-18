@@ -37,6 +37,7 @@ export type ReelTuVungProps = {
   hookPhu: string;
   items: TuVung[];
   nhac: string;
+  cta?: [string, string]; // tuỳ chọn: lời kêu gọi cảnh cuối (lưu bài / theo dõi / comment)
 };
 export type ReelNangBandProps = {
   nhan: string;
@@ -44,6 +45,7 @@ export type ReelNangBandProps = {
   hookPhu: string;
   items: NangBand[];
   nhac: string;
+  cta?: [string, string];
 };
 
 export const tongKhungTuVung = (p: ReelTuVungProps) =>
@@ -453,7 +455,10 @@ export const ReelTuVung: React.FC<ReelTuVungProps> = (p) => {
         </Sequence>
       ))}
       <Sequence from={batDauCTA}>
-        <CanhCTA dong1="Lưu lại để ôn trước ngày thi!" dong2="Theo dõi page để nhận từ vựng & bài mẫu mỗi tuần" />
+        <CanhCTA
+          dong1={p.cta?.[0] ?? "Lưu lại để ôn trước ngày thi!"}
+          dong2={p.cta?.[1] ?? "Theo dõi page để nhận từ vựng & bài mẫu mỗi tuần"}
+        />
         <Pop />
       </Sequence>
     </AbsoluteFill>
@@ -485,7 +490,204 @@ export const ReelNangBand: React.FC<ReelNangBandProps> = (p) => {
         </Sequence>
       ))}
       <Sequence from={batDauCTA}>
-        <CanhCTA dong1="Lưu lại & thử viết lại câu của bạn!" dong2="Theo dõi page để nhận bài mẫu Writing mỗi tuần" />
+        <CanhCTA
+          dong1={p.cta?.[0] ?? "Lưu lại & thử viết lại câu của bạn!"}
+          dong2={p.cta?.[1] ?? "Theo dõi page để nhận bài mẫu Writing mỗi tuần"}
+        />
+        <Pop />
+      </Sequence>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- Composition: Reel "Chọn đáp án đúng" (quiz, đếm ngược 3 giây) ----------
+const QUIZ_HIEN = 1.5; // giây đọc câu hỏi trước khi đếm ngược
+const QUIZ_DEM = 3; // đếm ngược
+const QUIZ_GIAI = 2.8; // hiện đáp án + giải thích
+const QUIZ_S = QUIZ_HIEN + QUIZ_DEM + QUIZ_GIAI;
+
+export type CauQuiz = { cau: string; dapAn: string[]; dung: number; giaiThich: string };
+export type ReelQuizProps = {
+  nhan: string;
+  hook: string[];
+  hookPhu: string;
+  items: CauQuiz[];
+  nhac: string;
+  cta?: [string, string];
+};
+export const tongKhungQuiz = (p: ReelQuizProps) =>
+  Math.round((HOOK + p.items.length * QUIZ_S + CTA) * FPS_REEL);
+
+const CanhQuiz: React.FC<{ item: CauQuiz; so: number; tong: number }> = ({ item, so, tong }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const batDauDem = Math.round(QUIZ_HIEN * fps);
+  const lucGiai = Math.round((QUIZ_HIEN + QUIZ_DEM) * fps);
+  const a = vao(f, fps);
+  const daGiai = f >= lucGiai;
+  const g = vao(f, fps, lucGiai);
+  const conLai = Math.max(1, QUIZ_DEM - Math.floor((f - batDauDem) / fps));
+  const dangDem = f >= batDauDem && !daGiai;
+  const tienDoDem = interpolate(f, [batDauDem, lucGiai], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const chu = ["A", "B", "C", "D"];
+  return (
+    <AbsoluteFill style={{ padding: "0 70px", justifyContent: "center" }}>
+      <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 40, color: XAM, marginBottom: 30, opacity: a }}>
+        CÂU {so} / {tong}
+      </div>
+      <div
+        style={{
+          fontFamily: FONT,
+          fontWeight: 800,
+          fontSize: 62,
+          lineHeight: 1.3,
+          color: TRANG,
+          opacity: a,
+          transform: `translateY(${(1 - a) * 40}px)`,
+        }}
+      >
+        {item.cau.split("___").map((p, i, arr) => (
+          <React.Fragment key={i}>
+            {p}
+            {i < arr.length - 1 ? (
+              <span style={{ color: CAM }}>{daGiai ? item.dapAn[item.dung] : "_____"}</span>
+            ) : null}
+          </React.Fragment>
+        ))}
+      </div>
+      <div style={{ marginTop: 50, display: "flex", flexDirection: "column", gap: 26 }}>
+        {item.dapAn.map((d, i) => {
+          const s = vao(f, fps, 8 + i * 5);
+          const laDung = i === item.dung;
+          const nen = daGiai ? (laDung ? CAM : "rgba(255,255,255,0.08)") : TRANG;
+          const mauChu = daGiai ? (laDung ? TRANG : "rgba(255,255,255,0.45)") : NAVY;
+          return (
+            <div
+              key={i}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 30,
+                background: nen,
+                borderRadius: 30,
+                padding: "26px 36px",
+                opacity: s,
+                transform: `translateX(${(1 - s) * -60}px) scale(${daGiai && laDung ? 1 + 0.04 * g : 1})`,
+              }}
+            >
+              <div
+                style={{
+                  width: 74,
+                  height: 74,
+                  borderRadius: 37,
+                  flexShrink: 0,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: daGiai ? (laDung ? TRANG : "rgba(255,255,255,0.15)") : NAVY,
+                  color: daGiai ? (laDung ? CAM : "rgba(255,255,255,0.5)") : TRANG,
+                  fontFamily: FONT,
+                  fontWeight: 900,
+                  fontSize: 40,
+                }}
+              >
+                {daGiai && laDung ? "✓" : chu[i]}
+              </div>
+              <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 52, color: mauChu }}>{d}</div>
+            </div>
+          );
+        })}
+      </div>
+      <div style={{ height: 190, marginTop: 44, position: "relative" }}>
+        {dangDem ? (
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 30 }}>
+            <div
+              style={{
+                width: 150,
+                height: 150,
+                borderRadius: 75,
+                background: `conic-gradient(${CAM} ${tienDoDem * 360}deg, rgba(255,255,255,0.15) 0deg)`,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: 120,
+                  height: 120,
+                  borderRadius: 60,
+                  background: NAVY_DARK,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontFamily: FONT,
+                  fontWeight: 900,
+                  fontSize: 70,
+                  color: TRANG,
+                }}
+              >
+                {conLai}
+              </div>
+            </div>
+            <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 40, color: XAM }}>Chọn nhanh nào!</div>
+          </div>
+        ) : null}
+        {daGiai ? (
+          <div
+            style={{
+              background: TRANG,
+              borderRadius: 30,
+              borderLeft: `16px solid ${CAM}`,
+              padding: "28px 36px",
+              opacity: g,
+              transform: `translateY(${(1 - g) * 40}px)`,
+              fontFamily: FONT,
+              fontWeight: 600,
+              fontSize: 40,
+              lineHeight: 1.4,
+              color: NAVY,
+            }}
+          >
+            💡 {item.giaiThich}
+          </div>
+        ) : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const ReelQuiz: React.FC<ReelQuizProps> = (p) => {
+  const hook = Math.round(HOOK * FPS_REEL);
+  const moi = Math.round(QUIZ_S * FPS_REEL);
+  const batDauCTA = hook + p.items.length * moi;
+  return (
+    <AbsoluteFill>
+      <Nen />
+      <DauTrang />
+      <ChanTrang />
+      <NhacNen file={p.nhac} />
+      <Sequence durationInFrames={hook}>
+        <CanhHook nhan={p.nhan} hook={p.hook} phu={p.hookPhu} />
+        <Pop />
+      </Sequence>
+      {p.items.map((it, i) => (
+        <Sequence key={i} from={hook + i * moi} durationInFrames={moi}>
+          <CanhQuiz item={it} so={i + 1} tong={p.items.length} />
+          <Whoosh />
+          <Sequence from={Math.round((QUIZ_HIEN + QUIZ_DEM) * FPS_REEL)}>
+            <Pop />
+          </Sequence>
+        </Sequence>
+      ))}
+      <Sequence from={batDauCTA}>
+        <CanhCTA
+          dong1={p.cta?.[0] ?? "Bạn đúng mấy câu? Comment ngay!"}
+          dong2={p.cta?.[1] ?? "Theo dõi page để chơi quiz IELTS mỗi tuần"}
+        />
         <Pop />
       </Sequence>
     </AbsoluteFill>
@@ -547,6 +749,118 @@ export const REEL_NANG_BAND_WRITING: ReelNangBandProps = {
       b5: "The government should do something about this problem.",
       b7: "Governments should introduce stricter regulations to tackle this issue.",
       hl: ["introduce stricter regulations", "tackle this issue"],
+    },
+  ],
+};
+
+// ----- Tuần 19–25/10/2026 -----
+export const REEL_NANG_BAND_EDUCATION: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · EDUCATION",
+  hook: ["Viết về giáo dục", "mà chỉ biết", "\"important\"?"],
+  hookPhu: "3 câu viết lại – chú ý phần tô cam",
+  nhac: "fassounds-lofi-study-calm-peaceful-chill-hop-112191.mp3",
+  items: [
+    {
+      b5: "Teachers are very important for children.",
+      b7: "Teachers play a pivotal role in shaping children's attitudes to learning.",
+      hl: ["play a pivotal role in", "shaping"],
+    },
+    {
+      b5: "Students can learn many things on the internet now.",
+      b7: "Online platforms have made education far more accessible to students.",
+      hl: ["Online platforms", "far more accessible"],
+    },
+    {
+      b5: "Many students study only to pass exams.",
+      b7: "Many students focus on rote learning rather than genuine understanding.",
+      hl: ["rote learning", "rather than genuine understanding"],
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_HEALTH: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · HEALTH",
+  hook: ["Nói về sức khỏe", "mà chỉ biết", "\"healthy\"?"],
+  hookPhu: "5 cụm từ ăn điểm cho Writing & Speaking",
+  nhac: "fassounds-lofi-study-calm-peaceful-chill-hop-112191.mp3",
+  items: [
+    {
+      en: "a sedentary lifestyle",
+      vi: "lối sống ít vận động",
+      vd: "A sedentary lifestyle increases the risk of heart disease.",
+    },
+    {
+      en: "to boost the immune system",
+      vi: "tăng cường hệ miễn dịch",
+      vd: "Regular exercise can boost the immune system.",
+    },
+    {
+      en: "preventive healthcare",
+      vi: "chăm sóc sức khỏe dự phòng",
+      vd: "Preventive healthcare can reduce pressure on hospitals.",
+    },
+    {
+      en: "to cut down on sugary drinks",
+      vi: "uống ít đồ uống có đường hơn",
+      vd: "Teenagers should cut down on sugary drinks.",
+    },
+    {
+      en: "mental well-being",
+      vi: "sức khỏe tinh thần",
+      vd: "Spending time in nature can improve mental well-being.",
+    },
+  ],
+};
+
+export const REEL_NANG_BAND_SPEAKING_LIKE: ReelNangBandProps = {
+  nhan: "SPEAKING PART 1",
+  hook: ["Speaking Part 1", "chỉ biết nói", "\"I like...\"?"],
+  hookPhu: "3 câu tự nhiên hơn – chú ý phần tô cam",
+  nhac: "fassounds-lofi-study-calm-peaceful-chill-hop-112191.mp3",
+  cta: ["Lưu lại & tập nói theo ngay!", "Theo dõi page để nhận mẹo Speaking mỗi tuần"],
+  items: [
+    {
+      b5: "Yes, I like reading. Reading is good.",
+      b7: "Yes, I'm really into reading. It helps me unwind after a long day.",
+      hl: ["I'm really into", "unwind"],
+    },
+    {
+      b5: "I like music very much because it makes me happy.",
+      b7: "I'm a huge fan of music. It instantly puts me in a good mood.",
+      hl: ["a huge fan of", "puts me in a good mood"],
+    },
+    {
+      b5: "I don't like sports. I think sports is boring.",
+      b7: "To be honest, I'm not much of a sports person. I find most games quite dull.",
+      hl: ["not much of a sports person", "quite dull"],
+    },
+  ],
+};
+
+export const REEL_QUIZ_COLLOCATION_1: ReelQuizProps = {
+  nhan: "QUIZ CHỦ NHẬT",
+  hook: ["3 câu \"dễ\"", "mà rất nhiều", "bạn chọn sai!"],
+  hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
+  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & theo dõi page để chơi quiz mỗi tuần"],
+  items: [
+    {
+      cau: "I ___ a lot of mistakes in my first IELTS test.",
+      dapAn: ["did", "made", "took"],
+      dung: 1,
+      giaiThich: "make a mistake – không nói \"do a mistake\"",
+    },
+    {
+      cau: "Can you ___ me how to get to the station?",
+      dapAn: ["say", "speak", "tell"],
+      dung: 2,
+      giaiThich: "tell + người + điều gì; \"say\" không đi thẳng với người",
+    },
+    {
+      cau: "I'm really looking forward to ___ you.",
+      dapAn: ["see", "seeing", "saw"],
+      dung: 1,
+      giaiThich: "look forward to + V-ing (\"to\" là giới từ)",
     },
   ],
 };
