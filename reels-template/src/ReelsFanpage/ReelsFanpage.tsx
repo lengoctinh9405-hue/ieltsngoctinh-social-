@@ -816,7 +816,7 @@ export const REEL_NANG_BAND_SPEAKING_LIKE: ReelNangBandProps = {
   nhan: "SPEAKING PART 1",
   hook: ["Speaking Part 1", "chỉ biết nói", "\"I like...\"?"],
   hookPhu: "3 câu tự nhiên hơn – chú ý phần tô cam",
-  nhac: "fassounds-lofi-study-calm-peaceful-chill-hop-112191.mp3",
+  nhac: "nhac-goc/dao-pho.mp3",
   cta: ["Lưu lại & tập nói theo ngay!", "Theo dõi page để nhận mẹo Speaking mỗi tuần"],
   items: [
     {
@@ -841,7 +841,7 @@ export const REEL_QUIZ_COLLOCATION_1: ReelQuizProps = {
   nhan: "QUIZ CHỦ NHẬT",
   hook: ["3 câu \"dễ\"", "mà rất nhiều", "bạn chọn sai!"],
   hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
-  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  nhac: "nhac-goc/quiz-time.mp3",
   cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & theo dõi page để chơi quiz mỗi tuần"],
   items: [
     {
