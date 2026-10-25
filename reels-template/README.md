@@ -23,4 +23,4 @@ Nhạc nền (trường `nhac`, đường dẫn tính từ `public/audio/`). Đ�
 - `fassounds-lofi-...112191.mp3`: lofi chậm, CHỈ dùng khi thật cần không khí yên tĩnh.
 Nhạc trong `nhac-goc/` do Claude tự sáng tác bằng code (`music-gen/gen.py`, render FluidSynth + soundfont FluidR3_GM giấy phép MIT), là nhạc gốc nên không cần credit.
 Muốn thêm bài mới: thêm một SONG trong `music-gen/gen.py` (apt-get install fluidsynth fluid-soundfont-gm; pip install mido), render rồi chuẩn hoá về -12 LUFS như các bài đang có.
-Hiệu ứng: Pixabay 382717 + pop tự tạo.
+Hiệu ứng (sfx/): Pixabay 382717 (whoosh) + pop tự tạo. BẮT BUỘC: anh Tỉnh thích Reel có sound effect hơn chỉ có nhạc – mọi Reel giữ nhạc vui tươi + SFX khớp từng nhịp (whoosh chuyển cảnh, pop khi hiện đáp án/thẻ quan trọng). Loại Reel mới cũng phải gắn SFX như vậy; được thêm SFX mới (tick, ding, buzz…) tự tạo hoặc từ Pixabay.
