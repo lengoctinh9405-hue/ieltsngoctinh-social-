@@ -46,6 +46,8 @@ export type ReelNangBandProps = {
   items: NangBand[];
   nhac: string;
   cta?: [string, string];
+  nhanTruoc?: string; // nhãn thẻ trên, mặc định "BAND 5" (ví dụ "BAND 4.5", "BAND 5.5", "BAND 6.5")
+  nhanSau?: string; // nhãn thẻ dưới, mặc định "BAND 7+" (ví dụ "BAND 6", "BAND 7", "BAND 8")
 };
 
 export const tongKhungTuVung = (p: ReelTuVungProps) =>
@@ -322,7 +324,13 @@ const TheCau: React.FC<{
   </div>
 );
 
-const CanhNangBand: React.FC<{ item: NangBand; so: number; tong: number }> = ({ item, so, tong }) => {
+const CanhNangBand: React.FC<{ item: NangBand; so: number; tong: number; nhanTruoc?: string; nhanSau?: string }> = ({
+  item,
+  so,
+  tong,
+  nhanTruoc = "BAND 5",
+  nhanSau = "BAND 7+",
+}) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const lucHienB7 = Math.round(2.6 * fps);
@@ -335,7 +343,7 @@ const CanhNangBand: React.FC<{ item: NangBand; so: number; tong: number }> = ({ 
         CÂU {so} / {tong}
       </div>
       <TheCau
-        nhan="BAND 5"
+        nhan={nhanTruoc}
         mauNhan={DO}
         text={item.b5}
         hl={[]}
@@ -357,7 +365,7 @@ const CanhNangBand: React.FC<{ item: NangBand; so: number; tong: number }> = ({ 
       >
         ↓
       </div>
-      <TheCau nhan="BAND 7+" mauNhan={CAM} text={item.b7} hl={item.hl} nen={TRANG} chu={NAVY} s={b} />
+      <TheCau nhan={nhanSau} mauNhan={CAM} text={item.b7} hl={item.hl} nen={TRANG} chu={NAVY} s={b} />
     </AbsoluteFill>
   );
 };
@@ -482,7 +490,7 @@ export const ReelNangBand: React.FC<ReelNangBandProps> = (p) => {
       </Sequence>
       {p.items.map((it, i) => (
         <Sequence key={i} from={hook + i * moi} durationInFrames={moi}>
-          <CanhNangBand item={it} so={i + 1} tong={p.items.length} />
+          <CanhNangBand item={it} so={i + 1} tong={p.items.length} nhanTruoc={p.nhanTruoc} nhanSau={p.nhanSau} />
           <Whoosh />
           <Sequence from={Math.round(2.6 * FPS_REEL)}>
             <Pop />
