@@ -694,6 +694,110 @@ export const ReelQuiz: React.FC<ReelQuizProps> = (p) => {
   );
 };
 
+// ---------- Composition: Reel "Sai hay đúng?" (câu sai → câu đúng + giải thích) ----------
+const SD_DOAN = 2.2; // giây để người xem tự đoán
+const SD_S = 6.2; // tổng thời lượng mỗi câu
+export type CauSaiDung = { sai: string; dung: string; hl: string[]; giaiThich: string };
+export type ReelSaiDungProps = {
+  nhan: string;
+  hook: string[];
+  hookPhu: string;
+  items: CauSaiDung[];
+  nhac: string;
+  cta?: [string, string];
+};
+export const tongKhungSaiDung = (p: ReelSaiDungProps) =>
+  Math.round((HOOK + p.items.length * SD_S + CTA) * FPS_REEL);
+
+const CanhSaiDung: React.FC<{ item: CauSaiDung; so: number; tong: number }> = ({ item, so, tong }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const lucGiai = Math.round(SD_DOAN * fps);
+  const a = vao(f, fps);
+  const daGiai = f >= lucGiai - 6;
+  const b = vao(f, fps, lucGiai);
+  const c = vao(f, fps, lucGiai + 12);
+  return (
+    <AbsoluteFill style={{ padding: "0 70px", justifyContent: "center" }}>
+      <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 40, color: XAM, marginBottom: 30, opacity: a }}>
+        CÂU {so} / {tong}
+      </div>
+      <TheCau
+        nhan={daGiai ? "✗ SAI" : "SAI HAY ĐÚNG?"}
+        mauNhan={daGiai ? DO : CAM}
+        text={item.sai}
+        hl={[]}
+        nen="rgba(255,255,255,0.10)"
+        chu={TRANG}
+        s={a}
+        gach={daGiai}
+      />
+      <div
+        style={{
+          textAlign: "center",
+          fontSize: 70,
+          color: CAM,
+          fontWeight: 900,
+          fontFamily: FONT,
+          margin: "14px 0",
+          opacity: b,
+        }}
+      >
+        ↓
+      </div>
+      <TheCau nhan="✓ ĐÚNG" mauNhan={CAM} text={item.dung} hl={item.hl} nen={TRANG} chu={NAVY} s={b} />
+      <div
+        style={{
+          marginTop: 30,
+          fontFamily: FONT,
+          fontWeight: 600,
+          fontSize: 40,
+          lineHeight: 1.4,
+          color: XAM,
+          opacity: c,
+          transform: `translateY(${(1 - c) * 30}px)`,
+        }}
+      >
+        💡 {item.giaiThich}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const ReelSaiDung: React.FC<ReelSaiDungProps> = (p) => {
+  const hook = Math.round(HOOK * FPS_REEL);
+  const moi = Math.round(SD_S * FPS_REEL);
+  const batDauCTA = hook + p.items.length * moi;
+  return (
+    <AbsoluteFill>
+      <Nen />
+      <DauTrang />
+      <ChanTrang />
+      <NhacNen file={p.nhac} />
+      <Sequence durationInFrames={hook}>
+        <CanhHook nhan={p.nhan} hook={p.hook} phu={p.hookPhu} />
+        <Pop />
+      </Sequence>
+      {p.items.map((it, i) => (
+        <Sequence key={i} from={hook + i * moi} durationInFrames={moi}>
+          <CanhSaiDung item={it} so={i + 1} tong={p.items.length} />
+          <Whoosh />
+          <Sequence from={Math.round(SD_DOAN * FPS_REEL)}>
+            <Pop />
+          </Sequence>
+        </Sequence>
+      ))}
+      <Sequence from={batDauCTA}>
+        <CanhCTA
+          dong1={p.cta?.[0] ?? "Bạn từng nói sai câu nào?"}
+          dong2={p.cta?.[1] ?? "Comment số câu & theo dõi page để nhận mẹo Speaking mỗi tuần"}
+        />
+        <Pop />
+      </Sequence>
+    </AbsoluteFill>
+  );
+};
+
 // ===================== DỮ LIỆU =====================
 export const REEL_TU_VUNG_ENVIRONMENT: ReelTuVungProps = {
   nhan: "TỪ VỰNG IELTS · ENVIRONMENT",
@@ -861,6 +965,133 @@ export const REEL_QUIZ_COLLOCATION_1: ReelQuizProps = {
       dapAn: ["see", "seeing", "saw"],
       dung: 1,
       giaiThich: "look forward to + V-ing (\"to\" là giới từ)",
+    },
+  ],
+};
+
+// ----- Tuần 26/10–01/11/2026 -----
+export const REEL_NANG_BAND_TECHNOLOGY: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · TECHNOLOGY",
+  hook: ["Viết về công nghệ", "mà chỉ biết", "\"makes life easier\"?"],
+  hookPhu: "3 câu viết lại – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  items: [
+    {
+      b5: "Technology makes our life easier.",
+      b7: "Technological advances have greatly simplified everyday tasks.",
+      hl: ["Technological advances", "greatly simplified"],
+    },
+    {
+      b5: "People use social media too much, so they don't talk face to face.",
+      b7: "Overuse of social media may reduce meaningful face-to-face interaction.",
+      hl: ["Overuse of social media", "meaningful face-to-face interaction"],
+    },
+    {
+      b5: "Robots will take many people's jobs in the future.",
+      b7: "Automation is likely to displace many workers in the coming decades.",
+      hl: ["Automation", "displace many workers"],
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_TRAVEL: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · TRAVEL",
+  hook: ["Nói về du lịch", "mà chỉ biết", "\"travel is fun\"?"],
+  hookPhu: "5 cụm từ ăn điểm cho Writing & Speaking",
+  nhac: "nhac-goc/nang-som.mp3",
+  items: [
+    {
+      en: "to broaden your horizons",
+      vi: "mở mang tầm mắt, hiểu biết",
+      vd: "Travelling alone can really broaden your horizons.",
+    },
+    {
+      en: "a once-in-a-lifetime experience",
+      vi: "trải nghiệm có một không hai",
+      vd: "Seeing the Northern Lights was a once-in-a-lifetime experience.",
+    },
+    {
+      en: "mass tourism",
+      vi: "du lịch đại trà",
+      vd: "Mass tourism can damage fragile ecosystems.",
+    },
+    {
+      en: "a tourist trap",
+      vi: "nơi \"chặt chém\" du khách",
+      vd: "That famous street has become a tourist trap.",
+    },
+    {
+      en: "to sample the local cuisine",
+      vi: "thưởng thức món ăn địa phương",
+      vd: "I always sample the local cuisine when I travel.",
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_SPEAKING_1: ReelSaiDungProps = {
+  nhan: "SPEAKING · SAI HAY ĐÚNG?",
+  hook: ["4 câu Speaking", "nghe rất quen", "nhưng đều SAI!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "nhac-goc/dao-pho.mp3",
+  items: [
+    {
+      sai: "I very like playing badminton.",
+      dung: "I really like playing badminton.",
+      hl: ["really like"],
+      giaiThich: "\"very\" không đứng trước động từ – dùng really",
+    },
+    {
+      sai: "I am agree with that idea.",
+      dung: "I agree with that idea.",
+      hl: ["I agree"],
+      giaiThich: "\"agree\" là động từ – không cần \"am\"",
+    },
+    {
+      sai: "Listening to music makes me feel relax.",
+      dung: "Listening to music makes me feel relaxed.",
+      hl: ["relaxed"],
+      giaiThich: "feel + tính từ → relaxed (không phải relax)",
+    },
+    {
+      sai: "I have been to Da Lat last year.",
+      dung: "I went to Da Lat last year.",
+      hl: ["went"],
+      giaiThich: "Có \"last year\" → dùng quá khứ đơn",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_IDIOMS_1: ReelTuVungProps = {
+  nhan: "IDIOMS CHO SPEAKING",
+  hook: ["Speaking nghe", "như đọc sách?", "Thử 5 idioms này!"],
+  hookPhu: "Chỉ dùng cho Speaking – KHÔNG dùng trong Writing Task 2",
+  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  cta: ["Lưu lại & thử dùng 1 idiom hôm nay!", "Comment câu của bạn & theo dõi page nhé"],
+  items: [
+    {
+      en: "a night owl",
+      vi: "cú đêm – người hay thức khuya",
+      vd: "I'm a night owl, so I study best at night.",
+    },
+    {
+      en: "under the weather",
+      vi: "hơi mệt, không được khỏe",
+      vd: "I was feeling a bit under the weather yesterday.",
+    },
+    {
+      en: "to hit the books",
+      vi: "vùi đầu vào học",
+      vd: "I need to hit the books before my exam.",
+    },
+    {
+      en: "once in a blue moon",
+      vi: "rất hiếm khi",
+      vd: "I only eat fast food once in a blue moon.",
+    },
+    {
+      en: "to call it a day",
+      vi: "nghỉ, dừng việc cho hôm nay",
+      vd: "I was exhausted, so I decided to call it a day.",
     },
   ],
 };
