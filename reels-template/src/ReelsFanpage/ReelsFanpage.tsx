@@ -1103,3 +1103,119 @@ export const REEL_TU_VUNG_IDIOMS_1: ReelTuVungProps = {
     },
   ],
 };
+
+// ----- Tuần 02–08/11/2026 (bắt đầu áp dụng độ khó theo level) -----
+export const REEL_NANG_BAND_WORK: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · WORK",
+  hook: ["Viết về công việc", "mà vẫn sai", "ngữ pháp cơ bản?"],
+  hookPhu: "3 câu viết lại – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  nhanTruoc: "BAND 4.5",
+  nhanSau: "BAND 6",
+  items: [
+    {
+      b5: "Many people work from home, it is more convenient.",
+      b7: "Many people now work from home, as it allows them to avoid long commutes.",
+      hl: ["as it allows them to avoid long commutes"],
+    },
+    {
+      b5: "If people have a good salary, they will work more hard.",
+      b7: "Employees tend to work harder when they are paid a fair salary.",
+      hl: ["tend to work harder", "a fair salary"],
+    },
+    {
+      b5: "Young people change job very much.",
+      b7: "Young people today change jobs more frequently than their parents did.",
+      hl: ["change jobs more frequently", "than their parents did"],
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_CRIME: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · CRIME",
+  hook: ["Viết về tội phạm", "mà chỉ biết", "\"punish them\"?"],
+  hookPhu: "5 cụm từ chính xác cho Writing & Speaking",
+  nhac: "nhac-goc/nang-som.mp3",
+  items: [
+    {
+      en: "to deter crime",
+      vi: "răn đe, ngăn chặn tội phạm",
+      vd: "Harsher sentences do not always deter crime.",
+    },
+    {
+      en: "to serve a prison sentence",
+      vi: "thụ án tù",
+      vd: "He served a five-year prison sentence for fraud.",
+    },
+    {
+      en: "to reintegrate into society",
+      vi: "tái hòa nhập xã hội",
+      vd: "Ex-prisoners often struggle to reintegrate into society.",
+    },
+    {
+      en: "to be disproportionately affected by",
+      vi: "bị ảnh hưởng nặng nề hơn hẳn",
+      vd: "Low-income areas are disproportionately affected by crime.",
+    },
+    {
+      en: "to exacerbate the problem",
+      vi: "làm vấn đề trầm trọng thêm",
+      vd: "Overcrowded prisons may exacerbate the problem of reoffending.",
+    },
+  ],
+};
+
+export const REEL_NANG_BAND_SPEAKING_PART3_1: ReelNangBandProps = {
+  nhan: "SPEAKING PART 3",
+  hook: ["Part 3 trả lời", "ngắn cụt lủn", "và lặp từ?"],
+  hookPhu: "3 câu tự nhiên hơn – chú ý phần tô cam",
+  nhac: "nhac-goc/dao-pho.mp3",
+  nhanTruoc: "BAND 5.5",
+  nhanSau: "BAND 7",
+  cta: ["Lưu lại & tập nói theo ngay!", "Theo dõi page để nhận mẹo Speaking mỗi tuần"],
+  items: [
+    {
+      b5: "Yes, people read less because they use phone.",
+      b7: "I'd say so, largely because short videos have shortened our attention spans.",
+      hl: ["I'd say so", "shortened our attention spans"],
+    },
+    {
+      b5: "I think living in the city is good and bad.",
+      b7: "City life is a double-edged sword: more jobs, but far more stress.",
+      hl: ["a double-edged sword"],
+    },
+    {
+      b5: "Old people don't use smartphones well because they are old.",
+      b7: "If they had grown up with smartphones, they would find them easier now.",
+      hl: ["If they had grown up with", "would find them easier now"],
+    },
+  ],
+};
+
+export const REEL_QUIZ_BOOST_1: ReelQuizProps = {
+  nhan: "QUIZ CHỦ NHẬT",
+  hook: ["Band 6", "vẫn hay chọn sai", "3 câu này!"],
+  hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
+  nhac: "nhac-goc/quiz-time.mp3",
+  cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & theo dõi page để chơi quiz mỗi tuần"],
+  items: [
+    {
+      cau: "Students ___ in big cities often pay very high rents.",
+      dapAn: ["live", "living", "are living"],
+      dung: 1,
+      giaiThich: "Rút gọn mệnh đề quan hệ: who live → living",
+    },
+    {
+      cau: "The government should ___ measures to reduce traffic.",
+      dapAn: ["make", "do", "take"],
+      dung: 2,
+      giaiThich: "take measures – không nói \"make/do measures\"",
+    },
+    {
+      cau: "___ the heavy rain, the festival went ahead.",
+      dapAn: ["Although", "Despite of", "Despite"],
+      dung: 2,
+      giaiThich: "Despite + danh từ, không có \"of\"; Although + mệnh đề",
+    },
+  ],
+};
