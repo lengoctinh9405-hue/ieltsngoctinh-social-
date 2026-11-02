@@ -1219,3 +1219,158 @@ export const REEL_QUIZ_BOOST_1: ReelQuizProps = {
     },
   ],
 };
+
+// ----- Tuần 09–15/11/2026 (làm sớm 5 Reel T2–T6) -----
+export const REEL_NANG_BAND_GLOBALISATION: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · GLOBALISATION",
+  hook: ["Viết Globalisation", "mà kẹt ở 6.5?", "Thử 3 cấu trúc này"],
+  hookPhu: "3 câu viết lại – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  nhanTruoc: "BAND 6.5",
+  nhanSau: "BAND 8",
+  items: [
+    {
+      b5: "Globalisation has made many local cultures disappear.",
+      b7: "Arguably, globalisation has accelerated the erosion of local cultural identities.",
+      hl: ["Arguably", "accelerated the erosion of"],
+    },
+    {
+      b5: "International trade benefits both rich and poor countries, but not equally.",
+      b7: "While international trade benefits all nations, its gains are by no means evenly distributed.",
+      hl: ["by no means evenly distributed"],
+    },
+    {
+      b5: "Multinational companies are the main reason why local businesses close.",
+      b7: "It is multinational corporations that are largely driving small local firms out of business.",
+      hl: ["It is multinational corporations that", "driving small local firms out of business"],
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_WRITING_1: ReelSaiDungProps = {
+  nhan: "WRITING · SAI HAY ĐÚNG?",
+  hook: ["4 lỗi Writing", "rất quen", "bạn vẫn mắc!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "nhac-goc/nang-som.mp3",
+  cta: ["Bạn mắc mấy lỗi?", "Comment số lỗi & lưu lại để soát bài Writing"],
+  items: [
+    {
+      sai: "The number of students are increasing.",
+      dung: "The number of students is increasing.",
+      hl: ["is increasing"],
+      giaiThich: "\"The number of\" + danh từ số nhiều → động từ số ít",
+    },
+    {
+      sai: "Although cars are convenient, but they cause pollution.",
+      dung: "Although cars are convenient, they cause pollution.",
+      hl: ["they cause pollution"],
+      giaiThich: "Although và but không dùng chung trong một câu",
+    },
+    {
+      sai: "This problem can be solved by many ways.",
+      dung: "This problem can be solved in many ways.",
+      hl: ["in many ways"],
+      giaiThich: "Dùng \"in many ways\", không dùng \"by many ways\"",
+    },
+    {
+      sai: "In conclusion, I totally agree this opinion.",
+      dung: "In conclusion, I totally agree with this opinion.",
+      hl: ["agree with"],
+      giaiThich: "agree with + ý kiến / người",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_MEDIA: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · MEDIA",
+  hook: ["Viết về Media", "mà chỉ biết", "\"fake news\"?"],
+  hookPhu: "5 cụm từ chính xác cho Writing & Speaking",
+  nhac: "nhac-goc/dao-pho.mp3",
+  items: [
+    {
+      en: "to sensationalise the news",
+      vi: "giật gân hoá tin tức",
+      vd: "Some tabloids sensationalise the news to attract readers.",
+    },
+    {
+      en: "misleading information",
+      vi: "thông tin sai lệch, gây hiểu lầm",
+      vd: "Misleading information spreads quickly on social media.",
+    },
+    {
+      en: "to shape public opinion",
+      vi: "định hướng dư luận",
+      vd: "Newspapers can shape public opinion on political issues.",
+    },
+    {
+      en: "an invasion of privacy",
+      vi: "sự xâm phạm quyền riêng tư",
+      vd: "Photographing celebrities at home is an invasion of privacy.",
+    },
+    {
+      en: "to verify sources",
+      vi: "kiểm chứng nguồn tin",
+      vd: "Reporters should always verify sources before publishing.",
+    },
+  ],
+};
+
+export const REEL_PARAPHRASE_DE_BAI_1: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · PARAPHRASE",
+  hook: ["Mở bài", "chép nguyên đề?", "Xem cách đổi!"],
+  hookPhu: "3 câu đề viết lại – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  nhanTruoc: "ĐỀ BÀI",
+  nhanSau: "MỞ BÀI",
+  cta: ["Lưu lại & thử paraphrase 1 đề!", "Comment câu của bạn & theo dõi page nhé"],
+  items: [
+    {
+      b5: "Many people believe that university education should be free.",
+      b7: "It is widely argued that tertiary education ought to be provided free of charge.",
+      hl: ["It is widely argued that", "tertiary education", "free of charge"],
+    },
+    {
+      b5: "The number of cars on the road is increasing.",
+      b7: "There has been an increase in the number of vehicles on the roads.",
+      hl: ["There has been an increase in", "vehicles"],
+    },
+    {
+      b5: "Some people think children should learn a foreign language at primary school.",
+      b7: "Some argue that foreign languages should be taught to children at primary level.",
+      hl: ["Some argue that", "should be taught to children", "at primary level"],
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_SPEAKING_2: ReelSaiDungProps = {
+  nhan: "SPEAKING · SAI HAY ĐÚNG?",
+  hook: ["4 câu Speaking", "khiến bạn kẹt ở 6.0", "mà không hề biết!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  items: [
+    {
+      sai: "I'm used to get up early.",
+      dung: "I'm used to getting up early.",
+      hl: ["getting up"],
+      giaiThich: "be used to + V-ing = đã quen với việc gì",
+    },
+    {
+      sai: "Nowadays, people are more and more busier.",
+      dung: "Nowadays, people are busier and busier.",
+      hl: ["busier and busier"],
+      giaiThich: "So sánh kép: adj-er and adj-er, không thêm \"more\"",
+    },
+    {
+      sai: "I wish I can travel more.",
+      dung: "I wish I could travel more.",
+      hl: ["could"],
+      giaiThich: "wish + quá khứ → mong ước trái với hiện tại",
+    },
+    {
+      sai: "It's worth to visit Hoi An.",
+      dung: "It's worth visiting Hoi An.",
+      hl: ["worth visiting"],
+      giaiThich: "be worth + V-ing, không dùng \"to V\"",
+    },
+  ],
+};
