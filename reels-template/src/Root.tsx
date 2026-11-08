@@ -8,6 +8,7 @@ import {
   REEL_NANG_BAND_TECHNOLOGY, REEL_TU_VUNG_TRAVEL, REEL_SAI_DUNG_SPEAKING_1, REEL_TU_VUNG_IDIOMS_1,
   REEL_NANG_BAND_WORK, REEL_TU_VUNG_CRIME, REEL_NANG_BAND_SPEAKING_PART3_1, REEL_QUIZ_BOOST_1,
   REEL_NANG_BAND_GLOBALISATION, REEL_SAI_DUNG_WRITING_1, REEL_TU_VUNG_MEDIA, REEL_PARAPHRASE_DE_BAI_1, REEL_SAI_DUNG_SPEAKING_2,
+  REEL_QUIZ_MASTER_1, REEL_TU_VUNG_FOOD,
 } from "./ReelsFanpage/ReelsFanpage";
 export const RemotionRoot: React.FC = () => (
   <>
@@ -30,5 +31,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Reel-TuVung-Media" component={ReelTuVung} durationInFrames={tongKhungTuVung(REEL_TU_VUNG_MEDIA)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_TU_VUNG_MEDIA} />
     <Composition id="Reel-Paraphrase-DeBai-1" component={ReelNangBand} durationInFrames={tongKhungNangBand(REEL_PARAPHRASE_DE_BAI_1)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_PARAPHRASE_DE_BAI_1} />
     <Composition id="Reel-SaiDung-Speaking-2" component={ReelSaiDung} durationInFrames={tongKhungSaiDung(REEL_SAI_DUNG_SPEAKING_2)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_SAI_DUNG_SPEAKING_2} />
+    <Composition id="Reel-Quiz-Master-1" component={ReelQuiz} durationInFrames={tongKhungQuiz(REEL_QUIZ_MASTER_1)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_QUIZ_MASTER_1} />
+    <Composition id="Reel-TuVung-Food" component={ReelTuVung} durationInFrames={tongKhungTuVung(REEL_TU_VUNG_FOOD)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_TU_VUNG_FOOD} />
   </>
 );

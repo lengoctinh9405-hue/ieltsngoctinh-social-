@@ -301,8 +301,47 @@ SONG4 = dict(
     },
 )
 
+
+# ---------- Bài 5: "Ngày hội" – steel drum + pizzicato vui tươi (F, 116 bpm) ----------
+def acc_pizz(s, bar, c, sec):
+    b = bar * 4
+    tones = [n(x) + 12 for x in CHORD[c]]
+    for st in ([0.5, 1.5, 2.5, 3, 3.5] if sec != "end" else [0]):
+        for k, p in enumerate(tones):
+            s.note(1, b + st, 0.3 if sec != "end" else 2, p + 12, 70 if st in (0.5, 2.5) else 58)
+    root = broot(c)
+    for st, off in [(0, 0), (1, 12), (1.5, 7), (2, 0), (3, 12), (3.5, 7)]:
+        if sec == "end" and st > 0:
+            break
+        s.note(2, b + st, 0.4 if sec != "end" else 2, root + off, 94)
+    if sec in ("B",):
+        for p in tones:
+            s.note(3, b, 4, p + 12, 44)  # pad dây nhẹ
+
+
+SONG5 = dict(
+    seed=55, bpm=116, tonic="F", drums="pop", prog=["F", "C", "Dm", "Bb"],
+    programs={0: 114, 1: 45, 2: 33, 3: 48, 4: 9},
+    lead=(0, 0, 98), double=(4, 12, 58), accomp=acc_pizz,
+    plan=["intro", "A", "B", "A", "B", "end"],
+    melodies={
+        "A": [
+            [(0, .5, "C5"), (.5, .5, "F5"), (1, .5, "A5"), (1.5, .5, "G5"), (2, 1, "F5"), (3, .5, "A5"), (3.5, .5, "C6")],
+            [(0, 1, "G5"), (1, .5, "E5"), (1.5, .5, "C5"), (2, 1, "E5"), (3, 1, "G5")],
+            [(0, .5, "F5"), (.5, .5, "A5"), (1, 1, "D6"), (2, .5, "C6"), (2.5, .5, "A5"), (3, 1, "F5")],
+            [(0, .5, "D5"), (.5, .5, "F5"), (1, .5, "Bb4" if False else "A#4"), (1.5, .5, "D5"), (2, 2, "C5")],
+        ],
+        "B": [
+            [(0, .25, "A5"), (.25, .25, "A5"), (.5, .5, "C6"), (1, 1, "A5"), (2, .5, "G5"), (2.5, .5, "F5"), (3, 1, "A5")],
+            [(0, .25, "G5"), (.25, .25, "G5"), (.5, .5, "C6"), (1, 1, "G5"), (2, .5, "E5"), (2.5, .5, "G5"), (3, 1, "C6")],
+            [(0, .5, "D6"), (.5, .5, "C6"), (1, .5, "A5"), (1.5, .5, "F5"), (2, 1, "A5"), (3, 1, "D6")],
+            [(0, .5, "C6"), (.5, .5, "A#5"), (1, .5, "A5"), (1.5, .5, "G5"), (2, 1.5, "F5"), (3.5, .5, "C5")],
+        ],
+    },
+)
+
 if __name__ == "__main__":
     out = sys.argv[1]
-    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4)]:
+    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4), ("ngay-hoi", SONG5)]:
         build(spec, f"{out}/{name}.mid")
         print("ok", name)

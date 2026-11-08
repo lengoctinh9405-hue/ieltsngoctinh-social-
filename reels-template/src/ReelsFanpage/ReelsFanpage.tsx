@@ -1374,3 +1374,67 @@ export const REEL_SAI_DUNG_SPEAKING_2: ReelSaiDungProps = {
     },
   ],
 };
+
+// ----- Tuần 09–15/11/2026 (T7–CN, đăng tay MBS) -----
+export const REEL_QUIZ_MASTER_1: ReelQuizProps = {
+  nhan: "QUIZ CUỐI TUẦN",
+  hook: ["Quiz band 7+", "người band 6.5", "vẫn chọn sai!"],
+  hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
+  nhac: "nhac-goc/quiz-time.mp3",
+  cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & lưu lại để ôn nhé"],
+  items: [
+    {
+      cau: "These results are ___ with earlier studies.",
+      dapAn: ["coherent", "consistent", "constant"],
+      dung: 1,
+      giaiThich: "be consistent with = khớp với; coherent = mạch lạc",
+    },
+    {
+      cau: "Not only ___ money, but cycling also improves fitness.",
+      dapAn: ["cycling saves", "does cycling save", "cycling does save"],
+      dung: 1,
+      giaiThich: "Not only đứng đầu câu → đảo ngữ: does + S + V",
+    },
+    {
+      cau: "___, social media has made people lonelier.",
+      dapAn: ["In a certain extent", "To a certain extent", "At a certain extent"],
+      dung: 1,
+      giaiThich: "Hedging chuẩn: to a certain extent / to some extent",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_FOOD: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · FOOD",
+  hook: ["Nói về Food", "mà chỉ biết", "\"delicious\"?"],
+  hookPhu: "5 cụm từ tự nhiên cho Speaking & Writing",
+  nhac: "nhac-goc/ngay-hoi.mp3",
+  cta: ["Lưu lại để nói Food tự nhiên!", "Comment món bạn mê nhất nhé!"],
+  items: [
+    {
+      en: "a balanced diet",
+      vi: "chế độ ăn cân bằng",
+      vd: "I try to have a balanced diet.",
+    },
+    {
+      en: "home-cooked meals",
+      vi: "bữa ăn nấu tại nhà",
+      vd: "Nothing beats home-cooked meals.",
+    },
+    {
+      en: "to eat out",
+      vi: "đi ăn ở ngoài",
+      vd: "We often eat out on Saturday nights.",
+    },
+    {
+      en: "street food",
+      vi: "đồ ăn đường phố",
+      vd: "Saigon is famous for street food.",
+    },
+    {
+      en: "to skip breakfast",
+      vi: "bỏ bữa sáng",
+      vd: "I often skip breakfast on weekdays.",
+    },
+  ],
+};
