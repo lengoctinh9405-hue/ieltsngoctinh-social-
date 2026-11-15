@@ -1438,3 +1438,217 @@ export const REEL_TU_VUNG_FOOD: ReelTuVungProps = {
     },
   ],
 };
+
+// ----- Tuần 16–22/11/2026 (đăng tay MBS) -----
+export const REEL_NANG_BAND_URBANISATION: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · URBANISATION",
+  hook: ["Viết về đô thị", "mà câu nào", "cũng \"crowded\"?"],
+  hookPhu: "3 câu viết lại – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  nhanTruoc: "BAND 5.5",
+  nhanSau: "BAND 7",
+  cta: ["Lưu lại & viết thử 1 câu!", "Theo dõi page để nhận bài mẫu Writing"],
+  items: [
+    {
+      b5: "Many people move to cities because they want to find jobs.",
+      b7: "Rural residents are migrating to cities in search of better employment prospects.",
+      hl: ["in search of", "employment prospects"],
+    },
+    {
+      b5: "Cities are growing fast, so house prices are very high.",
+      b7: "Rapid urban growth has put decent housing beyond the reach of many families.",
+      hl: ["Rapid urban growth", "beyond the reach of"],
+    },
+    {
+      b5: "People who live in big cities often feel stressed and lonely.",
+      b7: "Those living in large cities often experience high levels of stress and isolation.",
+      hl: ["Those living in", "high levels of stress and isolation"],
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_WRITING_2: ReelSaiDungProps = {
+  nhan: "WRITING · SAI HAY ĐÚNG?",
+  hook: ["4 lỗi Writing", "giữ bạn ở 6.0", "mà ít ai để ý!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "nhac-goc/nang-som.mp3",
+  cta: ["Bạn mắc mấy lỗi?", "Comment số lỗi & lưu lại để soát bài Writing"],
+  items: [
+    {
+      sai: "The amount of people using buses has risen.",
+      dung: "The number of people using buses has risen.",
+      hl: ["The number of"],
+      giaiThich: "people đếm được → the number of; amount of + danh từ không đếm được",
+    },
+    {
+      sai: "Since 2010, the figure rose steadily.",
+      dung: "Since 2010, the figure has risen steadily.",
+      hl: ["has risen"],
+      giaiThich: "Since + mốc thời gian → thì hiện tại hoàn thành",
+    },
+    {
+      sai: "Many cities are overcrowded, this leads to traffic jams.",
+      dung: "Many cities are overcrowded, which leads to traffic jams.",
+      hl: ["which leads to"],
+      giaiThich: "Nối 2 mệnh đề bằng dấu phẩy là lỗi comma splice → dùng which",
+    },
+    {
+      sai: "Studying abroad has benefits, such as students become independent.",
+      dung: "Studying abroad has benefits, such as greater independence.",
+      hl: ["such as greater independence"],
+      giaiThich: "such as + danh từ / cụm danh từ, không + mệnh đề",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_EDUCATION: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · EDUCATION",
+  hook: ["Viết Education", "mà chỉ biết", "\"study hard\"?"],
+  hookPhu: "5 cụm từ chính xác cho Writing & Speaking",
+  nhac: "nhac-goc/dao-pho.mp3",
+  cta: ["Lưu lại để ôn trước ngày thi!", "Theo dõi page để nhận từ vựng mỗi tuần"],
+  items: [
+    {
+      en: "to drop out of school",
+      vi: "bỏ học giữa chừng",
+      vd: "Poverty forces many teenagers to drop out of school.",
+    },
+    {
+      en: "to acquire practical skills",
+      vi: "tiếp thu kỹ năng thực tế",
+      vd: "Internships help students acquire practical skills.",
+    },
+    {
+      en: "a well-rounded education",
+      vi: "nền giáo dục toàn diện",
+      vd: "Arts subjects contribute to a well-rounded education.",
+    },
+    {
+      en: "to keep up with the curriculum",
+      vi: "theo kịp chương trình học",
+      vd: "Some students struggle to keep up with the curriculum.",
+    },
+    {
+      en: "academic performance",
+      vi: "kết quả học tập",
+      vd: "Lack of sleep can harm academic performance.",
+    },
+  ],
+};
+
+export const REEL_PARAPHRASE_ENVIRONMENT: ReelNangBandProps = {
+  nhan: "WRITING · PARAPHRASE",
+  hook: ["Paraphrase", "chỉ biết đổi", "từ đồng nghĩa?"],
+  hookPhu: "Giữ nguyên nghĩa – chú ý phần tô cam",
+  nhac: "nhac-goc/tung-bung.mp3",
+  nhanTruoc: "CÂU GỐC",
+  nhanSau: "PARAPHRASE",
+  cta: ["Lưu lại & thử viết 1 câu!", "Comment câu của bạn & theo dõi page nhé"],
+  items: [
+    {
+      b5: "People are buying more and more things, and this harms the environment.",
+      b7: "Rising consumerism is arguably taking a heavy toll on the environment.",
+      hl: ["Rising consumerism", "arguably", "taking a heavy toll on"],
+    },
+    {
+      b5: "Governments rarely punish companies that pollute rivers.",
+      b7: "Seldom are companies held accountable for polluting rivers.",
+      hl: ["Seldom are companies held accountable"],
+    },
+    {
+      b5: "Climate change happens mainly because we burn fossil fuels.",
+      b7: "Climate change is largely attributable to the burning of fossil fuels.",
+      hl: ["largely attributable to", "the burning of"],
+    },
+  ],
+};
+
+export const REEL_NANG_BAND_SPEAKING_TEACHERS: ReelNangBandProps = {
+  nhan: "SPEAKING PART 1 · TEACHERS",
+  hook: ["20/11 rồi!", "Nói về thầy cô", "bằng tiếng Anh?"],
+  hookPhu: "3 câu tự nhiên hơn – chú ý phần tô cam",
+  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  nhanTruoc: "BAND 4.5",
+  nhanSau: "BAND 6",
+  cta: ["Lưu lại & tập nói theo ngay!", "Comment tên thầy cô bạn nhớ nhất nhé!"],
+  items: [
+    {
+      b5: "Yes. My teacher is very kind.",
+      b7: "Yes, I do. My primary teacher was very kind and patient with us.",
+      hl: ["Yes, I do.", "was very kind and patient with us"],
+    },
+    {
+      b5: "I like teacher who funny.",
+      b7: "I prefer teachers who make lessons fun and easy to follow.",
+      hl: ["teachers who make lessons fun"],
+    },
+    {
+      b5: "In Vietnam, we have Teacher Day, we give flowers.",
+      b7: "On Teachers' Day, students usually give their teachers flowers to say thank you.",
+      hl: ["On Teachers' Day", "to say thank you"],
+    },
+  ],
+};
+
+export const REEL_QUIZ_TU_DE_NHAM: ReelQuizProps = {
+  nhan: "QUIZ CUỐI TUẦN",
+  hook: ["3 cặp từ", "band 6 vẫn", "chọn nhầm!"],
+  hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
+  nhac: "nhac-goc/quiz-time.mp3",
+  cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & lưu lại để ôn nhé"],
+  items: [
+    {
+      cau: "The ban had little ___ on air quality.",
+      dapAn: ["affect", "effect", "affection"],
+      dung: 1,
+      giaiThich: "have an effect on (danh từ); affect là động từ",
+    },
+    {
+      cau: "Prices ___ sharply after the tax increase.",
+      dapAn: ["rose", "raised", "arose"],
+      dung: 0,
+      giaiThich: "rise không cần tân ngữ; raise + tân ngữ (raise prices)",
+    },
+    {
+      cau: "A used car is more ___ than a new one.",
+      dapAn: ["economic", "economical", "economy"],
+      dung: 1,
+      giaiThich: "economical = tiết kiệm; economic = thuộc về kinh tế",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_IDIOMS_WEEKEND: ReelTuVungProps = {
+  nhan: "SPEAKING · IDIOMS CUỐI TUẦN",
+  hook: ["Kể về cuối tuần", "mà chỉ biết", "\"I relax\"?"],
+  hookPhu: "5 cụm tự nhiên cho Speaking – KHÔNG dùng trong Writing Task 2",
+  nhac: "nhac-goc/ngay-hoi.mp3",
+  cta: ["Lưu lại để nói tự nhiên hơn!", "Comment cuối tuần của bạn nhé!"],
+  items: [
+    {
+      en: "to recharge your batteries",
+      vi: "nạp lại năng lượng",
+      vd: "Weekends are a chance to recharge your batteries.",
+    },
+    {
+      en: "a couch potato",
+      vi: "người lười, chỉ nằm xem TV",
+      vd: "On rainy weekends, I turn into a couch potato.",
+    },
+    {
+      en: "to let your hair down",
+      vi: "xả hơi, thả lỏng hết mình",
+      vd: "Karaoke is a great way to let your hair down.",
+    },
+    {
+      en: "to catch up with friends",
+      vi: "gặp lại, hàn huyên với bạn bè",
+      vd: "I usually catch up with friends over coffee.",
+    },
+    {
+      en: "to sleep in",
+      vi: "ngủ nướng",
+      vd: "I always sleep in on Sunday mornings.",
+    },
+  ],
+};

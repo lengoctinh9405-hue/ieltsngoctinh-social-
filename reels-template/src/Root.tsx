@@ -9,6 +9,8 @@ import {
   REEL_NANG_BAND_WORK, REEL_TU_VUNG_CRIME, REEL_NANG_BAND_SPEAKING_PART3_1, REEL_QUIZ_BOOST_1,
   REEL_NANG_BAND_GLOBALISATION, REEL_SAI_DUNG_WRITING_1, REEL_TU_VUNG_MEDIA, REEL_PARAPHRASE_DE_BAI_1, REEL_SAI_DUNG_SPEAKING_2,
   REEL_QUIZ_MASTER_1, REEL_TU_VUNG_FOOD,
+  REEL_NANG_BAND_URBANISATION, REEL_SAI_DUNG_WRITING_2, REEL_TU_VUNG_EDUCATION, REEL_PARAPHRASE_ENVIRONMENT,
+  REEL_NANG_BAND_SPEAKING_TEACHERS, REEL_QUIZ_TU_DE_NHAM, REEL_TU_VUNG_IDIOMS_WEEKEND,
 } from "./ReelsFanpage/ReelsFanpage";
 export const RemotionRoot: React.FC = () => (
   <>
@@ -33,5 +35,12 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Reel-SaiDung-Speaking-2" component={ReelSaiDung} durationInFrames={tongKhungSaiDung(REEL_SAI_DUNG_SPEAKING_2)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_SAI_DUNG_SPEAKING_2} />
     <Composition id="Reel-Quiz-Master-1" component={ReelQuiz} durationInFrames={tongKhungQuiz(REEL_QUIZ_MASTER_1)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_QUIZ_MASTER_1} />
     <Composition id="Reel-TuVung-Food" component={ReelTuVung} durationInFrames={tongKhungTuVung(REEL_TU_VUNG_FOOD)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_TU_VUNG_FOOD} />
+    <Composition id="Reel-NangBand-Urbanisation" component={ReelNangBand} durationInFrames={tongKhungNangBand(REEL_NANG_BAND_URBANISATION)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_NANG_BAND_URBANISATION} />
+    <Composition id="Reel-SaiDung-Writing-2" component={ReelSaiDung} durationInFrames={tongKhungSaiDung(REEL_SAI_DUNG_WRITING_2)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_SAI_DUNG_WRITING_2} />
+    <Composition id="Reel-TuVung-Education" component={ReelTuVung} durationInFrames={tongKhungTuVung(REEL_TU_VUNG_EDUCATION)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_TU_VUNG_EDUCATION} />
+    <Composition id="Reel-Paraphrase-Environment" component={ReelNangBand} durationInFrames={tongKhungNangBand(REEL_PARAPHRASE_ENVIRONMENT)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_PARAPHRASE_ENVIRONMENT} />
+    <Composition id="Reel-NangBand-Speaking-Teachers" component={ReelNangBand} durationInFrames={tongKhungNangBand(REEL_NANG_BAND_SPEAKING_TEACHERS)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_NANG_BAND_SPEAKING_TEACHERS} />
+    <Composition id="Reel-Quiz-TuDeNham" component={ReelQuiz} durationInFrames={tongKhungQuiz(REEL_QUIZ_TU_DE_NHAM)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_QUIZ_TU_DE_NHAM} />
+    <Composition id="Reel-TuVung-Idioms-Weekend" component={ReelTuVung} durationInFrames={tongKhungTuVung(REEL_TU_VUNG_IDIOMS_WEEKEND)} fps={FPS_REEL} width={1080} height={1920} defaultProps={REEL_TU_VUNG_IDIOMS_WEEKEND} />
   </>
 );

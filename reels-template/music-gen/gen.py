@@ -17,6 +17,7 @@ CHORD = {  # chord tones (root in octave 3)
     "Em": ["E3", "G3", "B3"], "D": ["D3", "F#3", "A3"], "Dm7": ["D3", "F3", "A3", "C4"],
     "G7": ["G2", "B2", "D3", "F3"], "Cmaj7": ["C3", "E3", "G3", "B3"], "Am7": ["A2", "C3", "E3", "G3"],
     "Bb": ["A#2", "D3", "F3"], "Dm": ["D3", "F3", "A3"],
+    "A": ["A2", "C#3", "E3"], "Bm": ["B2", "D3", "F#3"],
 }
 
 
@@ -340,8 +341,47 @@ SONG5 = dict(
     },
 )
 
+# ---------- Bài 6: "Tưng bừng" – sáo + clavinet nảy, kèn đồng (D, 122 bpm) ----------
+def acc_clav(s, bar, c, sec):
+    b = bar * 4
+    tones = [n(x) + 12 for x in CHORD[c]]
+    for st in ([0.5, 1, 1.5, 2.5, 3.25, 3.5] if sec != "end" else [0]):
+        for p in tones:
+            s.note(1, b + st, 0.18 if sec != "end" else 2, p, 74 if st in (0.5, 2.5) else 60)
+    root = broot(c)
+    for st, off in [(0, 0), (0.5, 12), (1, 7), (1.75, 0), (2, 12), (2.5, 7), (3, 0), (3.5, 12)]:
+        if sec == "end" and st > 0:
+            break
+        s.note(2, b + st, 0.35 if sec != "end" else 2, root + off, 96)
+    if sec == "B":  # kèn đồng nhấn phách
+        for st in (0, 2.5):
+            for p in tones:
+                s.note(3, b + st, 0.4, p + 12, 66)
+
+
+SONG6 = dict(
+    seed=66, bpm=122, tonic="D", drums="pop", prog=["D", "A", "Bm", "G"],
+    programs={0: 73, 1: 7, 2: 34, 3: 61, 4: 9},
+    lead=(0, 0, 96), double=(4, 12, 56), accomp=acc_clav,
+    plan=["intro", "A", "B", "A", "B", "end"],
+    melodies={
+        "A": [
+            [(0, .5, "F#5"), (.5, .5, "A5"), (1, .5, "D6"), (1.5, .5, "A5"), (2, 1, "B5"), (3, 1, "A5")],
+            [(0, .5, "E5"), (.5, .5, "C#5"), (1, .5, "E5"), (1.5, .5, "A5"), (2, 1, "G5"), (3, 1, "E5")],
+            [(0, .5, "D5"), (.5, .5, "F#5"), (1, 1, "B5"), (2, .5, "A5"), (2.5, .5, "F#5"), (3, 1, "D5")],
+            [(0, .5, "G5"), (.5, .5, "F#5"), (1, .5, "E5"), (1.5, .5, "D5"), (2, 1.5, "E5"), (3.5, .5, "A4")],
+        ],
+        "B": [
+            [(0, .25, "A5"), (.25, .25, "A5"), (.5, .5, "D6"), (1, .5, "C#6"), (1.5, .5, "A5"), (2, 1, "F#5"), (3, 1, "A5")],
+            [(0, .25, "G5"), (.25, .25, "G5"), (.5, .5, "C#6"), (1, .5, "A5"), (1.5, .5, "E5"), (2, 1, "C#5"), (3, 1, "E5")],
+            [(0, .5, "F#5"), (.5, .5, "B5"), (1, 1, "D6"), (2, .5, "C#6"), (2.5, .5, "B5"), (3, 1, "F#5")],
+            [(0, .5, "G5"), (.5, .5, "A5"), (1, .5, "B5"), (1.5, .5, "C#6"), (2, 2, "D6")],
+        ],
+    },
+)
+
 if __name__ == "__main__":
     out = sys.argv[1]
-    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4), ("ngay-hoi", SONG5)]:
+    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4), ("ngay-hoi", SONG5), ("tung-bung", SONG6)]:
         build(spec, f"{out}/{name}.mid")
         print("ok", name)
