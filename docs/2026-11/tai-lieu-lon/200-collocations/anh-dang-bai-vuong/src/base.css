@@ -1,0 +1,5 @@
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1080px;background:#003D82;font-family:Inter;color:#fff;position:relative;overflow:hidden}
+.c{position:absolute;right:-200px;top:-260px;width:480px;height:480px;border-radius:50%;background:#FB8F2C}
+.f{position:absolute;left:80px;right:80px;bottom:56px;font-weight:800;font-size:30px;display:flex;align-items:center;justify-content:space-between}
+.f span.l{display:flex;align-items:center;gap:14px}.f span.r{font-weight:600;font-size:24px;color:#BFD3EE}
+.k{font-weight:800;font-size:26px;letter-spacing:.14em;color:#BFD3EE}
