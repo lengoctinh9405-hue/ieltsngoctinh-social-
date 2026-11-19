@@ -1,0 +1,296 @@
+[
+ {
+  "id": "01",
+  "slug": "01-true-false-not-given",
+  "pages": 6,
+  "kw": "TFNG",
+  "kicker": "IELTS READING · SỐ 01 · TẢI MIỄN PHÍ",
+  "h1": "FALSE hay<br><span>NOT GIVEN</span>?",
+  "p": "Phân biệt 3 đáp án True / False / Not Given bằng công thức khối, sơ đồ quyết định và bài luyện có giải thích.",
+  "stats": [
+   [
+    "6",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "bẫy kinh điển"
+   ],
+   [
+    "8",
+    "câu có giải thích"
+   ],
+   [
+    "4",
+    "bước quy trình"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "k": "TRANG 2",
+    "h": "3 đáp án = <span>3 phép&nbsp;so&nbsp;sánh</span>",
+    "li": [
+     "Đặt 3 đáp án cạnh&nbsp;nhau",
+     "Công thức xếp&nbsp;khối",
+     "Ví dụ trên đoạn văn&nbsp;thật"
+    ]
+   },
+   {
+    "p": 3,
+    "k": "TRANG 3",
+    "h": "<span>Sơ đồ</span> chốt đáp&nbsp;án",
+    "li": [
+     "Quy trình 4&nbsp;bước",
+     "2 câu hỏi để quyết&nbsp;định",
+     "Không cần&nbsp;đoán"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "09",
+  "slug": "09-listening-form-completion",
+  "pages": 7,
+  "kw": "FORM",
+  "kicker": "IELTS LISTENING · SỐ 09 · TẢI MIỄN PHÍ",
+  "h1": "Nghe ra hết mà<br>vẫn <span>sai Part 1</span>?",
+  "p": "Form & Note Completion: đọc form trước, đoán từng ô trống, né 5 bẫy kinh điển. Có bài luyện kèm transcript.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "4",
+    "bước làm bài"
+   ],
+   [
+    "5",
+    "bẫy kinh điển"
+   ],
+   [
+    "8",
+    "câu + transcript"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "k": "TRANG 2",
+    "h": "Công thức <span>4&nbsp;khối</span>",
+    "li": [
+     "Đọc form&nbsp;trước",
+     "Đoán loại từ từng&nbsp;ô",
+     "Bắt tín hiệu khi&nbsp;nghe"
+    ]
+   },
+   {
+    "p": 4,
+    "k": "TRANG 4",
+    "h": "<span>5 bẫy</span> kinh&nbsp;điển",
+    "li": [
+     "Người nói đổi&nbsp;ý",
+     "Đánh vần & con&nbsp;số",
+     "Số nhiều, giá cũ –&nbsp;mới"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "03",
+  "slug": "03-matching-headings",
+  "pages": 7,
+  "kw": "HEADINGS",
+  "kicker": "IELTS READING · SỐ 03 · TẢI MIỄN PHÍ",
+  "h1": "Toàn chọn sai<br><span>Matching Headings</span>?",
+  "p": "Tìm ý chính của CẢ đoạn thay vì bắt từ giống nhau: công thức heading, cấu trúc đoạn văn và bảng loại trừ.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "4",
+    "bẫy kinh điển"
+   ],
+   [
+    "5",
+    "đoạn luyện tập"
+   ],
+   [
+    "8",
+    "heading (3 thừa)"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "k": "TRANG 2",
+    "h": "Ý chính của <span>CẢ&nbsp;đoạn</span>",
+    "li": [
+     "Heading = Chủ đề + Điều tác giả&nbsp;nói",
+     "Ví dụ đúng –&nbsp;sai",
+     "Vì sao trùng từ là&nbsp;bẫy"
+    ]
+   },
+   {
+    "p": 4,
+    "k": "TRANG 4",
+    "h": "<span>4 bẫy</span> + bảng loại&nbsp;trừ",
+    "li": [
+     "Heading trùng&nbsp;từ",
+     "Heading quá chi&nbsp;tiết",
+     "Hai heading na ná&nbsp;nhau"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "10",
+  "slug": "10-listening-multiple-choice",
+  "pages": 7,
+  "kw": "MCQ",
+  "kicker": "IELTS LISTENING · SỐ 10 · TẢI MIỄN PHÍ",
+  "h1": "Nghe thấy cả<br><span>A, B và C</span>?",
+  "p": "Multiple Choice Listening: đề hỏi quyết định cuối cùng, không hỏi bạn nghe thấy gì. Công thức 3 khối, 4 bẫy, bài luyện kèm transcript.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "3",
+    "khối công thức"
+   ],
+   [
+    "4",
+    "bẫy kinh điển"
+   ],
+   [
+    "5",
+    "câu + transcript"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "k": "TRANG 2",
+    "h": "Nghe <span>quyết định&nbsp;cuối</span>",
+    "li": [
+     "Gạch keyword câu&nbsp;hỏi",
+     "Paraphrase đáp&nbsp;án",
+     "Nhắc – bác –&nbsp;chốt"
+    ]
+   },
+   {
+    "p": 4,
+    "k": "TRANG 4",
+    "h": "<span>4 bẫy</span> kinh&nbsp;điển",
+    "li": [
+     "Nghe thấy cả 3 đáp&nbsp;án",
+     "Từ đảo chiều&nbsp;“but”",
+     "Dạng chọn 2 đáp&nbsp;án"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "05",
+  "slug": "05-sentence-summary-completion",
+  "pages": 7,
+  "kw": "SUMMARY",
+  "kicker": "IELTS READING · SỐ 05 · TẢI MIỄN PHÍ",
+  "h1": "Hiểu bài mà<br>vẫn <span>mất điểm oan</span>?",
+  "p": "Sentence & Summary Completion: giới hạn số từ, đoán từ loại, chép đúng chính tả. Có 9 câu luyện kèm giải thích.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "4",
+    "khối kiểm tra"
+   ],
+   [
+    "5",
+    "bẫy hay gặp"
+   ],
+   [
+    "9",
+    "câu có giải thích"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "k": "TRANG 2",
+    "h": "Điền từ = <span>4 khối</span> kiểm&nbsp;tra",
+    "li": [
+     "Giới hạn số&nbsp;từ",
+     "Từ loại +&nbsp;paraphrase",
+     "Chép đúng chính&nbsp;tả"
+    ]
+   },
+   {
+    "p": 4,
+    "k": "TRANG 4",
+    "h": "4 bước & <span>5&nbsp;bẫy</span>",
+    "li": [
+     "Thừa mạo từ&nbsp;“the”",
+     "Quên chữ&nbsp;“s”",
+     "Sai từ&nbsp;loại"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "11",
+  "slug": "11-listening-map-labelling",
+  "pages": 8,
+  "kw": "MAP",
+  "kicker": "IELTS LISTENING · SỐ 11 · TẢI MIỄN PHÍ",
+  "h1": "Nghe chỉ đường<br>mà vẫn <span>lạc</span>?",
+  "p": "Map & Plan Labelling: xác định điểm xuất phát, 6 cụm chỉ vị trí học bằng hình, 4 bẫy và bản đồ luyện tập có đường đi.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "6",
+    "cụm chỉ vị trí"
+   ],
+   [
+    "4",
+    "bẫy kinh điển"
+   ],
+   [
+    "6",
+    "câu + bản đồ"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 3,
+    "k": "TRANG 3",
+    "h": "<span>6 cụm</span> chỉ vị&nbsp;trí",
+    "li": [
+     "opposite,&nbsp;between…",
+     "Học bằng&nbsp;hình",
+     "Nhớ lâu&nbsp;hơn"
+    ]
+   },
+   {
+    "p": 6,
+    "k": "TRANG 6",
+    "h": "Bản đồ <span>luyện&nbsp;tập</span>",
+    "li": [
+     "Riverside&nbsp;Park",
+     "6 câu, nghe 1&nbsp;lần",
+     "Đáp án có đường&nbsp;đi"
+    ]
+   }
+  ]
+ }
+]
