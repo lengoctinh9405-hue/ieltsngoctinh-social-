@@ -1652,3 +1652,224 @@ export const REEL_TU_VUNG_IDIOMS_WEEKEND: ReelTuVungProps = {
     },
   ],
 };
+
+// ===== Tuần 23–29/11/2026 =====
+export const REEL_NANG_BAND_TASK1_ENERGY: ReelNangBandProps = {
+  nhan: "WRITING TASK 1 · ENERGY",
+  hook: ["Task 1 chỉ biết", "\"went up\" với", "\"didn't change\"?"],
+  hookPhu: "3 câu mô tả số liệu – chú ý phần tô cam",
+  nhac: "nhac-goc/groove.mp3",
+  nhanTruoc: "BAND 5.5",
+  nhanSau: "BAND 7",
+  cta: ["Lưu lại cho bài Task 1!", "Comment 1 câu mô tả số liệu của bạn nhé"],
+  items: [
+    {
+      b5: "The use of solar energy went up a lot after 2000.",
+      b7: "Solar power use rose dramatically after 2000, peaking at 40% in 2020.",
+      hl: ["rose dramatically", "peaking at 40%"],
+    },
+    {
+      b5: "Coal was 50% and gas was 25%.",
+      b7: "Coal accounted for half of all energy use, twice the figure for gas.",
+      hl: ["accounted for", "twice the figure for gas"],
+    },
+    {
+      b5: "After 2015, nuclear power did not change much.",
+      b7: "From 2015 onwards, nuclear power remained relatively stable at around 10%.",
+      hl: ["From 2015 onwards", "remained relatively stable"],
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_WRITING_3: ReelSaiDungProps = {
+  nhan: "WRITING · SAI HAY ĐÚNG?",
+  hook: ["Band 6.5", "vẫn mắc 4 lỗi", "rất tinh tế này!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "nhac-goc/nang-som.mp3",
+  cta: ["Bạn bắt được mấy lỗi?", "Comment số lỗi & lưu lại để soát bài Writing"],
+  items: [
+    {
+      sai: "Not until the 1990s the internet became popular.",
+      dung: "Not until the 1990s did the internet become popular.",
+      hl: ["did the internet become"],
+      giaiThich: "Not until… đứng đầu câu → đảo trợ động từ lên trước chủ ngữ",
+    },
+    {
+      sai: "It is the lack of funding that cause most of these problems.",
+      dung: "It is the lack of funding that causes most of these problems.",
+      hl: ["that causes"],
+      giaiThich: "Câu chẻ: động từ chia theo \"the lack\" (số ít)",
+    },
+    {
+      sai: "Having analysed the data, the conclusion is clear.",
+      dung: "Having analysed the data, researchers reached a clear conclusion.",
+      hl: ["researchers reached"],
+      giaiThich: "Chủ ngữ sau dấu phẩy phải là người \"analysed the data\"",
+    },
+    {
+      sai: "The main reason for this is because jobs are scarce.",
+      dung: "The main reason for this is that jobs are scarce.",
+      hl: ["is that"],
+      giaiThich: "The reason… is that – không dùng because (lặp nghĩa)",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_FAMILY: ReelTuVungProps = {
+  nhan: "TỪ VỰNG IELTS · FAMILY",
+  hook: ["Viết về Family", "mà chỉ biết", "\"love family\"?"],
+  hookPhu: "5 cụm từ chính xác cho Writing & Speaking",
+  nhac: "nhac-goc/dao-pho.mp3",
+  cta: ["Lưu lại để ôn trước ngày thi!", "Theo dõi page để nhận từ vựng mỗi tuần"],
+  items: [
+    {
+      en: "to raise children",
+      vi: "nuôi dạy con cái",
+      vd: "Many parents find it hard to raise children in cities.",
+    },
+    {
+      en: "an extended family",
+      vi: "đại gia đình nhiều thế hệ",
+      vd: "I grew up in an extended family with my grandparents.",
+    },
+    {
+      en: "to spend quality time",
+      vi: "dành thời gian thật sự bên nhau",
+      vd: "Parents should spend quality time with their children.",
+    },
+    {
+      en: "the generation gap",
+      vi: "khoảng cách thế hệ",
+      vd: "Social media has widened the generation gap.",
+    },
+    {
+      en: "to share household chores",
+      vi: "chia sẻ việc nhà",
+      vd: "Couples today often share household chores.",
+    },
+  ],
+};
+
+export const REEL_PARAPHRASE_HEALTH: ReelNangBandProps = {
+  nhan: "WRITING TASK 2 · PARAPHRASE",
+  hook: ["Mở bài Health", "chép y đề bài?", "Đổi cấu trúc đi!"],
+  hookPhu: "3 cách viết lại đề – giữ nguyên nghĩa",
+  nhac: "nhac-goc/tung-bung.mp3",
+  nhanTruoc: "ĐỀ BÀI",
+  nhanSau: "MỞ BÀI",
+  cta: ["Lưu lại & thử paraphrase 1 đề!", "Comment câu mở bài của bạn nhé"],
+  items: [
+    {
+      b5: "Some people think governments should spend more money on public health.",
+      b7: "Some contend that governments should allocate more funding to public health.",
+      hl: ["Some contend that", "allocate more funding to"],
+    },
+    {
+      b5: "Fast food is becoming more and more popular among teenagers.",
+      b7: "Fast food has been gaining popularity among adolescents.",
+      hl: ["has been gaining popularity", "adolescents"],
+    },
+    {
+      b5: "Many people do not do enough exercise, and this causes health problems.",
+      b7: "Insufficient physical activity leads to health problems for many people.",
+      hl: ["Insufficient physical activity", "leads to"],
+    },
+  ],
+};
+
+export const REEL_SAI_DUNG_SPEAKING_3: ReelSaiDungProps = {
+  nhan: "SPEAKING · SAI HAY ĐÚNG?",
+  hook: ["4 câu Speaking", "band 6 vẫn nói", "sai mỗi ngày!"],
+  hookPhu: "Tự đoán trước khi xem đáp án nhé",
+  nhac: "ikoliks-upbeat-energetic-background-music-426530.mp3",
+  cta: ["Bạn nói sai mấy câu?", "Comment số câu & lưu lại nhé"],
+  items: [
+    {
+      sai: "I prefer reading than watching TV.",
+      dung: "I prefer reading to watching TV.",
+      hl: ["to watching"],
+      giaiThich: "prefer A to B – không dùng \"than\"",
+    },
+    {
+      sai: "It's the first time I visit Hanoi.",
+      dung: "It's the first time I've visited Hanoi.",
+      hl: ["I've visited"],
+      giaiThich: "It's the first time + thì hiện tại hoàn thành",
+    },
+    {
+      sai: "I'd rather to stay at home tonight.",
+      dung: "I'd rather stay at home tonight.",
+      hl: ["I'd rather stay"],
+      giaiThich: "would rather + V nguyên mẫu, không \"to\"",
+    },
+    {
+      sai: "People spend a lot of time to use smartphones.",
+      dung: "People spend a lot of time using smartphones.",
+      hl: ["using"],
+      giaiThich: "spend time + V-ing",
+    },
+  ],
+};
+
+export const REEL_QUIZ_GIOI_TU: ReelQuizProps = {
+  nhan: "QUIZ CUỐI TUẦN",
+  hook: ["Giới từ đi kèm", "band 6 vẫn", "chọn sai!"],
+  hookPhu: "Bạn có 3 giây cho mỗi câu – thử ngay nhé",
+  nhac: "nhac-goc/quiz-time.mp3",
+  cta: ["Bạn đúng mấy câu?", "Comment số câu đúng & lưu lại để ôn nhé"],
+  items: [
+    {
+      cau: "There is a growing demand ___ skilled workers.",
+      dapAn: ["of", "for", "on"],
+      dung: 1,
+      giaiThich: "demand for (không dùng demand of)",
+    },
+    {
+      cau: "The sharp increase ___ house prices worries young people.",
+      dapAn: ["of", "in", "on"],
+      dung: 1,
+      giaiThich: "increase in + thứ tăng; of + con số",
+    },
+    {
+      cau: "Tourism can ___ a significant contribution to the economy.",
+      dapAn: ["do", "give", "make"],
+      dung: 2,
+      giaiThich: "make a contribution to (cụm cố định)",
+    },
+  ],
+};
+
+export const REEL_TU_VUNG_HOMETOWN: ReelTuVungProps = {
+  nhan: "SPEAKING · NÓI VỀ QUÊ NHÀ",
+  hook: ["Nói về quê nhà", "mà chỉ biết", "\"beautiful\"?"],
+  hookPhu: "5 cụm tự nhiên cho Speaking – không dùng idioms trong Writing Task 2",
+  nhac: "nhac-goc/pho-hoi.mp3",
+  cta: ["Lưu lại để nói tự nhiên hơn!", "Comment: quê bạn ở đâu?"],
+  items: [
+    {
+      en: "off the beaten track",
+      vi: "hẻo lánh, ít khách du lịch biết",
+      vd: "My hometown is a little off the beaten track.",
+    },
+    {
+      en: "a close-knit community",
+      vi: "cộng đồng gắn bó khăng khít",
+      vd: "My village is a close-knit community.",
+    },
+    {
+      en: "a stone's throw from",
+      vi: "rất gần, chỉ cách vài bước",
+      vd: "My house is a stone's throw from the beach.",
+    },
+    {
+      en: "changed beyond recognition",
+      vi: "thay đổi đến mức không nhận ra",
+      vd: "My neighbourhood has changed beyond recognition.",
+    },
+    {
+      en: "the hustle and bustle",
+      vi: "sự ồn ào, tấp nập",
+      vd: "I sometimes miss the hustle and bustle of Saigon.",
+    },
+  ],
+};

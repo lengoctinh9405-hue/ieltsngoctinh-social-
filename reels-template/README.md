@@ -21,6 +21,7 @@ Nhạc nền (trường `nhac`, đường dẫn tính từ `public/audio/`). Đ�
 - `nhac-goc/quiz-time.mp3`: 8-bit vui nhộn, 128 bpm (hợp quiz Chủ nhật)
 - `nhac-goc/ngay-hoi.mp3`: steel drum + pizzicato vui tươi, 116 bpm (hợp Reel từ vựng đời sống, Chủ nhật)
 - `nhac-goc/tung-bung.mp3`: sáo + clavinet nảy + kèn đồng, 122 bpm, giọng D (hợp Paraphrase / Writing / Speaking vui)
+- `nhac-goc/pho-hoi.mp3`: vibraphone + electric piano nảy + kèn nhẹ, 114 bpm, giọng G (hợp Speaking đời sống, Reel Chủ nhật, từ vựng)
 - `ikoliks-upbeat-energetic-background-music-426530.mp3`: Pixabay, upbeat (quiz / Chủ nhật)
 - `fassounds-lofi-...112191.mp3`: lofi chậm, CHỈ dùng khi thật cần không khí yên tĩnh.
 Nhạc trong `nhac-goc/` do Claude tự sáng tác bằng code (`music-gen/gen.py`, render FluidSynth + soundfont FluidR3_GM giấy phép MIT), là nhạc gốc nên không cần credit.

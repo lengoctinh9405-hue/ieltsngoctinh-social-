@@ -380,8 +380,47 @@ SONG6 = dict(
     },
 )
 
+# ---------- Bài 7: "Phố hội" – vibraphone + electric piano nảy, kèn nhẹ (G, 114 bpm) ----------
+def acc_ep(s, bar, c, sec):
+    b = bar * 4
+    tones = [n(x) + 12 for x in CHORD[c]]
+    for st in ([0, 0.75, 1.5, 2.5, 3, 3.5] if sec != "end" else [0]):
+        for p in tones:
+            s.note(1, b + st, 0.3 if sec != "end" else 2, p, 72 if st in (0, 2.5) else 56)
+    root = broot(c)
+    for st, off in [(0, 0), (0.75, 12), (1.5, 7), (2, 0), (2.75, 12), (3.5, 7)]:
+        if sec == "end" and st > 0:
+            break
+        s.note(2, b + st, 0.4 if sec != "end" else 2, root + off, 95)
+    if sec == "B":  # kèn nhẹ nhấn phách
+        for st in (1.5, 3.5):
+            for p in tones:
+                s.note(3, b + st, 0.35, p + 12, 60)
+
+
+SONG7 = dict(
+    seed=77, bpm=114, tonic="G", drums="uke", prog=["G", "Em", "C", "D"],
+    programs={0: 11, 1: 4, 2: 33, 3: 61, 4: 9},
+    lead=(0, 0, 100), double=(4, 12, 54), accomp=acc_ep,
+    plan=["intro", "A", "B", "A", "B", "end"],
+    melodies={
+        "A": [
+            [(0, .5, "D5"), (.5, .5, "G5"), (1, .5, "B5"), (1.5, .5, "A5"), (2, 1, "G5"), (3, .5, "B5"), (3.5, .5, "D6")],
+            [(0, 1, "E6"), (1, .5, "D6"), (1.5, .5, "B5"), (2, 1, "G5"), (3, 1, "B5")],
+            [(0, .5, "C6"), (.5, .5, "B5"), (1, .5, "A5"), (1.5, .5, "G5"), (2, 1, "E5"), (3, 1, "G5")],
+            [(0, .5, "F#5"), (.5, .5, "A5"), (1, .5, "D6"), (1.5, .5, "C6"), (2, 1.5, "A5"), (3.5, .5, "D5")],
+        ],
+        "B": [
+            [(0, .25, "B5"), (.25, .25, "B5"), (.5, .5, "D6"), (1, 1, "B5"), (2, .5, "A5"), (2.5, .5, "G5"), (3, 1, "B5")],
+            [(0, .25, "G5"), (.25, .25, "G5"), (.5, .5, "B5"), (1, 1, "E6"), (2, .5, "D6"), (2.5, .5, "B5"), (3, 1, "G5")],
+            [(0, .5, "E5"), (.5, .5, "G5"), (1, 1, "C6"), (2, .5, "B5"), (2.5, .5, "A5"), (3, 1, "E6")],
+            [(0, .5, "D6"), (.5, .5, "C6"), (1, .5, "B5"), (1.5, .5, "A5"), (2, 2, "G5")],
+        ],
+    },
+)
+
 if __name__ == "__main__":
     out = sys.argv[1]
-    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4), ("ngay-hoi", SONG5), ("tung-bung", SONG6)]:
+    for name, spec in [("nang-som", SONG1), ("dao-pho", SONG2), ("groove", SONG3), ("quiz-time", SONG4), ("ngay-hoi", SONG5), ("tung-bung", SONG6), ("pho-hoi", SONG7)]:
         build(spec, f"{out}/{name}.mid")
         print("ok", name)
