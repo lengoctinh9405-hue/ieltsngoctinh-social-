@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Writing Task 1 – Comparisons & Data | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:6mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== extra classes (same style family) ===== */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:10.5pt;line-height:1.38;margin-bottom:5mm;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden}
+.tbl th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:7px 10px;letter-spacing:.02em}
+.tbl td{padding:6px 10px;border-top:1px solid var(--n2);vertical-align:top}
+.tbl tr:nth-child(even) td{background:var(--n3)}
+.tbl td b.o{color:#B85E0B}
+.tbl .c1{font-family:"Inter";font-weight:800;color:var(--n);font-size:9.5pt;white-space:nowrap}
+.lv{display:inline-block;font-family:"Inter";font-weight:900;font-size:8.5pt;color:#fff;padding:2px 7px;border-radius:5px;margin-right:6px;vertical-align:1px}
+.wr{border-radius:10px;padding:7px 12px;margin-bottom:2.5mm;font-size:10.8pt;line-height:1.42}
+.wr.bad{background:var(--f2);border-left:4px solid var(--f)}
+.wr.good{background:var(--t2);border-left:4px solid var(--t)}
+.wr .why{display:block;color:var(--mut);font-size:10pt;margin-top:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.lines{border-bottom:1.3px dashed #B9C4D4;height:8mm}
+.prompt{background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 13px;margin-bottom:2mm;font-size:10.8pt;line-height:1.42}
+.prompt .ty{display:inline-block;font-family:"Inter";font-weight:800;font-size:8.5pt;color:#fff;background:var(--o);padding:1px 8px;border-radius:5px;margin-right:6px}
+.chartbox{background:#fff;border:1.5px solid var(--n2);border-radius:14px;padding:10px 12px;margin-bottom:4mm}
+.chartbox .cap{font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt}
+.chartbox .demo{font-family:"Inter";font-weight:700;font-size:8pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);padding:1px 7px;border-radius:5px;margin-left:6px}
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:5mm}
+.score div{border-radius:12px;padding:9px;text-align:center;font-size:10.3pt}
+.score .hd{font-weight:900;font-size:18pt}
+.sample{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 13px;margin-bottom:3mm;font-size:10.6pt;line-height:1.45}
+.sample .lab{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--n);display:block;margin-bottom:2px}
+.sample .t1{background:#FFE3C4;border-radius:3px;padding:0 2px}
+.sample .t2{background:#CFE3FA;border-radius:3px;padding:0 2px}
+.steps.tight .step .body{padding:6px 12px;margin-bottom:2.5mm}
+.steps.tight .step .num{flex:0 0 11mm}
+.steps.tight .step .num span{width:11mm;height:11mm;font-size:13pt}
+.tbl.sm{font-size:10pt;line-height:1.33}
+.tbl.sm td{padding:5px 9px}
+.answ .ansrow{padding:4px 0}
+.answ .ansrow .k{flex:0 0 33mm}
+.sample.in{padding:6px 12px;margin-bottom:2mm}
+.sample.in .lab{display:inline-block;background:var(--n);color:#fff;border-radius:5px;padding:0 7px;margin:0 6px 0 0}
+.score.sm div{padding:5px 8px}
+.score.sm .hd{font-size:15pt;line-height:1.2}
+.qs.tight .q{padding:3px 0;font-size:11pt;line-height:1.38}
+.lines.s{height:6.4mm}
+.answ.sm .ansrow{font-size:10.3pt;line-height:1.35;padding:3px 0}
+</style>
+</head>
+<body>
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Writing Task 1 · Chiến lược từng dạng bài · Số 17</div>
+    <h1>CÂU SO SÁNH<br><span class="o">&amp; SỐ LIỆU</span></h1>
+    <div class="sub">5 cấu trúc so sánh cốt lõi, cách đưa số liệu và tỉ lệ chính xác mà không lặp, 7 lỗi khiến câu Task 1 “mất điểm ngữ pháp” — kèm biểu đồ minh hoạ và bài luyện có đáp án.</div>
+    <div class="pill">Dành cho Band 5.0 → 6.5</div>
+    <div class="toc">
+      <div><b>01</b>5 cấu trúc so sánh</div>
+      <div><b>02</b>Số liệu &amp; tỉ lệ</div>
+      <div><b>03</b>Quy trình 4 bước + 7 lỗi</div>
+      <div><b>04</b>Luyện tập + đáp án</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — STRUCTURES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CẤU TRÚC</div>
+  </div>
+  <div class="kicker">Hiểu đúng bản chất</div>
+  <h2>Một câu so sánh tốt gồm 4 khối</h2>
+  <p class="lead" style="margin-bottom:3mm">Task 1 chấm rất nặng việc bạn <b>so sánh</b> được các số liệu, chứ không chỉ liệt kê. Một câu so sánh “đủ chuẩn” luôn có đủ 4 khối dưới đây.</p>
+
+  <div class="formula" style="margin-bottom:4mm;padding:9px 14px">
+    <div class="row"><span class="blk bS">Đối tượng A</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Cấu trúc so sánh</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Đối tượng B cùng loại</span><span class="op" style="color:var(--n)">+</span><span class="blk bT">Số liệu</span></div>
+    <p style="font-size:10.5pt;color:var(--mut)"><i>The proportion of households with a car in Ardley</i> · <i>was twice as high as</i> · <i>that in Benton</i> · <i>(40% and 20% respectively).</i></p>
+  </div>
+
+  <table class="tbl sm" style="margin-bottom:4mm">
+    <tr><th style="width:23%">Cấu trúc</th><th style="width:35%">Mẫu câu</th><th style="width:42%">Ví dụ (số liệu minh hoạ)</th></tr>
+    <tr><td class="c1">1. So sánh hơn / nhất</td><td><b>slightly / considerably / far</b> higher than<br><b>by far</b> the highest</td><td>Benton received <b class="o">considerably more</b> visitors than Corwick.<br>Dunmore had <b class="o">by far the highest</b> rate.</td></tr>
+    <tr><td class="c1">2. as … as</td><td>(almost / nearly) as … as<br>not as / not nearly as … as</td><td>Rail travel was <b class="o">almost as popular as</b> bus travel.<br>Cycling was <b class="o">not nearly as common as</b> walking.</td></tr>
+    <tr><td class="c1">3. Bội số</td><td><b>twice / three times</b> as many / much / high … as<br>half as many … as · double the number of</td><td>Ardley had <b class="o">three times as many</b> cinemas <b class="o">as</b> Benton.<br>Men spent <b class="o">twice as much</b> money on games <b class="o">as</b> women.</td></tr>
+    <tr><td class="c1">4. Giống nhau</td><td>the same as · similar to<br>the same + N + as · both … similar</td><td>The figure for 2010 was <b class="o">the same as</b> that for 2020, at 18%.<br>Both towns had <b class="o">similar</b> levels of car use.</td></tr>
+    <tr><td class="c1">5. Đối lập</td><td>A …, <b>whereas / while</b> B …<br>compared with · in contrast</td><td>Car use rose steadily, <b class="o">whereas</b> cycling declined.<br><b class="o">In contrast</b>, sales in Corwick fell sharply.</td></tr>
+  </table>
+
+  <h3 style="margin-bottom:5px">Cùng một thông tin — 3 mức band</h3>
+  <div class="wr bad"><span class="lv bF">BAND 5</span>Ardley is 40% and Benton is 20%. Ardley is more than Benton.<span class="why">Chỉ “đọc số”, so sánh hai tên thành phố thay vì hai tỉ lệ, lặp cấu trúc.</span></div>
+  <div class="wr" style="background:var(--o3);border-left:4px solid var(--o)"><span class="lv bP">BAND 6</span>The percentage of households with a car in Ardley (40%) was higher than in Benton (20%).<span class="why">Đúng ngữ pháp, có số liệu; nhưng chưa thể hiện mức chênh lệch.</span></div>
+  <div class="wr good"><span class="lv bT">BAND 7</span>At 40%, the proportion of households with a car in Ardley was twice as high as that in Benton.<span class="why">So sánh đúng đối tượng (<i>that in</i>), nêu rõ mức chênh (<i>twice as high as</i>), số liệu gọn.</span></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — DATA LANGUAGE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · SỐ LIỆU</div>
+  </div>
+  <div class="kicker">Chính xác nhưng không lặp</div>
+  <h2>Đưa số liệu &amp; tỉ lệ</h2>
+  <p class="lead" style="margin-bottom:4mm">Không cần chép mọi con số. Hãy chọn số <b>quan trọng</b>, rồi đổi cách đưa số liên tục để câu văn không lặp.</p>
+
+  <h3 style="margin-bottom:4px">3 cách gắn số vào câu</h3>
+  <table class="tbl" style="margin-bottom:4mm">
+    <tr><th style="width:30%">Cách</th><th>Ví dụ</th></tr>
+    <tr><td class="c1">Giới từ <b>at / to / by</b></td><td>Car use peaked <b class="o">at</b> 45% in 2015. · It rose <b class="o">to</b> 45% (mức đạt tới) · It rose <b class="o">by</b> 5% (mức tăng thêm).</td></tr>
+    <tr><td class="c1">Ngoặc đơn / respectively</td><td>Dunmore had the highest figure <b class="o">(210 litres)</b>. · Ardley and Benton used 150 and 148 litres <b class="o">respectively</b>.</td></tr>
+    <tr><td class="c1">Động từ số liệu</td><td>The figure <b class="o">stood at</b> 30%. · Coal <b class="o">accounted for</b> / <b class="o">made up</b> a quarter of all electricity generated.</td></tr>
+  </table>
+
+  <h3 style="margin-bottom:2px">Thước tỉ lệ: % → phân số</h3>
+  <svg viewBox="0 0 640 136" width="100%" style="display:block;margin-bottom:3mm">
+    <rect x="20" y="58" width="300" height="14" rx="7" fill="#DCE8F7"/>
+    <rect x="320" y="58" width="300" height="14" rx="7" fill="#FFE9D4"/>
+    <text x="170" y="130" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82">a minority (dưới 50%)</text>
+    <text x="470" y="130" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#B85E0B">the majority / most (trên 50%)</text>
+    <g font-family="Inter" font-size="11.5" font-weight="700" text-anchor="middle">
+      <line x1="80" y1="40" x2="80" y2="72" stroke="#003D82" stroke-width="2"/><text x="80" y="20" fill="#FB8F2C">10%</text><text x="80" y="34" fill="#1D2433">one in ten</text>
+      <line x1="140" y1="58" x2="140" y2="88" stroke="#003D82" stroke-width="2"/><text x="140" y="100" fill="#1D2433">a fifth</text>
+      <line x1="170" y1="40" x2="170" y2="72" stroke="#003D82" stroke-width="2"/><text x="170" y="20" fill="#FB8F2C">25%</text><text x="170" y="34" fill="#1D2433">a quarter</text>
+      <line x1="220" y1="58" x2="220" y2="88" stroke="#003D82" stroke-width="2"/><text x="220" y="100" fill="#1D2433">a third</text>
+      <line x1="320" y1="40" x2="320" y2="72" stroke="#003D82" stroke-width="2.5"/><text x="320" y="20" fill="#FB8F2C">50%</text><text x="320" y="34" fill="#1D2433">half</text>
+      <line x1="420" y1="58" x2="420" y2="88" stroke="#003D82" stroke-width="2"/><text x="420" y="100" fill="#1D2433">two thirds</text>
+      <line x1="470" y1="40" x2="470" y2="72" stroke="#003D82" stroke-width="2"/><text x="470" y="20" fill="#FB8F2C">75%</text><text x="470" y="34" fill="#1D2433">three quarters</text>
+      <line x1="560" y1="58" x2="560" y2="88" stroke="#003D82" stroke-width="2"/><text x="560" y="100" fill="#1D2433">the vast majority</text>
+    </g>
+    <g font-family="Inter" font-size="9.5" font-weight="700" fill="#5B6577" text-anchor="middle">
+      <text x="140" y="112">20%</text><text x="220" y="112">≈33%</text><text x="420" y="112">≈67%</text><text x="560" y="112">≈90%</text>
+    </g>
+  </svg>
+
+  <h3 style="margin-bottom:4px">Ước lượng khi số không “tròn”</h3>
+  <table class="tbl" style="margin-bottom:4mm">
+    <tr><th style="width:22%">Số liệu</th><th>Cách viết tự nhiên</th></tr>
+    <tr><td class="c1">49%</td><td><b class="o">nearly / almost</b> half · <b class="o">just under</b> half</td></tr>
+    <tr><td class="c1">52%</td><td><b class="o">just over</b> half · <b class="o">a slight majority</b></td></tr>
+    <tr><td class="c1">32% · 35%</td><td><b class="o">just under</b> a third · <b class="o">just over</b> a third (cả hai: <b class="o">roughly</b> a third)</td></tr>
+    <tr><td class="c1">78%</td><td><b class="o">over / more than</b> three quarters</td></tr>
+    <tr><td class="c1">5,960 tấn</td><td><b class="o">approximately / around / about</b> 6,000 tonnes · <b class="o">just under</b> 6,000 tonnes</td></tr>
+    <tr><td class="c1">7%</td><td><b class="o">a small minority</b> · <b class="o">fewer than one in ten</b> (người / vật đếm được)</td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div><b>Không ước lượng “quá tay”:</b> 41% <b>không</b> phải “nearly half”. Chỉ dùng phân số khi số liệu thật sự gần mốc đó (chênh khoảng 1–3 điểm %), nếu không hãy giữ số chính xác.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Nhìn biểu đồ → ra câu</div>
+  <h2>Quy trình 4 bước</h2>
+
+  <div class="chartbox">
+    <div class="cap">Average daily water use per person in four towns, 2024 (litres)<span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 196" width="100%" style="display:block;margin-top:2px;height:38mm">
+      <g font-family="Inter" font-size="10" fill="#5B6577" text-anchor="end">
+        <line x1="60" y1="170" x2="620" y2="170" stroke="#7A869A" stroke-width="1.5"/>
+        <line x1="60" y1="140" x2="620" y2="140" stroke="#ECEFF4"/><line x1="60" y1="110" x2="620" y2="110" stroke="#ECEFF4"/>
+        <line x1="60" y1="80" x2="620" y2="80" stroke="#ECEFF4"/><line x1="60" y1="50" x2="620" y2="50" stroke="#ECEFF4"/><line x1="60" y1="20" x2="620" y2="20" stroke="#ECEFF4"/>
+        <text x="52" y="174">0</text><text x="52" y="144">50</text><text x="52" y="114">100</text><text x="52" y="84">150</text><text x="52" y="54">200</text><text x="52" y="24">250</text>
+      </g>
+      <rect x="100" y="80" width="80" height="90" rx="4" fill="#003D82"/>
+      <rect x="230" y="81.2" width="80" height="88.8" rx="4" fill="#003D82"/>
+      <rect x="360" y="125" width="80" height="45" rx="4" fill="#003D82"/>
+      <rect x="490" y="44" width="80" height="126" rx="4" fill="#FB8F2C"/>
+      <g font-family="Inter" font-weight="800" font-size="12" text-anchor="middle" fill="#1D2433">
+        <text x="140" y="74">150</text><text x="270" y="75">148</text><text x="400" y="119">75</text><text x="530" y="38">210</text>
+      </g>
+      <g font-family="Inter" font-weight="700" font-size="11.5" text-anchor="middle" fill="#003D82">
+        <text x="140" y="188">Ardley</text><text x="270" y="188">Benton</text><text x="400" y="188">Corwick</text><text x="530" y="188">Dunmore</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="steps tight" style="margin-bottom:1mm">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Chọn cặp đáng so sánh</h3><p>Ưu tiên: cao nhất ↔ thấp nhất · hai số gần bằng nhau · hai số gấp nhau.</p><span class="chip">Dunmore cao nhất</span><span class="chip">Ardley ≈ Benton</span><span class="chip">Ardley = 2 × Corwick</span></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Chọn cấu trúc khớp với quan hệ</h3><p>Chênh nhiều → <i>by far / considerably</i> · gấp nhau → <i>twice as much … as</i> · gần bằng → <i>almost the same as</i> · ngược chiều → <i>whereas</i>.</p></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Chọn cách đưa số</h3><p>Số chính xác trong ngoặc, <i>at</i>, <i>respectively</i> — hoặc ước lượng nếu số không tròn. Luôn ghi <b>đơn vị</b>.</p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Soát 3 điểm</h3><p>So sánh <b>cùng loại</b> (<i>that of / those in</i>) · đúng danh từ (<i>number / amount</i>) · đúng thì (năm 2024 → quá khứ).</p></div></div>
+  </div>
+
+  <div class="ex" style="margin-bottom:2.2mm"><b>Dunmore</b> had by far the highest level of water use, at 210 litres per person per day.</div>
+  <div class="ex" style="margin-bottom:2.2mm">Water use in <b>Ardley</b> was almost the same as that in <b>Benton</b> (150 and 148 litres respectively).</div>
+  <div class="ex" style="margin-bottom:2.2mm">People in <b>Ardley</b> used twice as much water as those in <b>Corwick</b>.</div>
+  <div class="ex" style="margin-bottom:0">Residents of <b>Dunmore</b> used 210 litres a day, whereas those in <b>Corwick</b> used only 75 litres.</div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — MISTAKES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · LỖI HAY GẶP</div>
+  </div>
+  <div class="kicker">Lỗi nhỏ, mất điểm ngữ pháp</div>
+  <h2>7 lỗi hay gặp nhất</h2>
+  <p class="lead" style="margin-bottom:5mm">Phần lớn lỗi nằm ở <b>một từ</b>. Đọc dòng ❌, tự sửa trước khi nhìn dòng ✅.</p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>number ↔ amount</span></div><div class="c">
+      <div class="w"><em>number + N đếm được số nhiều</em><em>amount + N không đếm được</em></div>
+      <div class="mini">❌ The <b>amount</b> of cars rose.<br>✅ The <b>number</b> of cars rose.<br>✅ The <b>amount</b> of rubbish rose.</div>
+      <span style="font-size:9.8pt;color:var(--mut)"><i>The number of … <b>was</b></i> (động từ số ít).</span></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>percent ↔ percentage</span></div><div class="c">
+      <div class="w"><em>số + percent / %</em><em>the percentage of + N</em></div>
+      <div class="mini">❌ The <b>percent</b> of students was 40 <b>percentage</b>.<br>✅ The <b>percentage</b> of students was 40 <b>percent</b> (40%).</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>So sánh “khập khiễng”</span></div><div class="c">
+      <div class="w"><em>that of / that in</em><em>those of / those in</em></div>
+      <div class="mini">❌ The population of Ardley was larger than <b>Benton</b>.<br>✅ … larger than <b>that of</b> Benton.<br>✅ Prices in A were higher than <b>those in</b> B.</div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>So sánh kép</span></div><div class="c">
+      <div class="w"><em>more + -er</em><em>the most + -est</em></div>
+      <div class="mini">❌ Sales were <b>more higher</b> in May.<br>✅ Sales were <b>higher</b> in May.<br>❌ the <b>most highest</b> → ✅ the <b>highest</b></div></div></div>
+    <div class="trap"><div class="h"><b>5</b><span>Bội số sai cấu trúc</span></div><div class="c">
+      <div class="w"><em>twice higher than</em><em>two times more than</em></div>
+      <div class="mini">❌ Ardley's figure was <b>twice higher than</b> Benton's.<br>✅ … was <b>twice as high as</b> Benton's.<br>✅ Ardley's figure was <b>double</b> Benton's.</div></div></div>
+    <div class="trap"><div class="h"><b>6</b><span>whereas / while đứng một mình</span></div><div class="c">
+      <div class="w"><em>Mệnh đề 1, whereas mệnh đề 2</em></div>
+      <div class="mini">❌ Car use rose. <b>Whereas</b> cycling fell.<br>✅ Car use rose, <b>whereas</b> cycling fell.<br>✅ <b>While</b> car use rose, cycling fell.</div></div></div>
+    <div class="trap wide"><div class="h"><b>7</b><span>Nhầm <i>to / by</i> và quên đơn vị</span></div><div class="c">
+      <div class="two" style="gap:4mm">
+        <div class="mini">Tỉ lệ thất nghiệp từ 5% lên 8%:<br>❌ Unemployment increased <b>by</b> 8%.<br>✅ Unemployment increased <b>to</b> 8% (a rise <b>of</b> 3 percentage points).</div>
+        <div class="mini">❌ Ardley used <b>150</b>, while Corwick used <b>75</b>.<br>✅ Ardley used <b>150 litres</b> per person per day, while Corwick used <b>75 litres</b>.</div>
+      </div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:5mm">
+    <div class="ic">✓</div>
+    <div><b>Mẹo soát bài 1 phút:</b> khoanh tất cả chữ <i>than</i> và <i>as</i> trong bài — kiểm tra hai vế có <b>cùng loại</b> không; rồi khoanh <i>number / amount / percent / percentage</i> và kiểm tra danh từ đi sau.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PRACTICE A ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian gợi ý: 15 phút cho cả phần A–C</div>
+  <h2>Dữ liệu dùng cho bài tập</h2>
+
+  <div class="chartbox">
+    <div class="cap">Biểu đồ A · Percentage of students who walked to school in five towns, 2024<span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 204" width="100%" style="display:block;margin-top:4px">
+      <g stroke="#ECEFF4"><line x1="220" y1="10" x2="220" y2="180"/><line x1="340" y1="10" x2="340" y2="180"/><line x1="460" y1="10" x2="460" y2="180"/><line x1="580" y1="10" x2="580" y2="180"/></g>
+      <line x1="100" y1="10" x2="100" y2="180" stroke="#7A869A" stroke-width="1.5"/>
+      <g font-family="Inter" font-size="10" fill="#5B6577" text-anchor="middle"><text x="100" y="196">0%</text><text x="220" y="196">20%</text><text x="340" y="196">40%</text><text x="460" y="196">60%</text><text x="580" y="196">80%</text></g>
+      <g font-family="Inter" font-weight="700" font-size="12" fill="#003D82" text-anchor="end">
+        <text x="90" y="33">Ashford</text><text x="90" y="66">Brayton</text><text x="90" y="99">Colville</text><text x="90" y="132">Denham</text><text x="90" y="165">Elmore</text>
+      </g>
+      <rect x="100" y="16" width="372" height="24" rx="4" fill="#FB8F2C"/>
+      <rect x="100" y="49" width="186" height="24" rx="4" fill="#003D82"/>
+      <rect x="100" y="82" width="186" height="24" rx="4" fill="#003D82"/>
+      <rect x="100" y="115" width="90" height="24" rx="4" fill="#003D82"/>
+      <rect x="100" y="148" width="288" height="24" rx="4" fill="#003D82"/>
+      <g font-family="Inter" font-weight="800" font-size="12" fill="#1D2433">
+        <text x="480" y="33">62%</text><text x="294" y="66">31%</text><text x="294" y="99">31%</text><text x="198" y="132">15%</text><text x="396" y="165">48%</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="chartbox" style="padding-bottom:4px">
+    <div class="cap" style="margin-bottom:5px">Bảng B · Three public libraries in 2024<span class="demo">Số liệu minh hoạ</span></div>
+    <table class="tbl" style="margin-bottom:2mm">
+      <tr><th>Library</th><th>Books borrowed</th><th>Money spent on new books</th></tr>
+      <tr><td class="c1">North Library</td><td>120,000</td><td>$40,000</td></tr>
+      <tr><td class="c1">South Library</td><td>60,000</td><td>$40,000</td></tr>
+      <tr><td class="c1">East Library</td><td>30,000</td><td>$25,000</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin-bottom:2px">Phần A · Chọn phương án đúng</h3>
+  <div class="qs">
+    <div class="q"><span class="n">1</span><span class="s">The (<b>number / amount</b>) of books borrowed from North Library was 120,000.</span><span class="box"></span></div>
+    <div class="q"><span class="n">2</span><span class="s">East Library spent the smallest (<b>number / amount</b>) of money on new books.</span><span class="box"></span></div>
+    <div class="q"><span class="n">3</span><span class="s">In Elmore, 48 (<b>percent / percentage</b>) of students walked to school.</span><span class="box"></span></div>
+    <div class="q"><span class="n">4</span><span class="s">Denham had the lowest (<b>percent / percentage</b>) of students who walked to school.</span><span class="box"></span></div>
+    <div class="q"><span class="n">5</span><span class="s">The figure for Ashford was (<b>twice higher than / twice as high as</b>) that for Brayton.</span><span class="box"></span></div>
+    <div class="q"><span class="n">6</span><span class="s">North Library and South Library spent (<b>the same / the same as</b>) amount of money on new books.</span><span class="box"></span></div>
+    <div class="q"><span class="n">7</span><span class="s">The percentage in Brayton was equal to (<b>Colville / that in Colville</b>).</span><span class="box"></span></div>
+    <div class="q"><span class="n">8</span><span class="s">In Elmore, (<b>just under / just over</b>) half of the students walked to school.</span><span class="box"></span></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — PRACTICE B, C ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Dùng Biểu đồ A và Bảng B ở trang 6</div>
+  <h2>Viết lại câu so sánh</h2>
+  <p class="lead" style="margin-bottom:4mm"><b>Phần B:</b> viết <b>một câu</b> cho mỗi cặp số liệu, bắt buộc dùng cụm từ trong ngoặc. Nhớ so sánh cùng loại và ghi đơn vị.</p>
+
+  <div class="prompt"><span class="ty">9</span>Brayton 31% · Colville 31% → <b>(the same as)</b></div>
+  <div class="lines"></div><div class="lines" style="margin-bottom:3mm"></div>
+  <div class="prompt"><span class="ty">10</span>North Library 120,000 books · South Library 60,000 books → <b>(twice as many)</b></div>
+  <div class="lines"></div><div class="lines" style="margin-bottom:3mm"></div>
+  <div class="prompt"><span class="ty">11</span>East Library 30,000 books · North Library 120,000 books → <b>(a quarter)</b></div>
+  <div class="lines"></div><div class="lines" style="margin-bottom:3mm"></div>
+  <div class="prompt"><span class="ty">12</span>Ashford 62% · Denham 15% → <b>(whereas)</b></div>
+  <div class="lines"></div><div class="lines" style="margin-bottom:3mm"></div>
+  <div class="prompt"><span class="ty">13</span>Elmore 48% · Ashford 62% → <b>(not as … as)</b></div>
+  <div class="lines"></div><div class="lines" style="margin-bottom:5mm"></div>
+
+  <h3 style="margin-bottom:3px">Phần C · Viết tự do (2 câu)</h3>
+  <p style="font-size:11pt;color:#3A4456;margin-bottom:2mm">Dựa vào cột <b>Money spent on new books</b> của Bảng B, viết 2 câu so sánh. Dùng ít nhất <b>1 cấu trúc giống nhau / bội số</b> và <b>1 cách ước lượng hoặc đối lập</b>.</p>
+  <div class="lines"></div><div class="lines"></div><div class="lines"></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>7</span></div>
+</section>
+
+<!-- ============ PAGE 8 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đọc giải thích, đừng chỉ dò đáp án</div>
+  <h2 style="margin-bottom:1mm">Đáp án &amp; câu mẫu</h2>
+  <div class="answ">
+
+  <div class="ansrow"><span class="n">1</span><span class="k bT">number</span><span class="e"><i>books</i> đếm được, số nhiều → <b>number</b>.</span></div>
+  <div class="ansrow"><span class="n">2</span><span class="k bT">amount</span><span class="e"><i>money</i> không đếm được → <b>amount</b>.</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="k bT">percent</span><span class="e">Đứng sau một con số → <b>percent</b> (= %).</span></div>
+  <div class="ansrow"><span class="n">4</span><span class="k bT">percentage</span><span class="e">Không có số đứng trước, đi với <i>the lowest … of</i> → <b>percentage</b>.</span></div>
+  <div class="ansrow"><span class="n">5</span><span class="k bT">twice as high as</span><span class="e">62% = 2 × 31%. Cấu trúc chuẩn: <b>twice as + adj + as</b>.</span></div>
+  <div class="ansrow"><span class="n">6</span><span class="k bT">the same</span><span class="e">Đối tượng thứ hai đã nằm ở chủ ngữ (<i>North and South</i>) nên không cần <i>as</i>: <b>the same amount of money</b>.</span></div>
+  <div class="ansrow"><span class="n">7</span><span class="k bT">that in Colville</span><span class="e">So sánh tỉ lệ với tỉ lệ, không phải tỉ lệ với thị trấn (lỗi 3).</span></div>
+  <div class="ansrow"><span class="n">8</span><span class="k bT">just under</span><span class="e">48% thấp hơn 50% một chút → <b>just under half</b>.</span></div>
+
+  </div>
+  <div class="sample in" style="margin-top:3mm"><span class="lab">9</span>The percentage of students who walked to school in Brayton was <b>the same as</b> that in Colville, at 31%.</div>
+  <div class="sample in"><span class="lab">10</span><b>Twice as many</b> books were borrowed from North Library <b>as</b> from South Library (120,000 and 60,000 respectively). <span style="color:var(--mut)">/ North Library lent twice as many books as South Library.</span></div>
+  <div class="sample in"><span class="lab">11</span>The number of books borrowed from East Library (30,000) was only <b>a quarter</b> of the figure for North Library.</div>
+  <div class="sample in"><span class="lab">12</span>Over 60% of students in Ashford walked to school, <b>whereas</b> the figure for Denham was only 15%.</div>
+  <div class="sample in"><span class="lab">13</span>At 48%, the proportion of students who walked to school in Elmore was <b>not as high as</b> that in Ashford (62%).</div>
+  <div class="sample in"><span class="lab">C · Câu mẫu</span>North Library and South Library spent <b>the same amount</b> of money on new books ($40,000 each), whereas East Library spent considerably less, at $25,000. South Library's spending matched North's, even though it lent only <b>half as many</b> books.</div>
+
+  <div class="score sm" style="margin-top:2mm">
+    <div style="background:var(--t2)"><div class="hd" style="color:var(--t)">12–13</div>Rất vững — luyện cả bài Task 1</div>
+    <div style="background:var(--o3)"><div class="hd" style="color:var(--o)">8–11</div>Ổn — xem lại lỗi 1, 3, 5 (trang 5)</div>
+    <div style="background:var(--f2)"><div class="hd" style="color:var(--f)">0–7</div>Đọc lại trang 2–3 rồi làm lại</div>
+  </div>
+
+  <div class="cta" style="margin-top:3mm;padding:9px 16px">
+    <svg width="42" height="42" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big" style="font-size:14pt">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Reading · Listening · Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · So sánh &amp; số liệu</span><span>8</span></div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,1327 @@
+[
+ {
+  "id": "02",
+  "slug": "02-yes-no-not-given",
+  "pages": 6,
+  "kw": "YNNG",
+  "h1": "YES hay<br><span>NOT GIVEN</span>?",
+  "p": "Yes / No / Not Given hỏi quan điểm của TÁC GIẢ, không hỏi thông tin. Công thức khối, bảng từ tín hiệu và bài luyện có giải thích.",
+  "stats": [
+   [
+    "6",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "bẫy quan điểm"
+   ],
+   [
+    "8",
+    "câu có giải thích"
+   ],
+   [
+    "4",
+    "bước quy trình"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "So với <span>ý kiến</span>, không phải sự&nbsp;thật",
+    "li": [
+     "Statement ↔ quan&nbsp;điểm",
+     "Từ tín hiệu thái&nbsp;độ",
+     "Ví dụ đúng –&nbsp;sai"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "<span>5 bẫy</span> về quan&nbsp;điểm",
+    "li": [
+     "“Critics&nbsp;say…”",
+     "Hedging:&nbsp;arguably…",
+     "Ý kiến người&nbsp;khác"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "kicker": "IELTS READING · SỐ 02 · TẢI MIỄN PHÍ"
+ },
+ {
+  "id": "04",
+  "slug": "04-reading-multiple-choice",
+  "pages": 7,
+  "kw": "CHOICE",
+  "h1": "4 đáp án,<br>cái nào cũng <span>có lý</span>?",
+  "p": "Multiple Choice Reading: loại 3 đáp án mồi có lý do rõ ràng thay vì đi tìm đáp án đúng. Có bài luyện giải thích từng phương án.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "4",
+    "kiểu đáp án nhiễu"
+   ],
+   [
+    "3",
+    "bộ lọc loại trừ"
+   ],
+   [
+    "5",
+    "câu có giải thích"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "1 đúng + <span>3&nbsp;mồi</span>",
+    "li": [
+     "Câu hỏi → định&nbsp;vị",
+     "Loại 3 phương án&nbsp;mồi",
+     "Chốt đáp&nbsp;án"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "<span>4 kiểu</span> đáp án&nbsp;nhiễu",
+    "li": [
+     "Trùng từ trong&nbsp;bài",
+     "Đúng nhưng không trả&nbsp;lời",
+     "Choose TWO /&nbsp;THREE"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "kicker": "IELTS READING · SỐ 04 · TẢI MIỄN PHÍ"
+ },
+ {
+  "id": "06",
+  "slug": "06-matching-information",
+  "pages": 7,
+  "kw": "INFO",
+  "h1": "Đoạn nào<br>chứa <span>thông tin</span> này?",
+  "p": "Matching Information: tìm CHI TIẾT trong đoạn chứ không phải ý chính. Bảng 8 loại thông tin, cách quét đoạn và bài luyện có giải thích.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "8",
+    "loại thông tin"
+   ],
+   [
+    "5",
+    "bẫy kinh điển"
+   ],
+   [
+    "6",
+    "câu có giải thích"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Loại thông tin + <span>nội&nbsp;dung</span>",
+    "li": [
+     "a reason, a&nbsp;comparison…",
+     "Tín hiệu nhận&nbsp;biết",
+     "Khác Matching&nbsp;Headings"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "<span>5 bẫy</span> kinh&nbsp;điển",
+    "li": [
+     "Chỉ đọc câu đầu&nbsp;đoạn",
+     "Trùng từ&nbsp;khoá",
+     "Bỏ sót nửa câu giữa&nbsp;đoạn"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "kicker": "IELTS READING · SỐ 06 · TẢI MIỄN PHÍ"
+ },
+ {
+  "id": "07",
+  "slug": "07-matching-features-sentence-endings",
+  "pages": 8,
+  "kw": "ENDINGS",
+  "h1": "Matching Features<br>& <span>Sentence Endings</span>",
+  "p": "Hai dạng “nối” trong Reading: khoanh TÊN trước, dùng ngữ pháp loại ngay 2–3 phương án. Có bài luyện 9 câu kèm giải thích.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "2",
+    "dạng bài nối"
+   ],
+   [
+    "7",
+    "bẫy hay gặp"
+   ],
+   [
+    "9",
+    "câu có giải thích"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 3,
+    "h": "Bản đồ <span>tô màu&nbsp;tên</span>",
+    "li": [
+     "Khoanh tên&nbsp;trước",
+     "Nối ý kiến với&nbsp;người",
+     "Một tên dùng nhiều&nbsp;lần"
+    ],
+    "k": "TRANG 3"
+   },
+   {
+    "p": 4,
+    "h": "Ghép <span>nửa&nbsp;câu</span>",
+    "li": [
+     "Đúng ngữ&nbsp;pháp",
+     "Đúng&nbsp;nghĩa",
+     "Loại nhanh phương&nbsp;án"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "kicker": "IELTS READING · SỐ 07 · TẢI MIỄN PHÍ"
+ },
+ {
+  "id": "08",
+  "slug": "08-short-answer-diagram",
+  "pages": 7,
+  "kw": "DIAGRAM",
+  "h1": "Tìm đúng chỗ<br>mà vẫn <span>bị chấm sai</span>?",
+  "p": "Short Answer & Diagram Labelling: từ hỏi → loại đáp án → định vị → giới hạn từ. 5 lỗi mất điểm oan và bài luyện có sơ đồ.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "4",
+    "khối công thức"
+   ],
+   [
+    "5",
+    "lỗi mất điểm oan"
+   ],
+   [
+    "7",
+    "câu có sơ đồ"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Công thức <span>4&nbsp;khối</span>",
+    "li": [
+     "Từ hỏi → loại đáp&nbsp;án",
+     "Định vị trong&nbsp;bài",
+     "Giới hạn số&nbsp;từ"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 6,
+    "h": "Điền nhãn <span>sơ&nbsp;đồ</span>",
+    "li": [
+     "Bám mỏ&nbsp;neo",
+     "Đi theo thứ&nbsp;tự",
+     "Chép đúng từ trong&nbsp;bài"
+    ],
+    "k": "TRANG 6"
+   }
+  ],
+  "kicker": "IELTS READING · SỐ 08 · TẢI MIỄN PHÍ"
+ },
+ {
+  "id": "12",
+  "slug": "12-listening-matching",
+  "pages": 7,
+  "kw": "MATCHING",
+  "kicker": "IELTS LISTENING · SỐ 12 · TẢI MIỄN PHÍ",
+  "h1": "Nghe thấy hết<br><span>vẫn nối sai?</span>",
+  "p": "Công thức “mốc + ý được khẳng định” cho dạng Matching, 5 bẫy kinh điển và bài luyện có transcript.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "bẫy kinh điển"
+   ],
+   [
+    "4",
+    "bước làm bài"
+   ],
+   [
+    "6",
+    "câu luyện tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Hai danh sách, <span>một trục thời&nbsp;gian</span>",
+    "li": [
+     "Mục đi theo thứ&nbsp;tự",
+     "Lựa chọn bị xáo&nbsp;trộn",
+     "Luôn có phương án&nbsp;thừa"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "<span>5 bẫy</span> kinh&nbsp;điển",
+    "li": [
+     "Nghe trùng từ ≠&nbsp;đúng",
+     "Used to = thông tin&nbsp;cũ",
+     "Ý của người&nbsp;khác"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "12",
+   "slug": "12-listening-matching",
+   "skill": "Listening",
+   "title": "Listening Matching",
+   "pages": 7,
+   "keyword": "MATCHING",
+   "hook_h1": "Nghe thấy hết<br><span>vẫn nối sai?</span>",
+   "hook_p": "Công thức “mốc + ý được khẳng định” cho dạng Matching, 5 bẫy kinh điển và bài luyện có transcript.",
+   "stats": [
+    [
+     "7",
+     "trang PDF"
+    ],
+    [
+     "5",
+     "bẫy kinh điển"
+    ],
+    [
+     "4",
+     "bước làm bài"
+    ],
+    [
+     "6",
+     "câu luyện tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "Hai danh sách, <span>một trục thời gian</span>",
+     "li": [
+      "Mục đi theo thứ tự",
+      "Lựa chọn bị xáo trộn",
+      "Luôn có phương án thừa"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "<span>5 bẫy</span> kinh điển",
+     "li": [
+      "Nghe trùng từ ≠ đúng",
+      "Used to = thông tin cũ",
+      "Ý của người khác"
+     ]
+    }
+   ],
+   "caption_title": "LISTENING MATCHING – NỐI ĐÚNG KHI LỰA CHỌN NHIỀU HƠN CÂU HỎI",
+   "caption_pain": "Các bạn nghe thấy gần như mọi lựa chọn trong hộp A–H, nhưng nối xong vẫn sai một nửa? Lý do là người nói hiếm khi lặp lại đúng từ trong đề, còn các phương án sai thì vẫn được nhắc tới — chỉ là bị phủ định, đã cũ hoặc là ý của người khác.",
+   "caption_bullets": [
+    "Bản chất dạng Matching: mục theo thứ tự, lựa chọn xáo trộn, luôn có phương án thừa",
+    "Quy trình 4 bước + sơ đồ nối, cách bắt “mốc” chuyển câu",
+    "5 bẫy kinh điển: trùng từ, đảo chiều, used to, ý người khác, lỡ câu",
+    "Bài luyện 6 câu (8 lựa chọn) kèm transcript đánh dấu bẫy và giải thích"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+   "tip": "Gợi ý học: đọc kỹ 5 bẫy ở trang 4, làm bài trang 5 khi nhờ người đọc to transcript, rồi mới lật trang 6–7 để đối chiếu.",
+   "cheer": "Làm xong comment số câu đúng /6 để thầy biết nhé 👇"
+  }
+ },
+ {
+  "id": "13",
+  "slug": "13-listening-sentence-summary",
+  "pages": 7,
+  "kw": "GAPFILL",
+  "kicker": "IELTS LISTENING · SỐ 13 · TẢI MIỄN PHÍ",
+  "h1": "Nghe đúng<br><span>vẫn mất điểm?</span>",
+  "p": "Bảng giới hạn số từ, công thức 4 khối kiểm tra đáp án, 6 lỗi mất điểm oan và bài luyện 9 câu có transcript.",
+  "stats": [
+   [
+    "7",
+    "trang PDF"
+   ],
+   [
+    "6",
+    "lỗi mất điểm"
+   ],
+   [
+    "5",
+    "mức giới hạn từ"
+   ],
+   [
+    "9",
+    "câu luyện tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Bảng <span>giới hạn số&nbsp;từ</span>",
+    "li": [
+     "ONE WORD&nbsp;ONLY",
+     "a tennis court =&nbsp;sai",
+     "Gạch nối = 1&nbsp;từ"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "<span>6 lỗi</span> mất điểm&nbsp;oan",
+    "li": [
+     "Quên đuôi&nbsp;-s",
+     "Lặp từ đã in&nbsp;sẵn",
+     "12 từ hay sai chính&nbsp;tả"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "13",
+   "slug": "13-listening-sentence-summary",
+   "skill": "Listening",
+   "title": "Sentence & Summary Completion",
+   "pages": 7,
+   "keyword": "GAPFILL",
+   "hook_h1": "Nghe đúng<br><span>vẫn mất điểm?</span>",
+   "hook_p": "Bảng giới hạn số từ, công thức 4 khối kiểm tra đáp án, 6 lỗi mất điểm oan và bài luyện 9 câu có transcript.",
+   "stats": [
+    [
+     "7",
+     "trang PDF"
+    ],
+    [
+     "6",
+     "lỗi mất điểm"
+    ],
+    [
+     "5",
+     "mức giới hạn từ"
+    ],
+    [
+     "9",
+     "câu luyện tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "Bảng <span>giới hạn số từ</span>",
+     "li": [
+      "ONE WORD ONLY",
+      "a tennis court = sai",
+      "Gạch nối = 1 từ"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "<span>6 lỗi</span> mất điểm oan",
+     "li": [
+      "Quên đuôi -s",
+      "Lặp từ đã in sẵn",
+      "12 từ hay sai chính tả"
+     ]
+    }
+   ],
+   "caption_title": "LISTENING SENTENCE & SUMMARY COMPLETION – HẾT MẤT ĐIỂM OAN",
+   "caption_pain": "Các bạn nghe ra đáp án rồi mà vẫn bị chấm sai — vì thừa một chữ “a”, quên một chữ “s” hay viết nhầm một chữ cái? Ở dạng điền câu và đoạn tóm tắt, phần lớn điểm bị mất không phải do nghe kém mà do viết sai thứ mình đã nghe đúng.",
+   "caption_bullets": [
+    "Bảng 5 mức giới hạn số từ (ONE WORD ONLY, NO MORE THAN TWO WORDS…) kèm ví dụ đúng/sai",
+    "Công thức 4 khối kiểm tra đáp án + bảng tín hiệu đoán loại từ trước khi nghe",
+    "6 lỗi kinh điển ❌ → ✅ và 12 từ hay sai chính tả trong Listening",
+    "Bài luyện 9 câu (Sentence + Summary) kèm transcript đánh dấu bẫy và giải thích"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+   "tip": "Gợi ý học: học thuộc bảng giới hạn số từ ở trang 2, làm bài trang 5, rồi đối chiếu đáp án trang 7 với 6 lỗi ở trang 4.",
+   "cheer": "Làm xong comment số câu đúng /9 nhé, thầy chờ kết quả của các bạn ✍️"
+  }
+ },
+ {
+  "id": "14",
+  "slug": "14-listening-table-flowchart",
+  "pages": 8,
+  "kw": "TABLE",
+  "kicker": "IELTS LISTENING · SỐ 14 · TẢI MIỄN PHÍ",
+  "h1": "Đọc bảng<br>bằng <span>toạ độ</span>",
+  "p": "Tiêu đề cột cho loại từ, mũi tên cho thứ tự: đoán trước từng ô trống trước khi băng chạy.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "11",
+    "câu luyện tập"
+   ],
+   [
+    "5",
+    "bẫy kinh điển"
+   ],
+   [
+    "1",
+    "transcript có bẫy"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Công thức <span>toạ độ</span> ô&nbsp;trống",
+    "li": [
+     "Tiêu đề cột → loại&nbsp;từ",
+     "Mũi tên → thứ&nbsp;tự",
+     "Ví dụ đoán&nbsp;trước"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "5 bẫy <span>kinh&nbsp;điển</span>",
+    "li": [
+     "Mắt lạc&nbsp;hàng",
+     "Lệch dạng so với&nbsp;cột",
+     "Thừa từ ONE WORD&nbsp;ONLY"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "14",
+   "slug": "14-listening-table-flowchart",
+   "skill": "Listening",
+   "title": "Table & Flow-chart Completion",
+   "pages": 8,
+   "keyword": "TABLE",
+   "hook_h1": "Đọc bảng<br>bằng <span>toạ độ</span>",
+   "hook_p": "Tiêu đề cột cho loại từ, mũi tên cho thứ tự: đoán trước từng ô trống trước khi băng chạy.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "11",
+     "câu luyện tập"
+    ],
+    [
+     "5",
+     "bẫy kinh điển"
+    ],
+    [
+     "2",
+     "bài nghe có bẫy"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "Công thức <span>toạ độ</span> ô trống",
+     "li": [
+      "Tiêu đề cột → loại từ",
+      "Mũi tên → thứ tự",
+      "Ví dụ đoán trước"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "5 bẫy <span>kinh điển</span>",
+     "li": [
+      "Mắt lạc hàng",
+      "Lệch dạng so với cột",
+      "Thừa từ ONE WORD ONLY"
+     ]
+    }
+   ],
+   "caption_title": "TABLE & FLOW-CHART COMPLETION – ĐIỀN BẢNG VÀ SƠ ĐỒ KHI NGHE",
+   "caption_pain": "Nghe ra đáp án rồi mà vẫn điền nhầm ô? Với bảng và sơ đồ quy trình, các bạn thường không mất điểm vì tai mà vì mắt: nhìn lạc hàng, nhầm bước, hoặc viết sai dạng từ so với cả cột. Trong khi chính tiêu đề cột và mũi tên đã gợi ý gần hết đáp án.",
+   "caption_bullets": [
+    "Công thức “toạ độ”: tiêu đề cột + tiêu đề hàng + ô mẫu → đoán loại từ",
+    "Quy trình 4 bước + sơ đồ đường đi của mắt trong bảng và flow-chart",
+    "5 bẫy kinh điển: lạc hàng, chép lại phần in sẵn, lệch dạng từ, người nói quay lại bước trước, thừa từ",
+    "Bài luyện 11 câu (1 bảng + 1 flow-chart) + transcript đánh dấu từng bẫy"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 và muốn lên 7.0 Listening.",
+   "tip": "Gợi ý học: đọc trang 2–4 trước, rồi nhờ người đọc transcript trang 7 để làm bài ở trang 5–6 mà không nhìn trước.",
+   "cheer": "Làm xong 11 câu, bạn được mấy câu? Comment điểm của bạn nhé 🎧"
+  }
+ },
+ {
+  "id": "15",
+  "slug": "15-writing-task1-intro-overview",
+  "pages": 8,
+  "kw": "OVERVIEW",
+  "kicker": "WRITING TASK 1 · SỐ 15 · TẢI MIỄN PHÍ",
+  "h1": "Mở bài &amp; <br><span>Overview</span> chuẩn",
+  "p": "Paraphrase câu đề và viết overview 2 ý chính không số liệu — kèm mẫu câu, 6 lỗi hay gặp và bài luyện có đáp án.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "3",
+    "cách paraphrase"
+   ],
+   [
+    "6",
+    "lỗi hay gặp"
+   ],
+   [
+    "4",
+    "bài luyện tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "2 đoạn đầu = <span>bản đồ</span> cả&nbsp;bài",
+    "li": [
+     "Công thức mở&nbsp;bài",
+     "Công thức&nbsp;overview",
+     "So sánh Band 5 vs&nbsp;6.5+"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "Overview: <span>2 ý&nbsp;chính</span>",
+    "li": [
+     "Quy trình 4&nbsp;bước",
+     "Ý chính theo dạng biểu&nbsp;đồ",
+     "4 mẫu câu&nbsp;overview"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "15",
+   "slug": "15-writing-task1-intro-overview",
+   "skill": "Writing Task 1",
+   "title": "Mở bài & Overview",
+   "pages": 8,
+   "keyword": "OVERVIEW",
+   "hook_h1": "Mở bài &amp; <br><span>Overview</span> chuẩn",
+   "hook_p": "Paraphrase câu đề và viết overview 2 ý chính không số liệu — kèm mẫu câu, 6 lỗi hay gặp và bài luyện có đáp án.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "3",
+     "cách paraphrase"
+    ],
+    [
+     "6",
+     "lỗi hay gặp"
+    ],
+    [
+     "4",
+     "bài luyện tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "2 đoạn đầu = <span>bản đồ</span> cả bài",
+     "li": [
+      "Công thức mở bài",
+      "Công thức overview",
+      "So sánh Band 5 vs 6.5+"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "Overview: <span>2 ý chính</span>",
+     "li": [
+      "Quy trình 4 bước",
+      "Ý chính theo dạng biểu đồ",
+      "4 mẫu câu overview"
+     ]
+    }
+   ],
+   "caption_title": "MỞ BÀI & OVERVIEW WRITING TASK 1 – VIẾT ĐÚNG NGAY TỪ 2 ĐOẠN ĐẦU",
+   "caption_pain": "Nhiều bạn chép gần nguyên câu đề làm mở bài, rồi viết overview toàn số liệu hoặc quên luôn overview. Trong khi đó, thiếu một overview rõ ràng là một trong những lý do phổ biến khiến điểm Task Achievement bị giữ ở band 5.",
+   "caption_bullets": [
+    "3 cách paraphrase câu đề: đổi động từ, danh từ, thời gian",
+    "Quy trình 4 bước tìm 2 ý chính cho overview, theo từng dạng biểu đồ",
+    "6 lỗi hay gặp ❌ → ✅ ở mở bài và overview",
+    "4 bài luyện (có biểu đồ minh hoạ) + đáp án gợi ý"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.0 – 6.5",
+   "tip": "Gợi ý học: đọc kỹ trang 3–4, làm Bài 1 ở trang 6 trước khi xem đáp án ở trang 8.",
+   "cheer": "Làm xong Bài 4 thì comment câu overview của bạn để thầy xem giúp nhé ✍️"
+  }
+ },
+ {
+  "id": "16",
+  "slug": "16-writing-task1-trends",
+  "pages": 8,
+  "kw": "TREND",
+  "kicker": "WRITING TASK 1 · SỐ 16 · TẢI MIỄN PHÍ",
+  "h1": "Tả xu hướng<br><span>đúng &amp; hay</span>",
+  "p": "2 cấu trúc câu, bảng từ vựng mức độ & tốc độ, giới từ to/by/at/of và bài luyện với biểu đồ — có đáp án.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "2",
+    "cấu trúc câu"
+   ],
+   [
+    "7",
+    "lỗi hay gặp"
+   ],
+   [
+    "3",
+    "bài luyện tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 3,
+    "h": "Bảng từ vựng <span>xu&nbsp;hướng</span>",
+    "li": [
+     "Tăng, giảm, dao&nbsp;động",
+     "Ổn định, đỉnh,&nbsp;đáy",
+     "Mức độ &amp; tốc&nbsp;độ"
+    ],
+    "k": "TRANG 3"
+   },
+   {
+    "p": 4,
+    "h": "Giới từ <span>to · by · at ·&nbsp;of</span>",
+    "li": [
+     "Biểu đồ có chú&nbsp;thích",
+     "rose to vs rose&nbsp;by",
+     "Lưu ý percentage&nbsp;points"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "16",
+   "slug": "16-writing-task1-trends",
+   "skill": "Writing Task 1",
+   "title": "Câu mô tả xu hướng",
+   "pages": 8,
+   "keyword": "TREND",
+   "hook_h1": "Tả xu hướng<br><span>đúng &amp; hay</span>",
+   "hook_p": "2 cấu trúc câu, bảng từ vựng mức độ & tốc độ, giới từ to/by/at/of và bài luyện với biểu đồ — có đáp án.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "2",
+     "cấu trúc câu"
+    ],
+    [
+     "7",
+     "lỗi hay gặp"
+    ],
+    [
+     "3",
+     "bài luyện tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 3,
+     "h": "Bảng từ vựng <span>xu hướng</span>",
+     "li": [
+      "Tăng, giảm, dao động",
+      "Ổn định, đỉnh, đáy",
+      "Mức độ &amp; tốc độ"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "Giới từ <span>to · by · at · of</span>",
+     "li": [
+      "Biểu đồ có chú thích",
+      "rose to vs rose by",
+      "Lưu ý percentage points"
+     ]
+    }
+   ],
+   "caption_title": "CÂU MÔ TẢ XU HƯỚNG WRITING TASK 1 – TĂNG, GIẢM, DAO ĐỘNG, ĐẠT ĐỈNH",
+   "caption_pain": "Nhiều bạn viết cả bài chỉ với “increase” và “decrease”, hoặc nhầm “rose to” với “rose by” khiến con số bị sai hoàn toàn. Chỉ cần nắm chắc 2 cấu trúc và vài giới từ, câu văn của các bạn sẽ chính xác và đa dạng hơn hẳn.",
+   "caption_bullets": [
+    "2 cấu trúc mô tả xu hướng + quy trình 4 bước từ biểu đồ đến câu văn",
+    "Bảng từ vựng 6 kiểu xu hướng, tính từ/trạng từ chỉ mức độ & tốc độ",
+    "Giới từ đi kèm số liệu (from…to, to, by, at, of, in) + 7 lỗi hay gặp ❌ → ✅",
+    "3 bài luyện với biểu đồ minh hoạ + đáp án"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.0 – 6.5",
+   "tip": "Gợi ý học: học bảng ở trang 3–4, làm Bài 1 trang 6 trong 5 phút rồi mới dò đáp án ở trang 8.",
+   "cheer": "Bài 1 bạn được mấy/6? Comment kết quả cho thầy biết nhé 📈"
+  }
+ },
+ {
+  "id": "17",
+  "slug": "17-writing-task1-comparisons",
+  "pages": 8,
+  "kw": "COMPARE",
+  "kicker": "WRITING TASK 1 · SỐ 17 · TẢI MIỄN PHÍ",
+  "h1": "So sánh số liệu<br><span>gọn &amp; chính xác</span>",
+  "p": "5 cấu trúc so sánh, cách đưa số liệu – tỉ lệ không lặp và 7 lỗi khiến câu Task 1 mất điểm ngữ pháp.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "cấu trúc so sánh"
+   ],
+   [
+    "7",
+    "lỗi hay gặp"
+   ],
+   [
+    "13",
+    "câu luyện tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Câu so sánh <span>4&nbsp;khối</span>",
+    "li": [
+     "5 cấu trúc cốt&nbsp;lõi",
+     "twice as many …&nbsp;as",
+     "Ví dụ band 5 →&nbsp;7"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 5,
+    "h": "7 lỗi <span>hay gặp&nbsp;nhất</span>",
+    "li": [
+     "number ↔&nbsp;amount",
+     "percent ↔&nbsp;percentage",
+     "twice higher than&nbsp;❌"
+    ],
+    "k": "TRANG 5"
+   }
+  ],
+  "_a": {
+   "num": "17",
+   "slug": "17-writing-task1-comparisons",
+   "skill": "Writing Task 1",
+   "title": "Câu so sánh & đưa số liệu",
+   "pages": 8,
+   "keyword": "COMPARE",
+   "hook_h1": "So sánh số liệu<br><span>chuẩn band 7</span>",
+   "hook_p": "5 cấu trúc so sánh, cách đưa số liệu – tỉ lệ không lặp và 7 lỗi khiến câu Task 1 mất điểm ngữ pháp.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "5",
+     "cấu trúc so sánh"
+    ],
+    [
+     "7",
+     "lỗi hay gặp"
+    ],
+    [
+     "13",
+     "câu luyện tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "Câu so sánh <span>4 khối</span>",
+     "li": [
+      "5 cấu trúc cốt lõi",
+      "twice as many … as",
+      "Ví dụ band 5 → 7"
+     ]
+    },
+    {
+     "p": 5,
+     "h": "7 lỗi <span>hay gặp nhất</span>",
+     "li": [
+      "number ↔ amount",
+      "percent ↔ percentage",
+      "twice higher than ❌"
+     ]
+    }
+   ],
+   "caption_title": "CÂU SO SÁNH & ĐƯA SỐ LIỆU TRONG WRITING TASK 1",
+   "caption_pain": "Nhìn biểu đồ thì hiểu hết, nhưng viết ra chỉ được \"A is 40% and B is 20%\"? Nhiều bạn mất điểm Task 1 không phải vì thiếu ý, mà vì câu so sánh sai cấu trúc, nhầm number/amount hay lặp đi lặp lại một cách đưa số.",
+   "caption_bullets": [
+    "5 cấu trúc so sánh cốt lõi: so sánh hơn/nhất, as…as, bội số, the same as, whereas/while",
+    "Cách đưa số liệu và tỉ lệ: approximately, just over, roughly a third… kèm thước % → phân số",
+    "Quy trình 4 bước biến biểu đồ thành câu + 7 lỗi hay gặp ❌ → ✅",
+    "13 câu luyện tập với biểu đồ, bảng số liệu minh hoạ + đáp án, câu mẫu"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.0 → 6.5",
+   "tip": "Gợi ý học: đọc trang 2–5, rồi che phần đáp án và làm bài trang 6–7 trước khi so với câu mẫu ở trang 8.",
+   "cheer": "Làm xong Phần A–B, comment số câu đúng của bạn nhé! 📊"
+  }
+ },
+ {
+  "id": "18",
+  "slug": "18-writing-task2-introduction",
+  "pages": 8,
+  "kw": "THESIS",
+  "kicker": "WRITING TASK 2 · SỐ 18 · TẢI MIỄN PHÍ",
+  "h1": "Mở bài 2 câu<br><span>đúng ý đề</span>",
+  "p": "Công thức mở bài 2 câu, mẫu thesis cho 5 dạng đề Task 2 và 6 lỗi khiến mở bài mất điểm ngay từ câu đầu.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "dạng đề"
+   ],
+   [
+    "6",
+    "lỗi hay gặp"
+   ],
+   [
+    "5",
+    "mở bài mẫu"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "Mở bài = <span>2&nbsp;câu</span>",
+    "li": [
+     "Paraphrase +&nbsp;thesis",
+     "Sơ đồ đọc&nbsp;đề",
+     "Ví dụ band 5 →&nbsp;7"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 4,
+    "h": "Thesis cho <span>5 dạng&nbsp;đề</span>",
+    "li": [
+     "Opinion ·&nbsp;Discussion",
+     "Adv–Disadv ·&nbsp;Problem",
+     "Two-part&nbsp;question"
+    ],
+    "k": "TRANG 4"
+   }
+  ],
+  "_a": {
+   "num": "18",
+   "slug": "18-writing-task2-introduction",
+   "skill": "Writing Task 2",
+   "title": "Mở bài 2 câu & thesis statement",
+   "pages": 8,
+   "keyword": "THESIS",
+   "hook_h1": "Mở bài 2 câu<br><span>đúng ý đề</span>",
+   "hook_p": "Công thức mở bài 2 câu, mẫu thesis cho 5 dạng đề Task 2 và 6 lỗi khiến mở bài mất điểm ngay từ câu đầu.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "5",
+     "dạng đề"
+    ],
+    [
+     "6",
+     "lỗi hay gặp"
+    ],
+    [
+     "5",
+     "mở bài mẫu"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "Mở bài = <span>2 câu</span>",
+     "li": [
+      "Paraphrase + thesis",
+      "Sơ đồ đọc đề",
+      "Ví dụ band 5 → 7"
+     ]
+    },
+    {
+     "p": 4,
+     "h": "Thesis cho <span>5 dạng đề</span>",
+     "li": [
+      "Opinion · Discussion",
+      "Adv–Disadv · Problem",
+      "Two-part question"
+     ]
+    }
+   ],
+   "caption_title": "MỞ BÀI 2 CÂU & THESIS STATEMENT CHO WRITING TASK 2",
+   "caption_pain": "Các bạn có hay mở bài bằng \"Nowadays, with the development of society…\" rồi chép lại gần nguyên đề? Mở bài như vậy vừa tốn thời gian, vừa khiến giám khảo không biết bạn thật sự trả lời câu hỏi thế nào.",
+   "caption_bullets": [
+    "Công thức mở bài 2 câu: paraphrase đề + thesis, kèm ví dụ band 5 → band 7",
+    "4 kỹ thuật paraphrase không đổi nghĩa + quy trình 4 bước",
+    "Mẫu thesis cho 5 dạng đề: Opinion, Discussion, Advantages–Disadvantages, Problem–Solution, Two-part",
+    "6 lỗi hay gặp ❌ → ✅, bài luyện chọn thesis + viết mở bài có bài mẫu"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+   "tip": "Gợi ý học: học kỹ bảng thesis ở trang 4, sau đó tự viết 5 mở bài ở trang 7 rồi mới so với bài mẫu ở trang 8.",
+   "cheer": "Viết xong một mở bài, comment lên đây để cùng sửa nhé! ✍️"
+  }
+ },
+ {
+  "id": "19",
+  "slug": "19-writing-task2-body-paragraph",
+  "pages": 8,
+  "kw": "BODY",
+  "kicker": "WRITING TASK 2 · SỐ 19 · TẢI MIỄN PHÍ",
+  "h1": "Đủ ý vẫn<br><span>điểm thấp?</span>",
+  "p": "Khung 5 bước viết đoạn thân bài Task 2: topic sentence → lý do → giải thích → ví dụ → câu chốt, kèm đoạn mẫu band 5.5 → 7.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "5",
+    "bước triển khai"
+   ],
+   [
+    "5",
+    "lỗi hay gặp"
+   ],
+   [
+    "4",
+    "bài tập"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 2,
+    "h": "1 đoạn = <span>1 luận&nbsp;điểm</span>",
+    "li": [
+     "Khung 5 bước rõ&nbsp;ràng",
+     "Đoạn mẫu tô&nbsp;màu",
+     "Mỗi câu một nhiệm&nbsp;vụ"
+    ],
+    "k": "TRANG 2"
+   },
+   {
+    "p": 6,
+    "h": "Band 5.5 → <span>band&nbsp;7</span>",
+    "li": [
+     "Cùng một ý, hai&nbsp;bản",
+     "Phân tích từng&nbsp;câu",
+     "Nâng cấp từ&nbsp;vựng"
+    ],
+    "k": "TRANG 6"
+   }
+  ],
+  "_a": {
+   "num": "19",
+   "slug": "19-writing-task2-body-paragraph",
+   "skill": "Writing Task 2",
+   "title": "Body Paragraph – Câu triển khai luận điểm",
+   "pages": 8,
+   "keyword": "BODY",
+   "hook_h1": "Đủ ý vẫn<br><span>điểm thấp?</span>",
+   "hook_p": "Khung 5 bước viết đoạn thân bài Task 2: topic sentence → lý do → giải thích → ví dụ → câu chốt, kèm đoạn mẫu band 5.5 → 7.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "5",
+     "bước triển khai"
+    ],
+    [
+     "5",
+     "lỗi hay gặp"
+    ],
+    [
+     "4",
+     "bài tập"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 2,
+     "h": "1 đoạn = <span>1 luận điểm</span>",
+     "li": [
+      "Khung 5 bước rõ ràng",
+      "Đoạn mẫu tô màu",
+      "Mỗi câu một nhiệm vụ"
+     ]
+    },
+    {
+     "p": 6,
+     "h": "Band 5.5 → <span>band 7</span>",
+     "li": [
+      "Cùng một ý, hai bản",
+      "Phân tích từng câu",
+      "Nâng cấp từ vựng"
+     ]
+    }
+   ],
+   "caption_title": "WRITING TASK 2 – VIẾT ĐOẠN THÂN BÀI CHẶT CHẼ THEO 5 BƯỚC",
+   "caption_pain": "Các bạn có ý tưởng, viết đủ 250 từ, nhưng Task Response và Coherence vẫn chỉ quanh band 5.5–6? Thường là vì đoạn thân bài nêu ý rồi bỏ lửng: ví dụ chung chung, giải thích lặp lại, hoặc nhảy sang ý khác giữa chừng.",
+   "caption_bullets": [
+    "Khung 5 bước: topic sentence → lý do → giải thích → ví dụ → câu chốt, có đoạn mẫu tô màu",
+    "Bảng mẫu câu cho từng bước và cách đưa ví dụ đúng ngữ pháp (For instance, A case in point is…)",
+    "5 lỗi hay gặp: ví dụ chung chung, nhảy ý, lệch thesis, giải thích vòng tròn, câu chốt thêm ý mới",
+    "Đoạn mẫu band 5.5 → band 7 có phân tích + 4 bài tập kèm đáp án"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+   "tip": "Gợi ý học: đọc khung 5 bước ở trang 2, so sánh hai đoạn mẫu ở trang 6, rồi làm bài tập trang 7 trước khi xem đáp án trang 8.",
+   "cheer": "Làm xong comment thứ tự đúng của Bài 1 để thầy chấm nhé ✍️"
+  }
+ },
+ {
+  "id": "20",
+  "slug": "20-writing-task2-concession-conclusion",
+  "pages": 8,
+  "kw": "CONCLUSION",
+  "kicker": "WRITING TASK 2 · SỐ 20 · TẢI MIỄN PHÍ",
+  "h1": "Thừa nhận mà<br><span>không thua lý</span>",
+  "p": "Mẫu câu nhượng bộ (Admittedly, While it is true that…), 4 cách phản biện và công thức kết luận không thêm ý mới cho Task 2.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "8",
+    "cấu trúc"
+   ],
+   [
+    "4",
+    "cách phản biện"
+   ],
+   [
+    "6",
+    "lỗi hay gặp"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 3,
+    "h": "Cấu trúc <span>nhượng&nbsp;bộ</span>",
+    "li": [
+     "Although… but:&nbsp;sai",
+     "Despite + danh&nbsp;từ",
+     "Giới hạn phạm&nbsp;vi"
+    ],
+    "k": "TRANG 3"
+   },
+   {
+    "p": 5,
+    "h": "Kết luận <span>không ý&nbsp;mới</span>",
+    "li": [
+     "3 bước viết kết&nbsp;luận",
+     "Khung câu theo dạng&nbsp;đề",
+     "Mẫu band 5.5 →&nbsp;7"
+    ],
+    "k": "TRANG 5"
+   }
+  ],
+  "_a": {
+   "num": "20",
+   "slug": "20-writing-task2-concession-conclusion",
+   "skill": "Writing Task 2",
+   "title": "Nhượng bộ, phản biện & kết luận",
+   "pages": 8,
+   "keyword": "CONCLUSION",
+   "hook_h1": "Thừa nhận mà<br><span>không thua lý</span>",
+   "hook_p": "Mẫu câu nhượng bộ (Admittedly, While it is true that…), 4 cách phản biện và công thức kết luận không thêm ý mới cho Task 2.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "8",
+     "cấu trúc"
+    ],
+    [
+     "4",
+     "cách phản biện"
+    ],
+    [
+     "6",
+     "lỗi hay gặp"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 3,
+     "h": "Cấu trúc <span>nhượng bộ</span>",
+     "li": [
+      "Although… but: sai",
+      "Despite + danh từ",
+      "Giới hạn phạm vi"
+     ]
+    },
+    {
+     "p": 5,
+     "h": "Kết luận <span>không ý mới</span>",
+     "li": [
+      "3 bước viết kết luận",
+      "Khung câu theo dạng đề",
+      "Mẫu band 5.5 → 7"
+     ]
+    }
+   ],
+   "caption_title": "WRITING TASK 2 – CÂU NHƯỢNG BỘ, PHẢN BIỆN & KẾT LUẬN",
+   "caption_pain": "Các bạn muốn bài viết “có chiều sâu” nên thêm ý kiến trái chiều, nhưng viết xong lại thành ra lập trường lưng chừng? Hoặc kết luận cứ chép lại đề, thậm chí thêm một ý mới ở câu cuối? Đó là những lỗi khiến Task Response khó lên band 7.",
+   "caption_bullets": [
+    "Bản chất nhượng bộ: thừa nhận → phản biện → khẳng định lại quan điểm",
+    "Bảng 8 cấu trúc nhượng bộ kèm ngữ pháp và 4 cách phản biện có lý lẽ",
+    "Công thức kết luận 3 bước + khung câu cho từng dạng đề Task 2",
+    "6 lỗi hay gặp (Although… but, Despite + mệnh đề…) và bài tập có đáp án gợi ý"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+   "tip": "Gợi ý học: học kỹ bảng cấu trúc ở trang 3, làm Bài 1 trang 7 để kiểm tra ngữ pháp, rồi đối chiếu đáp án và gợi ý ở trang 8.",
+   "cheer": "Làm xong comment điểm tự chấm /10 để thầy biết nhé 💪"
+  }
+ },
+ {
+  "id": "21",
+  "slug": "21-writing-task1-line-graph",
+  "pages": 8,
+  "kw": "LINE",
+  "kicker": "WRITING TASK 1 · SỐ 21 · TẢI MIỄN PHÍ",
+  "h1": "Line Graph<br><span>dễ như kể chuyện</span>",
+  "p": "Mở bài, overview, chia đoạn thân bài và ngôn ngữ xu hướng — kèm bài mẫu 181 từ có phân tích chi tiết.",
+  "stats": [
+   [
+    "8",
+    "trang PDF"
+   ],
+   [
+    "181",
+    "từ bài mẫu"
+   ],
+   [
+    "7",
+    "lỗi hay gặp"
+   ],
+   [
+    "9",
+    "câu luyện viết"
+   ]
+  ],
+  "pg": [
+   {
+    "p": 3,
+    "h": "Viết <span>4 đoạn</span> trong 4&nbsp;bước",
+    "li": [
+     "Paraphrase mở&nbsp;bài",
+     "Overview không số&nbsp;liệu",
+     "Chia nhóm theo xu&nbsp;hướng"
+    ],
+    "k": "TRANG 3"
+   },
+   {
+    "p": 6,
+    "h": "Bài mẫu <span>có&nbsp;phân&nbsp;tích</span>",
+    "li": [
+     "181 từ, 4&nbsp;đoạn",
+     "Tô màu xu hướng, số&nbsp;liệu",
+     "Phân tích 4 tiêu&nbsp;chí"
+    ],
+    "k": "TRANG 6"
+   }
+  ],
+  "_a": {
+   "num": "21",
+   "slug": "21-writing-task1-line-graph",
+   "skill": "Writing Task 1",
+   "title": "Line Graph",
+   "pages": 8,
+   "keyword": "LINE",
+   "hook_h1": "Line Graph<br><span>dễ như kể chuyện</span>",
+   "hook_p": "Mở bài, overview, chia đoạn thân bài và ngôn ngữ xu hướng — kèm bài mẫu band 7+ có phân tích chi tiết.",
+   "stats": [
+    [
+     "8",
+     "trang PDF"
+    ],
+    [
+     "181",
+     "từ bài mẫu"
+    ],
+    [
+     "7",
+     "lỗi ❌ → ✅"
+    ],
+    [
+     "9",
+     "câu luyện viết"
+    ]
+   ],
+   "preview": [
+    {
+     "p": 3,
+     "h": "Viết <span>4 đoạn</span> trong 4 bước",
+     "li": [
+      "Paraphrase mở bài",
+      "Overview không số liệu",
+      "Chia nhóm theo xu hướng"
+     ]
+    },
+    {
+     "p": 6,
+     "h": "Bài mẫu <span>band 7+</span>",
+     "li": [
+      "181 từ, 4 đoạn",
+      "Tô màu xu hướng, số liệu",
+      "Phân tích 4 tiêu chí"
+     ]
+    }
+   ],
+   "caption_title": "CÁCH VIẾT LINE GRAPH – WRITING TASK 1",
+   "caption_pain": "Nhìn biểu đồ đường là các bạn viết ngay: năm này bao nhiêu, năm sau bao nhiêu… rồi hết 150 từ mà vẫn chỉ được band 5.5. Lý do thường là thiếu overview, chia đoạn theo cảm tính và lặp đi lặp lại “increase”, trong khi giám khảo cần thấy xu hướng chính và sự so sánh.",
+   "caption_bullets": [
+    "Cấu trúc 4 đoạn và quy trình viết: phân tích → mở bài → overview → thân bài",
+    "Bảng ngôn ngữ xu hướng, 4 cấu trúc câu và giới từ với số liệu (to / by / at / of / in)",
+    "7 lỗi hay gặp ❌ → ✅ và ví dụ nâng câu từ band 5 lên band 7",
+    "Bài mẫu 181 từ có phân tích + bài luyện với biểu đồ mới và đáp án gợi ý"
+   ],
+   "band": "Phù hợp với bạn đang ở khoảng band 5.5 và muốn lên 7.0 Writing.",
+   "tip": "Gợi ý học: tự viết overview cho biểu đồ trang 2 trước khi đọc bài mẫu trang 6, rồi làm bài luyện trang 7 và so với đáp án trang 8.",
+   "cheer": "Viết xong overview ở bài C trang 7, comment bài của bạn để mình góp ý nhé ✍️"
+  }
+ }
+]

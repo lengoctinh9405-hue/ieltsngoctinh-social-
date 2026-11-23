@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Writing Task 1 – Line Graph | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0;flex-wrap:wrap}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:8px 14px;margin-bottom:3.5mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt;margin-top:5px}
+.trap.wide{grid-column:1 / span 2}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:5px 0;border-bottom:1px solid var(--g2);font-size:10.5pt;line-height:1.4}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 27mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.cta{margin-top:5mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== new for 21: chart, task box, essay ===== */
+.task{border:2px solid var(--n);border-radius:14px;padding:10px 16px;margin-bottom:4mm;font-size:11pt;line-height:1.45;background:#fff}
+.task .tl{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--n);letter-spacing:.06em;margin-bottom:3px}
+.task .tl span{color:var(--mut);font-weight:600;letter-spacing:0}
+.task p{margin-bottom:3px;font-style:italic}
+.task p b{font-style:normal}
+.chart{background:var(--n3);border:1.5px solid var(--n2);border-radius:14px;padding:10px 12px 6px;margin-bottom:4mm}
+.chart .ct{font-family:"Inter";font-weight:800;font-size:10.5pt;color:var(--n);margin-bottom:4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.demo{font-family:"Inter";font-weight:700;font-size:8pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);border-radius:20px;padding:2px 9px;white-space:nowrap}
+.paras{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}
+.paras div{background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:8px 10px;font-size:10.2pt;line-height:1.35}
+.paras b{display:block;font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt;margin-bottom:2px}
+.paras .hot{background:var(--o3);border-color:var(--o)}
+.paras .hot b{color:#B85E0B}
+.pt{width:100%;border-collapse:collapse;font-size:10.5pt;margin-top:4px}
+.pt td{padding:3px 8px;border-bottom:1px solid var(--g2)}
+.pt td:first-child{color:var(--mut);width:42%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.box2{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:9px 13px;font-size:10.4pt;line-height:1.42}
+.box2 h3{font-size:11pt;margin-bottom:4px}
+.box2 p{margin-bottom:3px}
+.box2 u{text-decoration:none;background:var(--o2);border-radius:3px;padding:0 2px}
+.vt{width:100%;border-collapse:separate;border-spacing:0;border:2px solid var(--n);border-radius:14px;overflow:hidden;font-size:10.8pt}
+.vt th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;text-align:left;padding:7px 10px}
+.vt td{padding:5px 10px;border-top:1px solid var(--n2)}
+.vt td + td{border-left:1px solid var(--n2)}
+.vt td.rh{font-family:"Inter";font-weight:800;color:var(--n);font-size:9.8pt;background:var(--n3)}
+.deg{font-size:10.5pt;margin-top:3mm;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.deg span{font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:2px 7px;border-radius:5px}
+.up{display:flex;gap:10px;align-items:center;border-radius:10px;padding:6px 12px;margin-bottom:2mm;font-size:10.8pt;background:var(--f2)}
+.up.u7{background:var(--t2);margin-bottom:3.5mm}
+.up .b5,.up .b7{flex:0 0 17mm;text-align:center;font-family:"Inter";font-weight:900;font-size:8.5pt;color:#fff;border-radius:6px;padding:3px 0}
+.up .b5{background:var(--f)} .up .b7{background:var(--t)}
+.trap .c .bad,.trap .c .good{border-radius:8px;padding:5px 9px 5px 28px;margin-bottom:4px;font-size:10.2pt;position:relative}
+.trap .c .bad{background:var(--f2)} .trap .c .good{background:var(--t2)}
+.trap .c .bad:before{content:"❌";position:absolute;left:8px;top:5px;font-size:9pt}
+.trap .c .good:before{content:"✅";position:absolute;left:8px;top:5px;font-size:9pt}
+.trap .c .why{font-size:9.8pt;color:var(--mut);margin-top:2px}
+.legend{font-size:10.5pt;color:var(--mut);margin-bottom:4mm}
+.essay{display:flex;flex-direction:column;gap:3mm;margin-bottom:5mm}
+.essay .pa{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 12px}
+.essay .pa.ov{border-color:var(--o);background:var(--o3)}
+.essay .pl{flex:0 0 22mm;font-family:"Inter";font-weight:800;font-size:8.5pt;color:#fff;background:var(--n);border-radius:6px;text-align:center;padding:3px 0;margin-top:2px}
+.essay .ov .pl{background:var(--o)}
+.essay p{font-size:11.2pt;line-height:1.55}
+.tr{background:var(--o2);border-radius:3px;padding:0 2px}
+.nm{color:var(--n);font-weight:700}
+.lk{border-bottom:2px solid var(--n);}
+.crit{display:grid;grid-template-columns:1fr 1fr;gap:3.5mm}
+.crit div{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 12px;font-size:10.3pt;line-height:1.4}
+.crit b{display:block;font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt;margin-bottom:2px}
+.ex2{border:1.5px solid var(--n2);border-radius:12px;padding:8px 14px;margin-bottom:3mm;font-size:11pt}
+.ex2 h3{font-size:11pt;display:flex;align-items:center;gap:8px;margin-bottom:3px}
+.ex2 h3 span{width:6.5mm;height:6.5mm;border-radius:50%;background:var(--o);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:9.5pt}
+.ex2 ol{padding-left:20px;line-height:1.5}
+.ex2 li{padding:1px 0}
+.ex2 .lines i{display:block;height:8mm;border-bottom:1.5px dashed #B9C4D4}
+.ar2{display:flex;gap:10px;align-items:flex-start;padding:4.5px 0;border-bottom:1px solid var(--g2);font-size:10.6pt;line-height:1.4}
+.ar2 .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.ar2 .e b{color:var(--t)}
+.ar2 .e em{color:var(--mut);font-size:10pt}
+.chk{width:100%;border-collapse:separate;border-spacing:0;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden;margin-top:4mm;font-size:10.4pt}
+.chk th{background:var(--n3);color:var(--n);font-family:"Inter";font-weight:800;font-size:9.5pt;text-align:left;padding:6px 10px}
+.chk td{padding:4.5px 10px;border-top:1px solid var(--n2)}
+.chk td + td{border-left:1px solid var(--n2)}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Writing Task 1 · Chiến lược từng dạng bài · Số 21</div>
+    <h1>LINE<br><span class="o">GRAPH</span></h1>
+    <div class="sub">Cách viết bài biểu đồ đường từ mở bài, overview đến chia đoạn thân bài — kèm bảng ngôn ngữ xu hướng, 7 lỗi hay gặp và một bài mẫu 181 từ có phân tích chi tiết.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Cấu trúc 4 đoạn</div>
+      <div><b>02</b>Ngôn ngữ xu hướng &amp; số liệu</div>
+      <div><b>03</b>7 lỗi ❌ → ✅</div>
+      <div><b>04</b>Bài mẫu + luyện tập</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — TASK + STRUCTURE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CẤU TRÚC</div>
+  </div>
+  <div class="kicker">Hiểu đúng đề bài yêu cầu gì</div>
+  <h2>Line graph = kể chuyện xu hướng</h2>
+  <p class="lead" style="margin-bottom:4mm">Biểu đồ đường luôn có <b>trục thời gian</b>. Giám khảo không cần bạn đọc lại mọi con số, mà cần bạn chỉ ra <b>xu hướng chính</b> và <b>so sánh</b> các đường với nhau.</p>
+
+  <div class="task">
+    <div class="tl">WRITING TASK 1 · <span>Bạn nên dành khoảng 20 phút</span></div>
+    <p>The graph below shows the number of visitors to three types of tourist attraction in a country between 2000 and 2020.</p>
+    <p>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+    <p><b>Write at least 150 words.</b></p>
+  </div>
+
+  <div class="chart">
+    <div class="ct">Visitors to tourist attractions, 2000–2020 (millions) <span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 668 290" width="100%" style="display:block">
+      <g font-family="Carlito" font-size="12" fill="#5B6577">
+        <g stroke="#ECEFF4" stroke-width="1">
+          <line x1="60" y1="20" x2="520" y2="20"/><line x1="60" y1="60" x2="520" y2="60"/><line x1="60" y1="100" x2="520" y2="100"/><line x1="60" y1="140" x2="520" y2="140"/><line x1="60" y1="180" x2="520" y2="180"/><line x1="60" y1="220" x2="520" y2="220"/>
+        </g>
+        <line x1="60" y1="260" x2="520" y2="260" stroke="#B9C4D4" stroke-width="1.5"/>
+        <text x="50" y="264" text-anchor="end">0</text><text x="50" y="224" text-anchor="end">5</text><text x="50" y="184" text-anchor="end">10</text><text x="50" y="144" text-anchor="end">15</text><text x="50" y="104" text-anchor="end">20</text><text x="50" y="64" text-anchor="end">25</text><text x="50" y="24" text-anchor="end">30</text>
+        <text x="60" y="280" text-anchor="middle">2000</text><text x="175" y="280" text-anchor="middle">2005</text><text x="290" y="280" text-anchor="middle">2010</text><text x="405" y="280" text-anchor="middle">2015</text><text x="520" y="280" text-anchor="middle">2020</text>
+      </g>
+      <!-- theme parks -->
+      <polyline points="60,84 175,60 290,44 405,76 520,116" fill="none" stroke="#FB8F2C" stroke-width="3"/>
+      <g fill="#FB8F2C"><circle cx="60" cy="84" r="4.5"/><circle cx="175" cy="60" r="4.5"/><circle cx="290" cy="44" r="4.5"/><circle cx="405" cy="76" r="4.5"/><circle cx="520" cy="116" r="4.5"/></g>
+      <g font-family="Inter" font-weight="700" font-size="10.5" fill="#B85E0B" text-anchor="middle"><text x="60" y="74">22</text><text x="175" y="50">25</text><text x="290" y="34">27</text><text x="405" y="66">23</text></g>
+      <!-- museums -->
+      <polyline points="60,180 175,164 290,140 405,108 520,68" fill="none" stroke="#003D82" stroke-width="3"/>
+      <g fill="#003D82"><circle cx="60" cy="180" r="4.5"/><circle cx="175" cy="164" r="4.5"/><circle cx="290" cy="140" r="4.5"/><circle cx="405" cy="108" r="4.5"/><circle cx="520" cy="68" r="4.5"/></g>
+      <g font-family="Inter" font-weight="700" font-size="10.5" fill="#003D82" text-anchor="middle"><text x="60" y="198">10</text><text x="175" y="182">12</text><text x="290" y="158">15</text><text x="405" y="126">19</text></g>
+      <!-- national parks -->
+      <polyline points="60,220 175,212 290,188 405,148 520,100" fill="none" stroke="#1E9E62" stroke-width="3"/>
+      <g fill="#1E9E62"><circle cx="60" cy="220" r="4.5"/><circle cx="175" cy="212" r="4.5"/><circle cx="290" cy="188" r="4.5"/><circle cx="405" cy="148" r="4.5"/><circle cx="520" cy="100" r="4.5"/></g>
+      <g font-family="Inter" font-weight="700" font-size="10.5" fill="#1E9E62" text-anchor="middle"><text x="60" y="238">5</text><text x="175" y="230">6</text><text x="290" y="206">9</text><text x="405" y="166">14</text></g>
+      <!-- end labels -->
+      <g font-family="Inter" font-weight="800" font-size="12.5">
+        <text x="532" y="72" fill="#003D82">Museums · 24</text>
+        <text x="532" y="102" fill="#1E9E62">National parks · 20</text>
+        <text x="532" y="124" fill="#B85E0B">Theme parks · 18</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="paras">
+    <div><b>1 · Mở bài</b>Paraphrase đề: biểu đồ nói về gì, ở đâu, khi nào.</div>
+    <div class="hot"><b>2 · Overview</b>2 đặc điểm nổi bật nhất. Không số liệu chi tiết.</div>
+    <div><b>3 · Thân bài 1</b>Nhóm đường thứ nhất + số liệu chứng minh.</div>
+    <div><b>4 · Thân bài 2</b>Nhóm đường còn lại + so sánh.</div>
+  </div>
+
+  <div class="note" style="margin-top:5mm">
+    <div class="ic">?</div>
+    <div><b>Đọc biểu đồ trên trong 1 phút:</b> đường nào đi lên rồi đi xuống? Hai đường nào tăng suốt giai đoạn? Thứ hạng thay đổi thế nào giữa 2000 và 2020? Ba câu trả lời này chính là <b>overview</b> và <b>cách chia đoạn</b> — xem trang 3 và bài mẫu trang 6.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Phân tích trước, viết sau</div>
+  <h2>Viết từng đoạn trong 4 bước</h2>
+
+  <div class="steps">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Phân tích biểu đồ (3–4 phút)</h3><p>Trả lời 4 câu: <b>Đơn vị</b> là gì (millions, %)? <b>Thời gian</b> quá khứ hay tương lai (→ chọn thì)? Đường nào <b>cao nhất / thay đổi nhiều nhất</b>? Đường nào <b>cắt nhau</b>?</p></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Mở bài: paraphrase, không chép đề</h3>
+      <table class="pt">
+        <tr><td>The graph <b>shows</b></td><td>→ The line graph <b>illustrates / compares</b></td></tr>
+        <tr><td><b>the number of visitors to</b> …</td><td>→ <b>how many people visited</b> …</td></tr>
+        <tr><td><b>in a country</b></td><td>→ <b>in a particular country</b></td></tr>
+        <tr><td><b>between 2000 and 2020</b></td><td>→ <b>over a 20-year period</b> / from 2000 to 2020</td></tr>
+      </table></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Overview: xu hướng chung + điểm nổi bật</h3><p>Bắt đầu bằng <b>Overall,</b> … Nêu 2 ý: (1) các đường tăng hay giảm nhìn chung; (2) thay đổi thứ hạng, đỉnh, hoặc đường nổi bật nhất. <b>Không đưa số liệu chi tiết.</b></p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Thân bài: chia nhóm theo xu hướng</h3><p>Gom các đường <b>cùng hướng</b> vào một đoạn. Mỗi đoạn: điểm đầu → thay đổi chính (đỉnh, đáy, điểm cắt) → điểm cuối, có <b>so sánh</b> giữa các đường.</p></div></div>
+  </div>
+
+  <svg viewBox="0 0 640 175" width="100%" style="display:block">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#003D82"/></marker></defs>
+    <rect x="225" y="4" width="190" height="46" rx="12" fill="#003D82"/>
+    <text x="320" y="24" text-anchor="middle" font-family="Inter" font-weight="800" font-size="13" fill="#fff">3 đường trên biểu đồ</text>
+    <text x="320" y="41" text-anchor="middle" font-family="Carlito" font-size="12" fill="#BFD3EE">chia theo hướng thay đổi</text>
+    <path d="M270 50 V68 H140 V86" fill="none" stroke="#003D82" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M370 50 V68 H500 V86" fill="none" stroke="#003D82" stroke-width="2.5" marker-end="url(#ar)"/>
+    <rect x="20" y="90" width="240" height="80" rx="12" fill="#FFF6EC" stroke="#FB8F2C" stroke-width="2"/>
+    <text x="140" y="112" text-anchor="middle" font-family="Inter" font-weight="900" font-size="13" fill="#B85E0B">THÂN BÀI 1 · tăng rồi giảm</text>
+    <polyline points="50,150 95,135 140,126 185,138 230,150" fill="none" stroke="#FB8F2C" stroke-width="3"/>
+    <text x="140" y="164" text-anchor="middle" font-family="Carlito" font-size="12" fill="#5B6577">Theme parks</text>
+    <rect x="380" y="90" width="240" height="80" rx="12" fill="#F1F6FC" stroke="#003D82" stroke-width="2"/>
+    <text x="500" y="112" text-anchor="middle" font-family="Inter" font-weight="900" font-size="13" fill="#003D82">THÂN BÀI 2 · tăng đều</text>
+    <polyline points="410,140 455,137 500,131 545,123 590,114" fill="none" stroke="#003D82" stroke-width="3"/>
+    <polyline points="410,150 455,149 500,145 545,137 590,127" fill="none" stroke="#1E9E62" stroke-width="3"/>
+    <text x="500" y="166" text-anchor="middle" font-family="Carlito" font-size="11.5" fill="#5B6577">Museums + National parks</text>
+  </svg>
+  <p style="font-size:10.5pt;color:var(--mut);margin-top:2mm">Cách khác: chia theo <b>mốc thời gian</b> (2000–2010 / 2010–2020) khi mọi đường cùng đổi hướng tại một điểm. Chọn cách nào giúp so sánh dễ nhất.</p>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — LANGUAGE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · NGÔN NGỮ</div>
+  </div>
+  <div class="kicker">Đủ dùng, dùng đúng</div>
+  <h2>Ngôn ngữ xu hướng &amp; số liệu</h2>
+
+  <table class="vt">
+    <tr><th style="width:17%">Xu hướng</th><th style="width:43%">Động từ</th><th>Danh từ</th></tr>
+    <tr><td class="rh">↗ Tăng</td><td>rise, increase, grow, climb</td><td>a rise, an increase, growth</td></tr>
+    <tr><td class="rh">↘ Giảm</td><td>fall, decrease, decline, drop</td><td>a fall, a decrease, a decline, a drop</td></tr>
+    <tr><td class="rh">▲ Đỉnh</td><td>peak at, reach a peak of, reach a high of</td><td>a peak (of 27 million)</td></tr>
+    <tr><td class="rh">▼ Đáy</td><td>hit a low of, fall to a low of</td><td>a low (of 5 million)</td></tr>
+    <tr><td class="rh">→ Ổn định</td><td>remain stable, stay constant, level off (at)</td><td>a period of stability</td></tr>
+    <tr><td class="rh">∿ Dao động</td><td>fluctuate (between … and …)</td><td>fluctuations (in …)</td></tr>
+    <tr><td class="rh">✕ Vượt</td><td>overtake, surpass, exceed</td><td>—</td></tr>
+  </table>
+  <p class="deg"><b>Mức độ</b> (tính từ / trạng từ): <span>slight / slightly</span><span>gradual / gradually</span><span>steady / steadily</span><span>significant / significantly</span><span>sharp / sharply</span><span>dramatic / dramatically</span></p>
+
+  <div class="two" style="margin-top:3mm">
+    <div class="box2"><h3>4 cấu trúc câu xu hướng</h3>
+      <p><b>①</b> S + V + adv: <i>Museum attendance <u>rose steadily</u> to 24 million.</i></p>
+      <p><b>②</b> There was a + adj + N + in: <i><u>There was a sharp fall in</u> theme park visitors after 2010.</i></p>
+      <p><b>③</b> S + saw / experienced: <i>National parks <u>saw a dramatic increase</u> in visitors.</i></p>
+      <p><b>④</b> …, before + V-ing: <i>…peaked at 27 million, <u>before falling</u> to 18 million.</i></p>
+    </div>
+    <div class="box2"><h3>Giới từ với số liệu</h3>
+      <p><b>rise to</b> 24 million — mức đạt tới</p>
+      <p><b>rise by</b> 5 million — lượng thay đổi</p>
+      <p><b>stand at / start at</b> 10 million — điểm đầu</p>
+      <p><b>peak at / finish at</b> — đỉnh / điểm cuối</p>
+      <p>a rise <b>of</b> 5 million ≠ a rise <b>in</b> visitors</p>
+      <p><b>double · triple · quadruple · halve</b></p>
+    </div>
+  </div>
+
+  <h3 style="margin:4mm 0 2mm">Nâng câu từ band 5 lên band 7</h3>
+  <div class="up"><span class="b5">Band 5</span><span class="s">Museums increased from 10 to 24.</span></div>
+  <div class="up u7"><span class="b7">Band 7</span><span class="s">The number of visitors to museums <b>more than doubled</b>, from 10 million to 24 million.</span></div>
+  <div class="up"><span class="b5">Band 5</span><span class="s">Theme parks went up in 2010 and went down after.</span></div>
+  <div class="up u7"><span class="b7">Band 7</span><span class="s">Theme park attendance <b>peaked at</b> 27 million in 2010, <b>before falling steadily</b> to 18 million.</span></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — MISTAKES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LỖI HAY GẶP</div>
+  </div>
+  <div class="kicker">Những lỗi kéo điểm xuống band 5–6</div>
+  <h2>7 lỗi ❌ → ✅</h2>
+  <p class="lead" style="margin-bottom:5mm">Phần lớn bài band 5.5–6 không thiếu từ vựng, mà mắc đi mắc lại vài lỗi dưới đây.</p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Overview thiếu hoặc nhồi số</span></div><div class="c">
+      <div class="bad">Overall, museums rose from 10 to 24 million and national parks from 5 to 20 million.</div>
+      <div class="good">Overall, museums and national parks became more popular, while theme parks lost visitors after 2010.</div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Chủ ngữ sai nghĩa</span></div><div class="c">
+      <div class="bad">Museums increased significantly.</div>
+      <div class="good">The number of visitors to museums increased significantly. / Museum attendance…</div>
+      <div class="why">Bảo tàng không “tăng”; số khách mới tăng.</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Sai thì</span></div><div class="c">
+      <div class="bad">Theme park attendance falls to 18 million in 2020.</div>
+      <div class="good">Theme park attendance fell to 18 million in 2020.</div>
+      <div class="why">Số liệu quá khứ → quá khứ đơn. Số liệu dự báo → <i>is expected / projected to</i>.</div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Giới từ với số liệu</span></div><div class="c">
+      <div class="bad">rose at 24 million · an increase of museum visitors</div>
+      <div class="good">rose to 24 million · an increase in museum visitors</div></div></div>
+    <div class="trap"><div class="h"><b>5</b><span>Liệt kê từng năm</span></div><div class="c">
+      <div class="bad">In 2000 it was 10 million, in 2005 it was 12 million, in 2010 it was 15 million…</div>
+      <div class="good">Museum visitor numbers rose gradually from 10 million to 15 million over the first decade.</div></div></div>
+    <div class="trap"><div class="h"><b>6</b><span>Thêm lý do / ý kiến</span></div><div class="c">
+      <div class="bad">…rose sharply because people became more interested in culture.</div>
+      <div class="good">…rose sharply. <span style="color:var(--mut)">(Dừng ở đây.)</span></div>
+      <div class="why">Biểu đồ không cho lý do. Task 1 chỉ mô tả và so sánh.</div></div></div>
+    <div class="trap wide"><div class="h"><b>7</b><span>Nhầm từ loại: rise / raise, grow / growth, significant / significantly</span></div><div class="c">
+      <div class="two" style="gap:4mm">
+        <div><div class="bad">The figure raised to 24 million.</div><div class="good">The figure rose to 24 million.</div></div>
+        <div><div class="bad">There was a significantly growth in visitors.</div><div class="good">There was significant growth in visitors.</div></div>
+      </div>
+      <div class="why"><i>raise</i> cần tân ngữ (raise prices); <i>rise</i> thì không. Trạng từ đi với động từ (<i>grew significantly</i>), tính từ đi với danh từ (<i>significant growth</i>).</div></div></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — MODEL ANSWER ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">05 · BÀI MẪU</div>
+  </div>
+  <div class="kicker">Bài mẫu tham khảo band 7+ · 181 từ</div>
+  <h2>Bài mẫu có phân tích</h2>
+  <p class="legend"><span class="tr">Nền cam</span> = ngôn ngữ xu hướng · <span class="nm">Xanh đậm</span> = số liệu · <span class="lk">Gạch chân</span> = từ nối, so sánh</p>
+
+  <div class="essay">
+    <div class="pa"><span class="pl">Mở bài</span><p>The line graph <span class="tr">illustrates</span> how many people visited three types of tourist attraction in a particular country, <span class="lk">namely</span> museums, theme parks and national parks, between 2000 and 2020.</p></div>
+    <div class="pa ov"><span class="pl">Overview</span><p><span class="lk">Overall,</span> visitor numbers at museums and national parks <span class="tr">rose significantly</span> over the period, <span class="lk">whereas</span> theme parks, initially the most popular attraction, <span class="tr">peaked</span> in 2010 and then <span class="tr">declined</span>. By 2020, theme parks had become <span class="lk">the least visited of the three</span>.</p></div>
+    <div class="pa"><span class="pl">Thân bài 1</span><p>In 2000, theme parks attracted <span class="nm">22 million</span> visitors, <span class="lk">more than twice the figure for</span> museums (<span class="nm">10 million</span>) and <span class="lk">over four times that for</span> national parks (<span class="nm">5 million</span>). Theme park attendance <span class="tr">continued to grow</span>, <span class="tr">reaching a high of</span> <span class="nm">27 million</span> in 2010, <span class="tr">before dropping steadily</span> to <span class="nm">18 million</span> in 2020.</p></div>
+    <div class="pa"><span class="pl">Thân bài 2</span><p><span class="lk">By contrast,</span> the other two attractions <span class="tr">grew in popularity</span> throughout the period. Museum visitor numbers <span class="tr">rose gradually</span> to <span class="nm">15 million</span> in 2010 and then <span class="tr">more rapidly</span>, <span class="tr">overtaking</span> theme parks between 2015 and 2020 and <span class="tr">finishing at</span> <span class="nm">24 million</span>. National parks experienced <span class="lk">the most dramatic growth</span>: their visitor numbers <span class="tr">quadrupled</span> to <span class="nm">20 million</span>, which also took them above theme parks by the end of the period.</p></div>
+  </div>
+
+  <div class="crit">
+    <div><b>Task Achievement</b>Overview rõ 2 ý (xu hướng chung + đổi thứ hạng); số liệu chọn lọc ở điểm đầu, đỉnh, điểm cuối.</div>
+    <div><b>Coherence</b>Chia nhóm theo xu hướng: đoạn 3 “tăng rồi giảm”, đoạn 4 “tăng”; <i>By contrast</i> nối hai nhóm.</div>
+    <div><b>Lexical Resource</b>Không lặp <i>increase</i>: rose, grew, quadrupled, overtaking, reaching a high of.</div>
+    <div><b>Grammar</b>Mệnh đề rút gọn (<i>reaching…, before dropping…</i>), quá khứ hoàn thành (<i>had become</i>), so sánh bội số.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — PRACTICE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">06 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian gợi ý: 15 phút</div>
+  <h2>Luyện với biểu đồ mới</h2>
+
+  <div class="chart" style="margin-bottom:3mm">
+    <div class="ct">Main mode of transport used by commuters in a city, 1990–2020 (%) <span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 225" width="100%" style="display:block">
+      <g font-family="Carlito" font-size="12" fill="#5B6577">
+        <g stroke="#ECEFF4"><line x1="60" y1="20" x2="520" y2="20"/><line x1="60" y1="50" x2="520" y2="50"/><line x1="60" y1="80" x2="520" y2="80"/><line x1="60" y1="110" x2="520" y2="110"/><line x1="60" y1="140" x2="520" y2="140"/><line x1="60" y1="170" x2="520" y2="170"/></g>
+        <line x1="60" y1="200" x2="520" y2="200" stroke="#B9C4D4" stroke-width="1.5"/>
+        <text x="50" y="204" text-anchor="end">0</text><text x="50" y="174" text-anchor="end">10</text><text x="50" y="144" text-anchor="end">20</text><text x="50" y="114" text-anchor="end">30</text><text x="50" y="84" text-anchor="end">40</text><text x="50" y="54" text-anchor="end">50</text><text x="50" y="24" text-anchor="end">60</text>
+        <text x="60" y="218" text-anchor="middle">1990</text><text x="213" y="218" text-anchor="middle">2000</text><text x="367" y="218" text-anchor="middle">2010</text><text x="520" y="218" text-anchor="middle">2020</text>
+      </g>
+      <polyline points="60,95 213,65 367,44 520,50" fill="none" stroke="#003D82" stroke-width="3"/>
+      <g fill="#003D82"><circle cx="60" cy="95" r="4.5"/><circle cx="213" cy="65" r="4.5"/><circle cx="367" cy="44" r="4.5"/><circle cx="520" cy="50" r="4.5"/></g>
+      <polyline points="60,65 213,86 367,110 520,125" fill="none" stroke="#FB8F2C" stroke-width="3"/>
+      <g fill="#FB8F2C"><circle cx="60" cy="65" r="4.5"/><circle cx="213" cy="86" r="4.5"/><circle cx="367" cy="110" r="4.5"/></g>
+      <polyline points="60,140 213,149 367,146 520,125" fill="none" stroke="#1E9E62" stroke-width="3"/>
+      <g fill="#1E9E62"><circle cx="60" cy="140" r="4.5"/><circle cx="213" cy="149" r="4.5"/><circle cx="367" cy="146" r="4.5"/></g>
+      <circle cx="520" cy="125" r="5.5" fill="#fff" stroke="#5B6577" stroke-width="2.5"/>
+      <g font-family="Inter" font-weight="700" font-size="10.5" text-anchor="middle">
+        <text x="60" y="111" fill="#003D82">35</text><text x="213" y="57" fill="#003D82">45</text><text x="367" y="36" fill="#003D82">52</text><text x="520" y="42" fill="#003D82">50</text>
+        <text x="60" y="57" fill="#B85E0B">45</text><text x="213" y="102" fill="#B85E0B">38</text><text x="367" y="102" fill="#B85E0B">30</text>
+        <text x="60" y="158" fill="#1E9E62">20</text><text x="213" y="167" fill="#1E9E62">17</text><text x="367" y="164" fill="#1E9E62">18</text>
+        <text x="508" y="146" fill="#5B6577" text-anchor="end">25 (cả hai)</text>
+      </g>
+      <g font-family="Inter" font-weight="800" font-size="12.5">
+        <text x="532" y="54" fill="#003D82">Car</text>
+        <text x="532" y="122" fill="#B85E0B">Bus</text>
+        <text x="532" y="138" fill="#1E9E62">Bicycle</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="ex2"><h3><span>A</span>Sửa lỗi sai (mỗi câu 1 lỗi)</h3>
+    <ol>
+      <li>The percentage of commuters travelling by car rose from 35% in 1990 at 52% in 2010.</li>
+      <li>Bus use was decreased steadily over the period.</li>
+      <li>In 2020, the figure for cycling rises to 25%.</li>
+      <li>The number of bicycles increased to 25% in 2020.</li>
+      <li>Car use reached a peak at 52% in 2010.</li>
+      <li>There was a slight increase of cycling between 2000 and 2010.</li>
+    </ol></div>
+  <div class="ex2"><h3><span>B</span>Viết lại câu band 5 thành band 7</h3>
+    <ol start="7">
+      <li>Car went up and then it went down a little.</li>
+      <li>Bus was 45% in 1990. In 2020 it was 25%.</li>
+      <li>In 2020 bicycle and bus were the same.</li>
+    </ol></div>
+  <div class="ex2"><h3><span>C</span>Viết overview (2 câu, không số liệu chi tiết)</h3>
+    <div class="lines"><i></i><i></i></div></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>7</span></div>
+</section>
+
+<!-- ============ PAGE 8 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đáp án gợi ý — so cách viết, đừng chỉ so từ</div>
+  <h2>Đáp án &amp; tự đánh giá</h2>
+
+  <div class="ar2"><span class="n">1</span><span class="e">… from 35% in 1990 <b>to</b> 52% in 2010. <em>from … to …</em> chỉ khoảng thay đổi.</span></div>
+  <div class="ar2"><span class="n">2</span><span class="e">Bus use <b>decreased</b> steadily over the period. <em>decrease</em> ở nghĩa này là nội động từ, không dùng bị động.</span></div>
+  <div class="ar2"><span class="n">3</span><span class="e">In 2020, the figure for cycling <b>rose</b> to 25%. <em>Số liệu quá khứ → quá khứ đơn.</em></span></div>
+  <div class="ar2"><span class="n">4</span><span class="e"><b>The proportion of commuters who cycled</b> increased to 25% in 2020. <em>Đơn vị là %, chủ ngữ là người đi làm, không phải số xe đạp.</em></span></div>
+  <div class="ar2"><span class="n">5</span><span class="e">Car use <b>peaked at</b> 52% in 2010. / Car use <b>reached a peak of</b> 52% in 2010.</span></div>
+  <div class="ar2"><span class="n">6</span><span class="e">There was a slight increase <b>in</b> cycling between 2000 and 2010. <em>an increase in + đối tượng; an increase of + lượng.</em></span></div>
+  <div class="ar2"><span class="n">7</span><span class="e">The proportion of commuters travelling by car <b>rose to a peak of 52% in 2010, before dipping slightly</b> to 50% in 2020.</span></div>
+  <div class="ar2"><span class="n">8</span><span class="e">Bus use <b>fell steadily</b> throughout the period, <b>from 45% in 1990 to 25% in 2020</b>.</span></div>
+  <div class="ar2"><span class="n">9</span><span class="e"><b>By 2020, cycling had become as common as</b> taking the bus, <b>with each accounting for a quarter of</b> commuters.</span></div>
+  <div class="ar2"><span class="n">C</span><span class="e"><b>Overall, the car replaced the bus as the most popular way to commute, while bus use declined steadily. Cycling, the least common option for most of the period, rose in the final decade to match the bus.</b></span></div>
+
+  <table class="chk">
+    <tr><th>Tự chấm bài viết của bạn</th><th style="width:16mm">Có?</th></tr>
+    <tr><td>Overview bắt đầu bằng <i>Overall</i>, nêu 2 đặc điểm chính, không có số liệu chi tiết</td><td></td></tr>
+    <tr><td>Mỗi đoạn thân bài gom các đường cùng xu hướng và có ít nhất 1 câu so sánh</td><td></td></tr>
+    <tr><td>Số liệu chọn lọc (điểm đầu, đỉnh/đáy, điểm cuối) và có đơn vị (million, %)</td><td></td></tr>
+    <tr><td>Đúng thì, đúng giới từ <i>to / by / at / in / of</i>, không viết lý do hay ý kiến</td><td></td></tr>
+  </table>
+
+  <div class="cta">
+    <svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Bar Chart · Pie Chart · Table · Process · Map · Writing Task 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Line Graph</span><span>8</span></div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Listening – Table &amp; Flow-chart Completion | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0;flex-wrap:wrap}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:8px 14px;margin-bottom:3.5mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt;margin-top:5px}
+.trap.wide{grid-column:1 / span 2}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:5px 0;border-bottom:1px solid var(--g2);font-size:10.5pt;line-height:1.4}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 27mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.cta{margin-top:5mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== new for 14: tables, gaps, flow-chart, transcript ===== */
+.lt{width:100%;border-collapse:separate;border-spacing:0;border:2px solid var(--n);border-radius:14px;overflow:hidden;font-size:10.8pt;line-height:1.35}
+.lt caption{caption-side:top;text-align:left}
+.lt th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;text-align:left;padding:8px 10px}
+.lt td{padding:9px 10px;border-top:1px solid var(--n2);vertical-align:middle}
+.lt td + td, .lt th + th{border-left:1px solid var(--n2)}
+.lt th + th{border-left-color:rgba(255,255,255,.18)}
+.lt td.rh{font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt;background:var(--n3)}
+.lt .ttl{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:11pt;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.18)}
+.gap{display:inline-flex;align-items:center;gap:4px;vertical-align:middle}
+.gap b{width:6mm;height:6mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:8.5pt;display:inline-flex;align-items:center;justify-content:center}
+.gap i{display:inline-block;width:20mm;height:6.5mm;border:1.5px solid #B9C4D4;border-radius:6px;background:#fff}
+.gap.s i{width:14mm}
+.gap.ex i{background:var(--o3);border-color:var(--o2)}
+.pred{display:inline-block;font-family:"Inter";font-weight:700;font-size:8.3pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);border-radius:6px;padding:1px 6px;margin-top:3px}
+
+.fc{display:flex;flex-direction:column;align-items:center}
+.fc .bx{width:150mm;border:2px solid var(--n);border-radius:12px;background:#fff;padding:7px 14px;font-size:11pt;text-align:center;line-height:1.4}
+.fc .bx.alt{background:var(--n3)}
+.fc .ar{width:0;height:0;margin:2px 0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--n);position:relative}
+.fc .ar:before{content:"";position:absolute;left:-1.5px;top:-17px;width:3px;height:9px;background:var(--n)}
+.fc .arw{height:17px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin:3mm 0 4mm}
+.ways div{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 11px;font-size:10.2pt;line-height:1.4}
+.ways b.t{display:block;font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt;margin-bottom:2px}
+
+.tx{background:var(--n3);border:1.5px solid var(--n2);border-radius:14px;padding:10px 14px;font-size:10.2pt;line-height:1.5;margin-bottom:4mm}
+.tx h3{font-size:10.5pt;margin-bottom:3px}
+.tx h3 small{font-family:"Carlito";font-weight:400;color:var(--mut);font-size:10pt}
+.tx p{margin-bottom:4px}
+.hl{background:var(--o2);border-radius:4px;padding:0 3px;font-weight:700}
+.hl b{display:inline-flex;width:4.6mm;height:4.6mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-size:7.5pt;align-items:center;justify-content:center;margin-right:3px;vertical-align:1px}
+.st{text-decoration:line-through;color:var(--g);background:var(--g2);border-radius:4px;padding:0 3px}
+.sig{color:var(--n);font-weight:700;border-bottom:2px solid var(--o)}
+.legend{font-size:10.5pt;color:var(--mut);margin-bottom:3mm}
+.instr{font-size:11pt;margin-bottom:3mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.box2{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:10px 13px;font-size:10.5pt;line-height:1.45}
+.box2 h3{font-size:11pt;margin-bottom:3px}
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Listening · Chiến lược từng dạng bài · Số 14</div>
+    <h1>TABLE &amp;<br><span class="o">FLOW-CHART</span><br>COMPLETION</h1>
+    <div class="sub">Đọc bảng bằng tiêu đề cột – hàng, đọc sơ đồ bằng mũi tên: đoán trước loại từ cho từng ô trống — kèm 5 bẫy hay gặp, 11 câu luyện và transcript đánh dấu bẫy.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Công thức “toạ độ” ô trống</div>
+      <div><b>02</b>Quy trình 4 bước + sơ đồ</div>
+      <div><b>03</b>5 bẫy kinh điển</div>
+      <div><b>04</b>Luyện tập + transcript</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — FORMULA ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CÔNG THỨC</div>
+  </div>
+  <div class="kicker">Ô trống nào cũng có “toạ độ”</div>
+  <h2>Cột cho loại từ, hàng cho chủ đề</h2>
+  <p class="lead" style="margin-bottom:5mm">Bảng và sơ đồ quy trình cho bạn <b>rất nhiều manh mối miễn phí</b>: mỗi ô trống nằm ở giao điểm của một cột và một hàng, hoặc giữa hai mũi tên.</p>
+
+  <div class="formula">
+    <h3 style="margin-bottom:2px">Công thức dự đoán một ô trống</h3>
+    <div class="row"><span class="blk bS">Tiêu đề cột</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Tiêu đề hàng</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Ô mẫu cùng cột</span><span class="op" style="color:var(--o)">=</span><span class="blk bP">Loại từ + nghĩa dự đoán</span></div>
+    <div class="row"><span class="blk bS">Hộp phía trước</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Mũi tên</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Hộp phía sau</span><span class="op" style="color:var(--o)">=</span><span class="blk bP">Bước còn thiếu</span></div>
+    <p style="font-size:10.5pt;color:var(--mut)">Dòng 1 cho <b>Table</b>, dòng 2 cho <b>Flow-chart</b> — làm trong 30 giây đọc đề, trước khi nghe.</p>
+  </div>
+
+  <h3 style="margin-bottom:5px">Ví dụ: đoán trước cho bảng</h3>
+  <table class="lt">
+    <tr><th style="width:18%">Tour</th><th style="width:27%">Starting point</th><th style="width:17%">Price</th><th>Highlight</th></tr>
+    <tr><td class="rh">River tour</td><td>the old bridge</td><td>£15</td><td>a ride on a traditional <span class="gap ex"><b>1</b><i></i></span><br><span class="pred">danh từ – phương tiện (boat?)</span></td></tr>
+    <tr><td class="rh">Castle tour</td><td>the <span class="gap ex s"><b>2</b><i></i></span><br><span class="pred">danh từ – địa điểm</span></td><td>£<span class="gap ex s"><b>3</b><i></i></span><br><span class="pred">con số</span></td><td>a visit to the <span class="gap ex s"><b>4</b><i></i></span> tower<br><span class="pred">từ mô tả “tower”</span></td></tr>
+  </table>
+  <p style="font-size:10.5pt;color:var(--mut);margin:2mm 0 4mm">Ô 2 nằm trong cột <b>Starting point</b> và ô mẫu phía trên là <i>the old bridge</i> → chắc chắn là một <b>địa điểm</b>. Ô 3 có sẵn <b>£</b> → chỉ ghi số. Ô 4 kẹp giữa <i>the</i> và <i>tower</i> → một từ mô tả toà tháp (<i>north, main, clock…</i>).</p>
+
+  <h3 style="margin-bottom:5px">Ví dụ: đoán trước cho flow-chart</h3>
+  <div class="fc" style="margin-bottom:4mm">
+    <div class="bx">Seeds soaked in water overnight</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx alt">Seeds placed on a damp <span class="gap ex"><b>5</b><i></i></span> &nbsp;<span class="pred">danh từ – vật mềm, giữ nước (cloth? towel?)</span></div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Container covered and left in a warm place</div>
+  </div>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div><b>Đề luôn nói rõ giới hạn từ</b> ngay trên bảng: <i>ONE WORD ONLY</i>, <i>NO MORE THAN TWO WORDS</i>, <i>ONE WORD AND/OR A NUMBER</i>… Khoanh tròn nó đầu tiên — viết thừa một chữ là mất điểm dù nghe đúng.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Biết mắt phải đi đường nào</div>
+  <h2>Quy trình 4 bước</h2>
+
+  <div class="steps">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Đọc tiêu đề &amp; khoanh giới hạn từ</h3><p>Tiêu đề bảng/sơ đồ cho biết chủ đề cả đoạn nghe. Khoanh ngay giới hạn số từ.</p><span class="chip">ONE WORD ONLY</span><span class="chip">NO MORE THAN TWO WORDS</span><span class="chip">ONE WORD AND/OR A NUMBER</span></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Vẽ “đường đi” theo số câu</h3><p>Câu hỏi đi theo thứ tự băng nói. Trong bảng, số câu thường chạy <b>ngang theo từng hàng</b>, nhưng có đề chạy <b>dọc theo cột</b> — nối các số 1 → 2 → 3 bằng bút chì để mắt không bị lạc.</p></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Đoán loại từ bằng “toạ độ”</h3><p>Table: tiêu đề cột + ô mẫu cùng cột. Flow-chart: hộp trước và sau mũi tên. Ghi nhanh <b>N / V / adj / số</b> cạnh ô trống.</p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Nghe tín hiệu chuyển hàng / chuyển bước</h3><p>Khi nghe các cụm dưới đây, mắt chuyển sang hàng hoặc hộp tiếp theo.</p><span class="chip">Moving on to…</span><span class="chip">As for…</span><span class="chip">Next / Then</span><span class="chip">Once that's done…</span><span class="chip">After that</span><span class="chip">Finally</span></div></div>
+  </div>
+
+  <svg viewBox="0 0 640 250" width="100%" style="display:block">
+    <defs>
+      <marker id="ao" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#FB8F2C"/></marker>
+      <marker id="an" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#003D82"/></marker>
+    </defs>
+    <!-- TABLE side -->
+    <text x="10" y="16" font-family="Inter" font-weight="800" font-size="13" fill="#003D82">TABLE: số câu chạy theo hàng</text>
+    <rect x="10" y="28" width="320" height="34" rx="8" fill="#003D82"/>
+    <text x="55" y="50" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#fff">Course</text>
+    <text x="150" y="50" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#fff">When</text>
+    <text x="235" y="50" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#fff">Where</text>
+    <text x="300" y="50" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#fff">Cost</text>
+    <g font-family="Carlito" font-size="12" fill="#1D2433">
+      <rect x="10" y="62" width="320" height="56" fill="#F1F6FC" stroke="#DCE8F7"/>
+      <rect x="10" y="118" width="320" height="56" fill="#fff" stroke="#DCE8F7"/>
+      <rect x="10" y="174" width="320" height="56" fill="#F1F6FC" stroke="#DCE8F7"/>
+      <line x1="100" y1="62" x2="100" y2="230" stroke="#DCE8F7"/><line x1="200" y1="62" x2="200" y2="230" stroke="#DCE8F7"/><line x1="270" y1="62" x2="270" y2="230" stroke="#DCE8F7"/>
+      <text x="55" y="95" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#003D82">Row A</text>
+      <text x="55" y="151" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#003D82">Row B</text>
+      <text x="55" y="207" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11" fill="#003D82">Row C</text>
+      <text x="150" y="95" text-anchor="middle">Saturday</text>
+      <text x="150" y="207" text-anchor="middle">Sunday</text>
+      <text x="300" y="151" text-anchor="middle">£12</text>
+      <text x="300" y="207" text-anchor="middle">free</text>
+    </g>
+    <!-- gap circles -->
+    <g font-family="Inter" font-weight="800" font-size="11" fill="#fff" text-anchor="middle">
+      <circle cx="235" cy="90" r="11" fill="#FB8F2C"/><text x="235" y="94">1</text>
+      <circle cx="300" cy="90" r="11" fill="#FB8F2C"/><text x="300" y="94">2</text>
+      <circle cx="150" cy="146" r="11" fill="#FB8F2C"/><text x="150" y="150">3</text>
+      <circle cx="235" cy="146" r="11" fill="#FB8F2C"/><text x="235" y="150">4</text>
+      <circle cx="235" cy="202" r="11" fill="#FB8F2C"/><text x="235" y="206">5</text>
+    </g>
+    <path d="M246 90 H286" stroke="#FB8F2C" stroke-width="2.5" fill="none" marker-end="url(#ao)"/>
+    <path d="M300 101 C300 128 180 112 157 136" stroke="#FB8F2C" stroke-width="2.5" fill="none" stroke-dasharray="5 4" marker-end="url(#ao)"/>
+    <path d="M161 146 H221" stroke="#FB8F2C" stroke-width="2.5" fill="none" marker-end="url(#ao)"/>
+    <path d="M235 157 V188" stroke="#FB8F2C" stroke-width="2.5" fill="none" stroke-dasharray="5 4" marker-end="url(#ao)"/>
+    <text x="170" y="246" text-anchor="middle" font-family="Carlito" font-size="12" fill="#5B6577">Ô có sẵn chữ (Saturday, £12…) = mốc để biết băng đang ở đâu</text>
+
+    <!-- FLOW side -->
+    <text x="372" y="16" font-family="Inter" font-weight="800" font-size="13" fill="#003D82">FLOW-CHART: mũi tên = thứ tự</text>
+    <rect x="372" y="28" width="258" height="38" rx="10" fill="#fff" stroke="#003D82" stroke-width="2"/>
+    <text x="501" y="52" text-anchor="middle" font-family="Carlito" font-size="12.5" fill="#1D2433">Bước đã cho (mốc)</text>
+    <path d="M501 66 V84" stroke="#003D82" stroke-width="2.5" marker-end="url(#an)"/>
+    <rect x="372" y="88" width="258" height="38" rx="10" fill="#FFF6EC" stroke="#FB8F2C" stroke-width="2"/>
+    <text x="501" y="112" text-anchor="middle" font-family="Carlito" font-size="12.5" fill="#B85E0B" font-weight="700">… mixed with ____ (N)</text>
+    <path d="M501 126 V144" stroke="#003D82" stroke-width="2.5" marker-end="url(#an)"/>
+    <rect x="372" y="148" width="258" height="38" rx="10" fill="#FFF6EC" stroke="#FB8F2C" stroke-width="2"/>
+    <text x="501" y="172" text-anchor="middle" font-family="Carlito" font-size="12.5" fill="#B85E0B" font-weight="700">… left to ____ for 2 days (V)</text>
+    <path d="M501 186 V204" stroke="#003D82" stroke-width="2.5" marker-end="url(#an)"/>
+    <rect x="372" y="208" width="258" height="38" rx="10" fill="#fff" stroke="#003D82" stroke-width="2"/>
+    <text x="501" y="232" text-anchor="middle" font-family="Carlito" font-size="12.5" fill="#1D2433">Bước đã cho (mốc)</text>
+  </svg>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — TRAPS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · BẪY</div>
+  </div>
+  <div class="kicker">Nghe đúng nhưng điền sai chỗ</div>
+  <h2>5 bẫy kinh điển</h2>
+  <p class="lead">Với bảng và sơ đồ, phần lớn lỗi không nằm ở tai mà ở <b>mắt</b>: nhìn nhầm hàng, nhầm bước, hoặc viết sai dạng từ so với các ô xung quanh.</p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Mắt lạc hàng</span></div><div class="c">
+      <div class="w"><em>Moving on to…</em><em>As for…</em><em>The second one…</em></div>
+      Băng đã sang hàng mới nhưng mắt bạn vẫn ở hàng cũ, thế là đáp án của câu 4 bị điền vào ô câu 3.
+      <div class="mini">Cách chữa: đặt đầu bút chì ở <b>tiêu đề hàng</b> đang nghe; nghe thấy tên hàng mới là dời bút xuống.</div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Thông tin in sẵn bị đọc lại</span></div><div class="c">
+      <div class="w"><em>Saturday</em><em>£12</em><em>per night</em></div>
+      Bảng ghi sẵn <i>£ ___ per night</i>, băng nói <i>“It’s 45 pounds per night.”</i>
+      <div class="mini">Chỉ ghi <b>45</b>. Viết <i>£45 per night</i> là lặp lại phần in sẵn, dễ thừa giới hạn từ. Ô in sẵn là <b>mốc</b> để định vị, không phải để chép lại.</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Lệch dạng so với cả cột</span></div><div class="c">
+      <div class="w"><em>V-ing</em><em>số ít / số nhiều</em><em>N / adj</em></div>
+      Cột <i>Activity</i> ghi: <i>sailing, climbing, ___</i>. Băng nói: <i>“…and on the last day you’ll hike up to the lake.”</i>
+      <div class="mini">Ô trống phải song song với cột → <b>hiking</b>, không phải <i>hike</i>. Nhìn ô cùng cột để biết dạng từ.</div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Người nói không theo mũi tên</span></div><div class="c">
+      <div class="w"><em>Before that…</em><em>I should have said…</em><em>First of all, though…</em></div>
+      Trong flow-chart, người nói đôi khi <b>quay lại</b> bổ sung một bước trước đó.
+      <div class="mini">Đáp án vẫn nằm theo thứ tự <b>số câu</b>. Nếu bước được bổ sung đã in sẵn trên sơ đồ, nghe để định vị rồi đi tiếp, đừng hoảng.</div></div></div>
+    <div class="trap wide"><div class="h"><b>5</b><span>Đổi ý và thừa từ — nhất là với “ONE WORD ONLY”</span></div><div class="c">
+      <div class="w"><em>used to… but now</em><em>at first… then</em><em>not…, as people often think</em><em>very / completely</em></div>
+      Flow-chart hay giới hạn <b>ONE WORD ONLY</b>. Băng thường đưa thông tin cũ hoặc thông tin “mọi người tưởng” trước, rồi mới nói thông tin đúng, kèm trạng từ nhấn mạnh.
+      <div class="mini">Sơ đồ: <i>Store the herbs in a cool, ____ place.</i> · Băng: <i>“You might think a fridge is best, but they actually need somewhere <b>completely dry</b>.”</i> → Đáp án: <b style="color:var(--t)">dry</b> &nbsp;(<span style="color:var(--f)">❌ completely dry</span> = 2 từ · <span style="color:var(--f)">❌ fridge</span> = thông tin bị bác bỏ)</div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:6mm">
+    <div class="ic">✓</div>
+    <div><b>Soát cuối cùng:</b> đọc lại cả hàng/cả bước có ô bạn vừa điền. Câu phải <b>đúng ngữ pháp</b>, <b>đúng giới hạn từ</b>, và cùng dạng với các ô khác trong cột. Kiểm tra chính tả và đuôi <b>-s</b>.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — PRACTICE TABLE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Questions 1–6 · Table</div>
+  <h2>Khoá học cuối tuần</h2>
+  <p style="font-size:11pt;color:var(--mut)">Tài liệu này không có file audio. Transcript nằm ở trang 7 — <b>đừng lật trước</b>. Chọn một trong ba cách:</p>
+  <div class="ways">
+    <div><b class="t">Cách 1 · Nhờ bạn đọc</b>Nhờ bạn bè hoặc người thân đọc to transcript <b>một lần</b>, tốc độ bình thường. Bạn chỉ nhìn bảng.</div>
+    <div><b class="t">Cách 2 · Đọc lướt rồi che</b>Tự đọc lướt transcript <b>một lần</b> trong khoảng 60 giây, che lại, rồi điền từ trí nhớ.</div>
+    <div><b class="t">Cách 3 · Chép chính tả</b>Làm xong, nhờ người đọc lại từng câu để bạn chép chính tả các đoạn có bẫy.</div>
+  </div>
+  <p class="instr">Trước khi nghe: dùng <b>30 giây</b> nối đường đi các số câu và ghi loại từ cạnh mỗi ô.<br>Complete the table below. Write <b>ONE WORD AND/OR A NUMBER</b> for each answer.</p>
+
+  <table class="lt">
+    <tr><td colspan="5" class="ttl">Hilltop Community Centre – Weekend courses</td></tr>
+    <tr><th style="width:17%">Course</th><th style="width:17%">When</th><th style="width:22%">Where</th><th style="width:19%">Cost</th><th>Extra information</th></tr>
+    <tr><td class="rh">Pottery</td><td>Saturday,<br>9 a.m.–12 p.m.</td><td>the <span class="gap s"><b>1</b><i></i></span><br>studio</td><td>£<span class="gap s"><b>2</b><i></i></span><br>per session</td><td>clay included; wear old clothes</td></tr>
+    <tr><td class="rh">Photography</td><td><span class="gap s"><b>3</b><i></i></span><br>afternoons</td><td>main hall</td><td>£12<br>per session</td><td>cameras provided; bring a <span class="gap s"><b>4</b><i></i></span></td></tr>
+    <tr><td class="rh">Garden design</td><td>Sunday mornings</td><td>the <span class="gap s"><b>5</b><i></i></span><br>behind the centre</td><td>free</td><td>maximum of <span class="gap s"><b>6</b><i></i></span> people</td></tr>
+  </table>
+
+  <div class="note" style="margin-top:6mm">
+    <div class="ic">?</div>
+    <div>Trước khi nghe, thử trả lời: ô <b>3</b> chắc chắn là loại thông tin gì? (Gợi ý: nhìn hai ô <b>cùng cột</b>.) Ô <b>2</b> có sẵn <b>£</b> — bạn sẽ viết gì vào ô?</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PRACTICE FLOW-CHART ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Questions 7–11 · Flow-chart</div>
+  <h2>Trồng nấm từ bã cà phê</h2>
+  <p class="instr" style="color:var(--mut)">Một sinh viên trình bày dự án về cách một trường đại học tận dụng bã cà phê. Làm tương tự trang 5 (nhờ người đọc hoặc đọc lướt rồi che).</p>
+  <p class="instr">Complete the flow-chart below. Write <b>ONE WORD ONLY</b> for each answer.</p>
+
+  <div class="fc" style="margin-top:2mm">
+    <div class="bx" style="background:var(--n);color:#fff;font-family:Inter;font-weight:800;font-size:11pt;border-color:var(--n)">Growing mushrooms on used coffee grounds</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Used coffee grounds collected from campus cafés every <span class="gap"><b>7</b><i></i></span></div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Grounds mixed with <span class="gap"><b>8</b><i></i></span> so that air can circulate</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Mixture packed into plastic bags with small holes; mushroom culture added</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Bags kept in a warm, <span class="gap"><b>9</b><i></i></span> room for about three weeks</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Bags moved to a brighter area and sprayed twice a day to keep the <span class="gap"><b>10</b><i></i></span> high</div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Mushrooms harvested and sold to the university <span class="gap"><b>11</b><i></i></span></div>
+    <div class="arw"><div class="ar"></div></div>
+    <div class="bx">Used bags added to the campus compost heap</div>
+  </div>
+
+  <div class="note" style="margin-top:6mm">
+    <div class="ic">?</div>
+    <div>Ô <b>9</b> đứng sau <i>a warm,</i> và trước <i>room</i> → loại từ gì? Ô <b>10</b> đứng sau <i>keep the</i> và trước <i>high</i> → thứ gì có thể “giữ ở mức cao”? Ghi dự đoán trước khi nghe.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — TRANSCRIPT ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">TRANSCRIPT</div>
+  </div>
+  <div class="kicker">Chỉ lật trang này sau khi làm xong</div>
+  <h2>Transcript có đánh dấu bẫy</h2>
+  <p class="legend"><span class="hl" style="font-weight:400">Nền cam</span> = đáp án (số nhỏ là số câu). <span class="st">Gạch ngang</span> = thông tin gây nhiễu. <span class="sig">Gạch chân</span> = tín hiệu chuyển hàng / chuyển bước.</p>
+
+  <div class="tx">
+    <h3>Questions 1–6 <small>· Quản lý trung tâm giới thiệu khoá học</small></h3>
+    <p>Good evening, everyone, and thanks for coming along to hear about our new weekend courses at Hilltop Community Centre. There are three to choose from this term.</p>
+    <p><span class="sig">Let’s start with pottery</span>, which runs on Saturday mornings from nine till twelve. In the past, this class was held upstairs in the <span class="st">Art Room</span>, but we’ve now moved it down to the <span class="hl"><b>1</b>basement</span> studio, where there’s more space for the wheels. A lot of people assume it costs <span class="st">fifteen pounds</span>, because that’s what our evening classes charge, but the weekend sessions are <span class="hl"><b>2</b>eighteen pounds</span> each. That does include all your clay, though. Oh, and wear old clothes — it gets messy!</p>
+    <p><span class="sig">Next, photography.</span> We originally planned to run this on <span class="st">Saturdays</span>, but the main hall is often booked for weddings then, so it’ll take place on <span class="hl"><b>3</b>Sunday</span> afternoons instead. It’s twelve pounds a session. You don’t need to bring a <span class="st">camera</span>, as we’ll provide those. In the second half of each session you’ll edit your photos, and our computers are rather old, so please bring a <span class="hl"><b>4</b>laptop</span> if you have one.</p>
+    <p><span class="sig">Finally, garden design</span>, on Sunday mornings. It’s completely free, thanks to a grant from the council. You won’t be in the centre itself — we meet by the <span class="st">car park</span> and walk together to the <span class="hl"><b>5</b>orchard</span> behind the building, which is where all the sessions are held. Because it’s quite a small space, numbers are limited. We used to take up to <span class="st">twenty</span>, but it’s now a maximum of <span class="hl"><b>6</b>fourteen</span> people — that’s one-four — so book early.</p>
+  </div>
+
+  <div class="tx">
+    <h3>Questions 7–11 <small>· Sinh viên trình bày dự án</small></h3>
+    <p>For our project, we looked at how one university turns waste from its cafés into food. <span class="sig">The process starts with collection.</span> At first, volunteers collected the used coffee grounds <span class="st">once a week</span>, but the grounds went mouldy too quickly, so now they’re collected every <span class="hl"><b>7</b>morning</span>.</p>
+    <p>The grounds can’t be used on their own, because they’re too dense and the mushrooms need air. The team tried <span class="st">sawdust</span> at first, but it packed down too tightly, so now the grounds are mixed with <span class="hl"><b>8</b>straw</span>.</p>
+    <p><span class="sig">This mixture is then</span> packed into plastic bags, and the mushroom culture is added. Oh, <span class="sig">I should have said</span> — before that, the bags are pierced with small holes. Anyway, the bags are then kept in a warm room. Many people imagine this room should be <span class="st">cold</span>, like a cellar, but in fact it needs to be completely <span class="hl"><b>9</b>dark</span> for about three weeks.</p>
+    <p><span class="sig">After that</span>, the bags are moved to a brighter area. Here, the <span class="st">temperature</span> isn’t so important; what really matters is keeping the <span class="hl"><b>10</b>humidity</span> high, so the bags are sprayed with water twice a day.</p>
+    <p><span class="sig">Finally</span>, the mushrooms are harvested. In the first year, some were sold at a local <span class="st">farmers’ market</span>, but these days the whole crop goes to the university <span class="hl"><b>11</b>canteen</span>. And the used bags? They go straight onto the campus compost heap.</p>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>7</span></div>
+</section>
+
+<!-- ============ PAGE 8 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đọc giải thích, đừng chỉ dò đáp án</div>
+  <h2>Đáp án &amp; giải thích</h2>
+
+  <div class="ansrow"><span class="n">1</span><span class="k bT">BASEMENT</span><span class="e"><b>Bẫy đổi địa điểm:</b> <i>Art Room</i> là chỗ cũ (<i>in the past</i>). <i>“we’ve now moved it down to the basement studio”</i> — bảng đã in sẵn <i>studio</i>, chỉ ghi <b>basement</b>.</span></div>
+  <div class="ansrow"><span class="n">2</span><span class="k bT">18</span><span class="e"><b>Bẫy “mọi người tưởng”:</b> £15 là giá lớp buổi tối. Ô đã có <b>£</b> và <i>per session</i> → chỉ ghi <b>18</b> (hoặc <i>eighteen</i>).</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="k bT">SUNDAY</span><span class="e"><b>Dùng cột để đoán:</b> cột <i>When</i> có Saturday, Sunday → một ngày trong tuần. <i>Saturdays</i> là kế hoạch ban đầu đã bị đổi. Viết hoa chữ cái đầu cho chắc chắn.</span></div>
+  <div class="ansrow"><span class="n">4</span><span class="k bT">LAPTOP</span><span class="e"><b>Bẫy nghe thấy nhưng không phải đáp án:</b> <i>camera</i> được trung tâm cung cấp (khớp với <i>cameras provided</i> in sẵn). Ô sau <i>a</i> → danh từ số ít.</span></div>
+  <div class="ansrow"><span class="n">5</span><span class="k bT">ORCHARD</span><span class="e"><i>car park</i> chỉ là điểm hẹn. Nơi học là <i>“the orchard behind the building”</i> — khớp với <i>behind the centre</i> in sẵn.</span></div>
+  <div class="ansrow"><span class="n">6</span><span class="k bT">14</span><span class="e"><b>Bẫy đổi số + 14/40:</b> <i>twenty</i> là con số cũ (<i>used to</i>). Người nói nhắc lại <i>one-four</i> để xác nhận.</span></div>
+  <div class="ansrow"><span class="n">7</span><span class="k bT">MORNING</span><span class="e"><i>once a week</i> là cách làm cũ (<i>At first… but… now</i>). Sau <i>every</i> → danh từ số ít.</span></div>
+  <div class="ansrow"><span class="n">8</span><span class="k bT">STRAW</span><span class="e"><i>sawdust</i> đã thử và bỏ (<i>packed down too tightly</i>). Hộp ghi <i>so that air can circulate</i> = <i>the mushrooms need air</i>.</span></div>
+  <div class="ansrow"><span class="n">9</span><span class="k bT">DARK</span><span class="e"><b>ONE WORD ONLY:</b> <i>completely dark</i> là 2 từ → chỉ ghi <b>dark</b>. <i>cold</i> là điều “many people imagine”. Bước bổ sung <i>pierced with small holes</i> đã in sẵn (bẫy 4).</span></div>
+  <div class="ansrow"><span class="n">10</span><span class="k bT">HUMIDITY</span><span class="e"><i>temperature isn’t so important</i> → loại. <i>keeping the humidity high</i> khớp với <i>keep the ___ high</i>. Chú ý chính tả.</span></div>
+  <div class="ansrow"><span class="n">11</span><span class="k bT">CANTEEN</span><span class="e"><i>farmers’ market</i> là năm đầu (<i>In the first year</i>); <i>these days</i> → <b>canteen</b>.</span></div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:4mm">
+    <div style="background:var(--t2);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:19pt;color:var(--t)">10–11</div><div style="font-size:10.2pt">Rất vững — luyện với audio đề thật</div></div>
+    <div style="background:var(--o3);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:19pt;color:var(--o)">7–9</div><div style="font-size:10.2pt">Ổn — nghe lại các đoạn gạch ngang</div></div>
+    <div style="background:var(--f2);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:19pt;color:var(--f)">0–6</div><div style="font-size:10.2pt">Đọc lại trang 3 &amp; 4 rồi làm lại bằng cách 3</div></div>
+  </div>
+
+  <div class="cta">
+    <svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Listening Form Completion · Multiple Choice · Map Labelling · Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Table &amp; Flow-chart Completion</span><span>8</span></div>
+</section>
+
+</body>
+</html>

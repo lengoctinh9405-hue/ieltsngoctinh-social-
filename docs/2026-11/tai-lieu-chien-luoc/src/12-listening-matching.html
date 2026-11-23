@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Listening – Matching | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:6mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ---- extra classes (same style family) ---- */
+.dlg{background:var(--n3);border:1.5px solid var(--n2);border-radius:14px;padding:11px 16px;font-size:11pt;line-height:1.5;margin-bottom:5mm}
+.dlg .ln{display:flex;gap:10px;padding:2.5px 0}
+.dlg .sp{flex:0 0 22mm;font-family:"Inter";font-weight:800;font-size:8.5pt;color:var(--n);padding-top:2px;text-transform:uppercase}
+.dlg .tx{flex:1}
+.dlg.mono .tx{text-align:left}
+.dlg p{margin-bottom:5px}
+.dlg p:last-child{margin-bottom:0}
+.hr{background:var(--f2);color:#B3332C;border-radius:4px;padding:0 3px}
+.ho{background:var(--o2);color:#B85E0B;font-weight:700;border-radius:4px;padding:0 3px}
+.hg{background:var(--t2);color:#157A4B;font-weight:700;border-radius:4px;padding:0 3px}
+.qn{font-family:"Inter";font-weight:800;font-size:8.5pt;color:var(--o)}
+.legend{font-size:10pt;color:var(--mut);margin-bottom:4mm}
+.legend span{margin-right:4px}
+
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-bottom:5mm}
+.ways div{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 11px;font-size:10pt;line-height:1.4}
+.ways b.t{display:block;font-family:"Inter";font-weight:800;color:var(--n);font-size:9.5pt;margin-bottom:2px}
+
+.info{display:flex;gap:10px;background:var(--n);color:#fff;border-radius:12px;padding:9px 14px;font-size:10.5pt;margin-bottom:5mm}
+.info .ic{font-family:"Inter";font-weight:900;font-size:15pt;color:var(--o);line-height:1.1}
+.info b{color:#FFD3A8}
+
+.optbox{border:2px solid var(--n);border-radius:14px;overflow:hidden;margin-bottom:5mm}
+.optbox .hd2{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:10.5pt;padding:7px 14px}
+.optbox .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 8mm;padding:8px 14px 9px;font-size:11pt}
+.optbox .grid div{padding:3px 0;display:flex;gap:8px}
+.optbox .grid b{font-family:"Inter";font-weight:900;color:var(--o);flex:0 0 5mm}
+.optbox.one .grid{grid-template-columns:1fr}
+
+.instr{font-size:11pt;color:var(--ink);margin-bottom:3mm}
+.instr b{font-family:"Inter";font-weight:800;font-size:10pt}
+
+.mq{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.mq .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.mq .s{flex:1}
+.mq .box{flex:0 0 14mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+.gap{display:inline-flex;align-items:center;gap:4px;vertical-align:middle}
+.gap .gn{display:inline-flex;width:6mm;height:6mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:8.5pt;align-items:center;justify-content:center}
+.gap .gl{display:inline-block;width:30mm;height:6.5mm;border:1.5px solid #B9C4D4;border-radius:6px;background:#fff}
+
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden;font-size:10.5pt;margin-bottom:5mm}
+.tbl th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:6px 10px}
+.tbl td{padding:5px 10px;border-top:1px solid var(--n2);vertical-align:top;line-height:1.35}
+.tbl tr:nth-child(even) td{background:var(--n3)}
+.tbl .ok{color:var(--t);font-weight:700}
+.tbl .no{color:var(--f);font-weight:700}
+
+.xo{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:5px}
+.xo div{border-radius:8px;padding:5px 9px;font-size:10pt;line-height:1.35}
+.xo .x{background:var(--f2);border:1px solid #F3B7B2}
+.xo .v{background:var(--t2);border:1px solid #A9DFC3}
+.xo b.m{font-family:"Inter";font-weight:900;font-size:9pt;margin-right:4px}
+.xo .x b.m{color:var(--f)} .xo .v b.m{color:var(--t)}
+
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:6mm}
+.score div{border-radius:12px;padding:10px;text-align:center;font-size:10.5pt}
+.score .hd{font-weight:900;font-size:20pt}
+
+.sumbox{background:#fff;border:2px solid var(--n);border-radius:14px;padding:10px 16px 12px;font-size:11.5pt;line-height:2.05;margin-bottom:4mm}
+.sumbox h3{line-height:1.4;margin-bottom:2px}
+.sent{border-bottom:1px solid var(--g2);padding:5px 0;font-size:11.5pt;display:flex;gap:10px;align-items:center}
+.sent .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Listening · Chiến lược từng dạng bài · Số 12</div>
+    <h1>LISTENING<br><span class="o">MATCHING</span></h1>
+    <div class="sub">8 lựa chọn cho 6 câu hỏi, người nói lại không bao giờ dùng đúng từ trong đề. Công thức “mốc + ý được khẳng định” giúp bạn nối đúng, kèm 5 bẫy kinh điển và bài luyện có transcript.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Bản chất dạng nối</div>
+      <div><b>02</b>Quy trình 4 bước + sơ đồ</div>
+      <div><b>03</b>5 bẫy kinh điển</div>
+      <div><b>04</b>Luyện tập + transcript</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — FORMULA ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CÔNG THỨC</div>
+  </div>
+  <div class="kicker">Hiểu đúng bản chất</div>
+  <h2>Hai danh sách, một trục thời gian</h2>
+  <p class="lead">Đề cho bạn một danh sách <b>mục cần nối</b> (người, địa điểm, giai đoạn…) và một hộp <b>lựa chọn A, B, C…</b> (ý kiến, đặc điểm). Người nói lần lượt nhắc từng mục — bạn chọn chữ cái mô tả đúng mục đó. Dạng này hay gặp ở <b>Part 2</b> và <b>Part 3</b>.</p>
+
+  <div class="three">
+    <div class="card" style="border-color:#9DB8DD;background:var(--n3)">
+      <div class="lab" style="color:var(--n)">MỤC 1, 2, 3…</div>
+      <p style="margin-top:8px">Đi <b>theo thứ tự</b> bài nghe. Tên mục (Anna, the museum…) là <b>mốc</b> báo bạn đã sang câu mới.</p>
+    </div>
+    <div class="card" style="border-color:#F7C796;background:var(--o3)">
+      <div class="lab" style="color:var(--o)">A – H</div>
+      <p style="margin-top:8px"><b>Không theo thứ tự</b>. Người nói diễn đạt lại (paraphrase), gần như không đọc nguyên văn lựa chọn.</p>
+    </div>
+    <div class="card g">
+      <div class="lab">THỪA</div>
+      <p style="margin-top:8px">Số lựa chọn <b>nhiều hơn</b> số câu (VD: 8 cho 6 câu) → luôn có 2–3 phương án <b>gây nhiễu</b>.</p>
+    </div>
+  </div>
+
+  <div class="formula">
+    <h3 style="margin-bottom:4px">Công thức nối một câu</h3>
+    <div class="row"><span class="blk bS">Nghe mốc (tên mục)</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Ý được KHẲNG ĐỊNH</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Khớp paraphrase</span><span class="op" style="color:var(--n)">→</span><span class="blk bT">Chữ cái</span></div>
+    <p style="font-size:10.5pt;color:var(--mut)">Khối cam là quan trọng nhất: người nói thường nhắc tới 2–3 lựa chọn cho cùng một mục, nhưng chỉ <b>một ý được khẳng định là đúng</b> với mục đó ở hiện tại. Các ý còn lại bị phủ định, đã cũ, hoặc là ý của người khác.</p>
+  </div>
+
+  <h3 style="margin-bottom:6px">Ví dụ nhanh</h3>
+  <div class="ex"><div class="p">Q: What does the speaker say about the sports centre? &nbsp; A. It is too expensive. &nbsp; B. It is often crowded. &nbsp; C. It is hard to get to.</div></div>
+  <div class="dlg">
+    <div class="ln"><span class="sp">Man</span><span class="tx">The sports centre? Well, the membership fee is <span class="hr">actually quite reasonable</span>, and there's <span class="hr">a bus stop right outside</span>. The only problem is that you can never find a free machine after work — <span class="hg">it's packed</span>.</span></div>
+  </div>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div>Cả 3 lựa chọn đều “được nhắc”. <b>A</b> bị phủ định (<i>reasonable</i>), <b>C</b> bị phủ định (<i>bus stop right outside</i>), <b>B</b> được khẳng định: <i>packed</i> = <i>often crowded</i> → đáp án <b>B</b>. Không có từ nào trong đáp án đúng được lặp lại nguyên văn.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Làm theo thứ tự, không đoán</div>
+  <h2>Quy trình 4 bước</h2>
+
+  <div class="steps">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Đọc hộp lựa chọn trước, đoán paraphrase</h3><p>Gạch 1–2 từ khoá mỗi lựa chọn và nghĩ sẵn cách nói khác. Đây là bước quyết định, vì bạn sẽ nghe <b>ý</b>, không nghe <b>từ</b>.</p><span class="chip">crowded → packed / busy</span><span class="chip">free → no charge</span><span class="chip">book → reserve</span><span class="chip">repaired → restored</span></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Đọc danh sách mục = các mốc</h3><p>Mục đi theo thứ tự bài nghe. Khi nghe tên mục kế tiếp (thường kèm <i>next, moving on to, our last stop</i>) → chuyển câu ngay.</p></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Nghe hết đoạn của mục, ghi chú nhanh</h3><p>Viết tạm các chữ cái nghe được cạnh số câu, gạch chữ bị phủ định (<s>E</s>). Chỉ chốt khi người nói <b>khẳng định</b> — thường sau <i>but, actually, what is…, the main thing is</i>.</p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Loại trừ rồi mới điền</h3><p>Gạch các chữ cái đã dùng (trừ khi đề ghi <i>NB You may use any letter more than once</i>). Câu bị lỡ → chọn trong các chữ còn lại, <b>không bỏ trống</b>.</p></div></div>
+  </div>
+
+  <h3 style="margin-bottom:4px">Sơ đồ: mục theo thứ tự — lựa chọn xáo trộn</h3>
+  <svg viewBox="0 0 640 262" width="100%" style="display:block">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#003D82"/></marker></defs>
+    <!-- time arrow -->
+    <path d="M26 20 V246" stroke="#FB8F2C" stroke-width="3" marker-end="url(#ar)"/>
+    <text x="14" y="140" font-family="Inter" font-weight="800" font-size="11" fill="#FB8F2C" transform="rotate(-90 14 140)" text-anchor="middle">THỨ TỰ NGHE</text>
+    <!-- left items -->
+    <g font-family="Inter" font-weight="800" font-size="14">
+      <rect x="44" y="14" width="160" height="40" rx="10" fill="#003D82"/><text x="124" y="39" text-anchor="middle" fill="#fff">1 · Anna</text>
+      <rect x="44" y="74" width="160" height="40" rx="10" fill="#003D82"/><text x="124" y="99" text-anchor="middle" fill="#fff">2 · Ben</text>
+      <rect x="44" y="134" width="160" height="40" rx="10" fill="#003D82"/><text x="124" y="159" text-anchor="middle" fill="#fff">3 · Chloe</text>
+      <rect x="44" y="194" width="160" height="40" rx="10" fill="#003D82"/><text x="124" y="219" text-anchor="middle" fill="#fff">4 · David</text>
+    </g>
+    <!-- links -->
+    <g fill="none" stroke-width="2.5" stroke="#1E9E62">
+      <path d="M204 34 C300 34 330 154 420 154"/>
+      <path d="M204 94 C300 94 330 18 420 18"/>
+      <path d="M204 154 C300 154 330 238 420 238"/>
+      <path d="M204 214 C300 214 330 58 420 58"/>
+    </g>
+    <!-- right options -->
+    <g font-family="Carlito" font-size="14">
+      <rect x="420" y="2" width="210" height="32" rx="9" fill="#E1F5EA" stroke="#1E9E62" stroke-width="1.5"/><text x="434" y="23" fill="#1D2433"><tspan font-family="Inter" font-weight="900" fill="#1E9E62">A</tspan>  enjoys the teamwork</text>
+      <rect x="420" y="42" width="210" height="32" rx="9" fill="#E1F5EA" stroke="#1E9E62" stroke-width="1.5"/><text x="434" y="63" fill="#1D2433"><tspan font-family="Inter" font-weight="900" fill="#1E9E62">B</tspan>  wants more feedback</text>
+      <rect x="420" y="82" width="210" height="32" rx="9" fill="#ECEFF4" stroke="#7A869A" stroke-width="1.5" stroke-dasharray="4 3"/><text x="434" y="103" fill="#7A869A"><tspan font-family="Inter" font-weight="900">C</tspan>  finds it too difficult</text>
+      <rect x="420" y="122" width="210" height="32" rx="9" fill="#E1F5EA" stroke="#1E9E62" stroke-width="1.5"/><text x="434" y="143" fill="#1D2433"><tspan font-family="Inter" font-weight="900" fill="#1E9E62">D</tspan>  has changed courses</text>
+      <rect x="420" y="162" width="210" height="32" rx="9" fill="#ECEFF4" stroke="#7A869A" stroke-width="1.5" stroke-dasharray="4 3"/><text x="434" y="183" fill="#7A869A"><tspan font-family="Inter" font-weight="900">E</tspan>  plans to work abroad</text>
+      <rect x="420" y="202" width="210" height="32" rx="9" fill="#E1F5EA" stroke="#1E9E62" stroke-width="1.5"/><text x="434" y="223" fill="#1D2433"><tspan font-family="Inter" font-weight="900" fill="#1E9E62">F</tspan>  needs a quieter room</text>
+    </g>
+    <text x="525" y="256" text-anchor="middle" font-family="Carlito" font-weight="700" font-size="12.5" fill="#7A869A">C, E = phương án thừa (nghe thấy nhưng sai)</text>
+  </svg>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — TRAPS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · BẪY</div>
+  </div>
+  <div class="kicker">Lý do phần lớn bạn mất điểm</div>
+  <h2>5 bẫy kinh điển</h2>
+  <p class="lead">Trong Matching, phương án sai <b>thường được nhắc tới</b> — chỉ là không được khẳng định cho đúng mục. Hãy hỏi: “Người nói có <b>xác nhận</b> điều này cho mục này, ở hiện tại không?”</p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Nghe trùng từ trong lựa chọn</span></div><div class="c">
+      <div class="w"><em>same word</em><em>≠ answer</em></div>
+      Lựa chọn: <i>It has a large car park.</i><br>Nghe: <i>“There's a <b>car park</b> next door, but it's tiny, so I'd come by bus.”</i><div class="mini">Nghe đúng chữ <b>car park</b> nhưng <i>tiny</i> ≠ <i>large</i> → <b style="color:var(--f)">không chọn</b></div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Phủ định &amp; đảo chiều</span></div><div class="c">
+      <div class="w"><em>but</em><em>actually</em><em>not … at all</em><em>in fact</em></div>
+      Lựa chọn: <i>It is usually crowded.</i><br>Nghe: <i>“I expected it to be crowded, <b>but actually</b> it was half empty.”</i><div class="mini">Ý sau <b>but actually</b> mới là sự thật → <b style="color:var(--f)">không chọn</b></div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Quá khứ ≠ hiện tại</span></div><div class="c">
+      <div class="w"><em>used to</em><em>until recently</em><em>no longer</em></div>
+      Lựa chọn: <i>It is free to enter.</i><br>Nghe: <i>“It <b>used to be</b> free, but there's now a four-pound charge.”</i><div class="mini">Đề dùng thì hiện tại, thông tin đã cũ → <b style="color:var(--f)">không chọn</b></div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Ý kiến của người khác</span></div><div class="c">
+      <div class="w"><em>my tutor says</em><em>some people think</em></div>
+      Q: What does <b>Jack</b> think about the course?<br>Nghe: <i>“<b>My brother</b> thinks it's too short, but for me it's just right.”</i><div class="mini"><i>too short</i> là ý của anh trai, không phải của Jack → <b style="color:var(--f)">không chọn</b></div></div></div>
+    <div class="trap wide"><div class="h"><b>5</b><span>Lỡ một câu rồi “đứng lại nhớ” — mất luôn câu sau</span></div><div class="c">
+      Mỗi mục chỉ được nói trong vài câu. Nếu bạn còn đang nghĩ về câu 3 khi người nói đã sang mục 4, bạn sẽ mất cả hai.
+      <div class="xo">
+        <div class="x"><b class="m">❌</b>Mải nhớ lại ý của mục 3, không để ý <i>“Moving on to the Clock Tower…”</i> → lỡ câu 4, 5.</div>
+        <div class="v"><b class="m">✅</b>Nghe tên mục mới → bỏ câu 3, chuyển ngay sang câu 4. Cuối bài điền câu 3 bằng <b>phép loại trừ</b>.</div>
+      </div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:6mm">
+    <div class="ic">✓</div>
+    <div><b>Mẹo kiểm tra cuối cùng:</b> với mỗi chữ cái đã chọn, hãy tìm lại được <b>câu khẳng định</b> trong trí nhớ (VD: <i>“it's packed”</i>). Nếu bạn chỉ nhớ được <b>một từ trùng</b> chứ không nhớ được ý, nhiều khả năng đó là phương án nhiễu.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — PRACTICE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian đọc đề: 45 giây · Chỉ nghe 1 lần</div>
+  <h2>Bài luyện: Old Town walking tour</h2>
+  <p class="lead" style="margin-bottom:4mm">Một hướng dẫn viên giới thiệu 6 điểm dừng của chuyến đi bộ quanh khu phố cổ (dạng Part 2).</p>
+
+  <div class="info"><div class="ic">i</div><div>Tài liệu chưa có file audio. Transcript nằm ở <b>trang 6 — đừng lật trước</b>. Chọn một trong ba cách luyện dưới đây.</div></div>
+  <div class="ways">
+    <div><b class="t">Cách 1 · Nhờ bạn đọc</b>Nhờ bạn bè/người thân đọc to transcript <b>một lần</b>, tốc độ bình thường. Bạn chỉ nhìn đề.</div>
+    <div><b class="t">Cách 2 · Đọc rồi che</b>Tự đọc transcript <b>đúng một lần</b> trong 90 giây, che lại, rồi làm bài từ trí nhớ.</div>
+    <div><b class="t">Cách 3 · Tự ghi âm</b>Ghi âm giọng bạn đọc transcript, vài ngày sau nghe lại và làm bài.</div>
+  </div>
+
+  <p class="instr"><b>What does the guide say about each place?</b><br>Choose <b>SIX</b> answers from the box and write the correct letter, <b>A–H</b>, next to Questions 1–6.</p>
+
+  <div class="optbox">
+    <div class="hd2">Comments</div>
+    <div class="grid">
+      <div><b>A</b>It is closed on certain days.</div>
+      <div><b>E</b>It is free to enter.</div>
+      <div><b>B</b>It has recently been repaired.</div>
+      <div><b>F</b>It is popular with local families.</div>
+      <div><b>C</b>It offers the best views of the city.</div>
+      <div><b>G</b>Photography is not allowed inside.</div>
+      <div><b>D</b>Visitors must book in advance.</div>
+      <div><b>H</b>It was originally built for a different purpose.</div>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:2px">Places</h3>
+  <div class="mq"><span class="n">1</span><span class="s">the Old Market</span><span class="box"></span></div>
+  <div class="mq"><span class="n">2</span><span class="s">the Harbour Museum</span><span class="box"></span></div>
+  <div class="mq"><span class="n">3</span><span class="s">St Anne's Church</span><span class="box"></span></div>
+  <div class="mq"><span class="n">4</span><span class="s">the Clock Tower</span><span class="box"></span></div>
+  <div class="mq"><span class="n">5</span><span class="s">the Botanical Garden</span><span class="box"></span></div>
+  <div class="mq"><span class="n">6</span><span class="s">the Weavers' Cottage</span><span class="box"></span></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — TRANSCRIPT ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">TRANSCRIPT</div>
+  </div>
+  <div class="kicker">Chỉ lật trang này sau khi làm xong</div>
+  <h2>Transcript có đánh dấu bẫy</h2>
+  <p class="legend"><span class="hr">đỏ</span> phương án nhiễu (được nhắc nhưng bị phủ định / đã cũ) &nbsp; <span class="ho">cam</span> tín hiệu chuyển mục / đảo chiều &nbsp; <span class="hg">xanh</span> ý được khẳng định = đáp án</p>
+
+  <div class="dlg mono">
+    <div class="ln"><span class="sp">Guide</span><span class="tx">
+      <p>Good morning, everyone, and welcome to the Old Town walking tour. Before we set off, I'll give you a quick introduction to the six places we'll be visiting.</p>
+      <p><span class="ho">We'll start at the Old Market.</span> Most visitors assume it was always a market, <span class="ho">but in fact</span> <span class="hg">the building was designed as a tram depot</span> in the 1890s, and the stalls only moved in after the trams stopped running. <span class="qn">[Q1]</span> People often expect it to be <span class="hr">full of local families</span>, but these days most of the shoppers are tourists.</p>
+      <p><span class="ho">Next is the Harbour Museum.</span> Entry <span class="hr">used to be free</span>, but since last year there's been a small charge. More importantly, numbers are limited, so <span class="hg">you'll need to reserve a time slot online</span> — you can't just turn up on the day. <span class="qn">[Q2]</span></p>
+      <p><span class="ho">From there, it's a short walk to St Anne's Church.</span> It's <span class="hr">open every day of the week</span>, Sundays included. You're welcome to photograph the outside, but <span class="hg">once you're through the door, please keep cameras and phones in your pockets</span> — that's a strict rule. <span class="qn">[Q3]</span></p>
+      <p><span class="ho">Our fourth stop is the Clock Tower.</span> Older guidebooks claim it has <span class="hr">the best views in the city</span>, but the trees around it have grown so tall that you can't see much any more. <span class="ho">What is worth seeing</span> is the clock itself: <span class="hg">it was restored only last spring</span>, and for the first time in decades it actually tells the right time. <span class="qn">[Q4]</span></p>
+      <p><span class="ho">After that, we'll stroll through the Botanical Garden.</span> There's <span class="hr">no need to book</span> — you can just walk in. On Sunday afternoons, <span class="hg">it's the favourite spot for families who live nearby</span>, and the playground by the lake is always full of children. <span class="qn">[Q5]</span></p>
+      <p><span class="ho">Our final stop is the Weavers' Cottage</span>, a tiny museum run by volunteers. Because of that, <span class="hg">it only opens from Thursday to Sunday</span>, so do plan ahead if you want to look inside. <span class="qn">[Q6]</span> People sometimes ask whether it was <span class="hr">once a school</span>, but no — it has always been a family home.</p>
+    </span></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đọc giải thích, đừng chỉ dò đáp án</div>
+  <h2>Đáp án &amp; giải thích</h2>
+
+  <div class="ansrow"><span class="n">1</span><span class="k bT">H</span><span class="e"><i>“designed as a tram depot … the stalls only moved in after…”</i> = ban đầu xây cho <b>mục đích khác</b>. F bị loại: <i>these days most of the shoppers are tourists</i> (bẫy 2).</span></div>
+  <div class="ansrow"><span class="n">2</span><span class="k bT">D</span><span class="e"><i>“reserve a time slot online … can't just turn up”</i> = <b>book in advance</b>. E là bẫy 3: <i>used to be free</i> — bây giờ đã thu phí.</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="k bT">G</span><span class="e"><i>“once you're through the door, keep cameras and phones in your pockets”</i> = <b>không được chụp ảnh bên trong</b>. A bị loại: <i>open every day</i>.</span></div>
+  <div class="ansrow"><span class="n">4</span><span class="k bT">B</span><span class="e"><i>“restored only last spring”</i> = <b>recently repaired</b>. C là bẫy 1 + 4: <i>best views</i> là lời của <i>older guidebooks</i>, và người nói phủ định ngay sau đó.</span></div>
+  <div class="ansrow"><span class="n">5</span><span class="k bT">F</span><span class="e"><i>“the favourite spot for families who live nearby”</i> = <b>popular with local families</b>. D bị loại: <i>no need to book</i>.</span></div>
+  <div class="ansrow"><span class="n">6</span><span class="k bT">A</span><span class="e"><i>“only opens from Thursday to Sunday”</i> = <b>đóng cửa vào một số ngày</b>. H bị loại: <i>it has always been a family home</i>.</span></div>
+  <p style="font-size:10.5pt;color:var(--mut);margin-top:3mm">Hai phương án thừa: <b>C</b> và <b>E</b> — cả hai đều được nhắc tới trong bài nhưng không được khẳng định (C bị phủ định, E là thông tin đã cũ).</p>
+
+  <div class="score">
+    <div style="background:var(--t2)"><div class="hd" style="color:var(--t)">6/6</div>Rất vững — chuyển sang đề thật có file nghe</div>
+    <div style="background:var(--o3)"><div class="hd" style="color:var(--o)">4–5</div>Ổn — xem lại câu sai với 5 bẫy ở trang 4</div>
+    <div style="background:var(--f2)"><div class="hd" style="color:var(--f)">0–3</div>Đọc lại trang 2–3, luyện lại theo cách 2</div>
+  </div>
+
+  <div class="cta">
+    <svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Form Completion · Multiple Choice · Map Labelling · Sentence &amp; Summary Completion · Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Matching</span><span>7</span></div>
+</section>
+
+</body>
+</html>

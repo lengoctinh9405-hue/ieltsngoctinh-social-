@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Listening – Sentence & Summary Completion | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:6mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ---- extra classes (same style family) ---- */
+.dlg{background:var(--n3);border:1.5px solid var(--n2);border-radius:14px;padding:11px 16px;font-size:11pt;line-height:1.5;margin-bottom:5mm}
+.dlg .ln{display:flex;gap:10px;padding:2.5px 0}
+.dlg .sp{flex:0 0 22mm;font-family:"Inter";font-weight:800;font-size:8.5pt;color:var(--n);padding-top:2px;text-transform:uppercase}
+.dlg .tx{flex:1}
+.dlg.mono .tx{text-align:left}
+.dlg p{margin-bottom:5px}
+.dlg p:last-child{margin-bottom:0}
+.hr{background:var(--f2);color:#B3332C;border-radius:4px;padding:0 3px}
+.ho{background:var(--o2);color:#B85E0B;font-weight:700;border-radius:4px;padding:0 3px}
+.hg{background:var(--t2);color:#157A4B;font-weight:700;border-radius:4px;padding:0 3px}
+.qn{font-family:"Inter";font-weight:800;font-size:8.5pt;color:var(--o)}
+.legend{font-size:10pt;color:var(--mut);margin-bottom:4mm}
+.legend span{margin-right:4px}
+
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-bottom:5mm}
+.ways div{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 11px;font-size:10pt;line-height:1.4}
+.ways b.t{display:block;font-family:"Inter";font-weight:800;color:var(--n);font-size:9.5pt;margin-bottom:2px}
+
+.info{display:flex;gap:10px;background:var(--n);color:#fff;border-radius:12px;padding:9px 14px;font-size:10.5pt;margin-bottom:5mm}
+.info .ic{font-family:"Inter";font-weight:900;font-size:15pt;color:var(--o);line-height:1.1}
+.info b{color:#FFD3A8}
+
+.optbox{border:2px solid var(--n);border-radius:14px;overflow:hidden;margin-bottom:5mm}
+.optbox .hd2{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:10.5pt;padding:7px 14px}
+.optbox .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 8mm;padding:8px 14px 9px;font-size:11pt}
+.optbox .grid div{padding:3px 0;display:flex;gap:8px}
+.optbox .grid b{font-family:"Inter";font-weight:900;color:var(--o);flex:0 0 5mm}
+.optbox.one .grid{grid-template-columns:1fr}
+
+.instr{font-size:11pt;color:var(--ink);margin-bottom:3mm}
+.instr b{font-family:"Inter";font-weight:800;font-size:10pt}
+
+.mq{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.mq .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.mq .s{flex:1}
+.mq .box{flex:0 0 14mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+.gap{display:inline-flex;align-items:center;gap:4px;vertical-align:middle}
+.gap .gn{display:inline-flex;width:6mm;height:6mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:8.5pt;align-items:center;justify-content:center}
+.gap .gl{display:inline-block;width:30mm;height:6.5mm;border:1.5px solid #B9C4D4;border-radius:6px;background:#fff}
+
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden;font-size:10.5pt;margin-bottom:5mm}
+.tbl th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:6px 10px}
+.tbl td{padding:5px 10px;border-top:1px solid var(--n2);vertical-align:top;line-height:1.35}
+.tbl tr:nth-child(even) td{background:var(--n3)}
+.tbl .ok{color:var(--t);font-weight:700}
+.tbl .no{color:var(--f);font-weight:700}
+
+.xo{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:5px}
+.xo div{border-radius:8px;padding:5px 9px;font-size:10pt;line-height:1.35}
+.xo .x{background:var(--f2);border:1px solid #F3B7B2}
+.xo .v{background:var(--t2);border:1px solid #A9DFC3}
+.xo b.m{font-family:"Inter";font-weight:900;font-size:9pt;margin-right:4px}
+.xo .x b.m{color:var(--f)} .xo .v b.m{color:var(--t)}
+
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:6mm}
+.score div{border-radius:12px;padding:10px;text-align:center;font-size:10.5pt}
+.score .hd{font-weight:900;font-size:20pt}
+
+.sumbox{background:#fff;border:2px solid var(--n);border-radius:14px;padding:10px 16px 12px;font-size:11.5pt;line-height:2.05;margin-bottom:4mm}
+.sumbox h3{line-height:1.4;margin-bottom:2px}
+.sent{border-bottom:1px solid var(--g2);padding:5px 0;font-size:11.5pt;display:flex;gap:10px;align-items:center}
+.sent .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Listening · Chiến lược từng dạng bài · Số 13</div>
+    <h1>SENTENCE &amp;<br>SUMMARY<br><span class="o">COMPLETION</span></h1>
+    <div class="sub">Nghe đúng mà vẫn mất điểm vì thừa một chữ “a”, thiếu một chữ “s”? Công thức 4 khối kiểm tra đáp án, bảng giới hạn số từ, 6 lỗi hay gặp và bài luyện có transcript.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Giới hạn số từ &amp; 4 khối</div>
+      <div><b>02</b>Quy trình + đoán loại từ</div>
+      <div><b>03</b>6 lỗi mất điểm</div>
+      <div><b>04</b>Luyện tập + transcript</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — FORMULA ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CÔNG THỨC</div>
+  </div>
+  <div class="kicker">Hiểu đúng bản chất</div>
+  <h2>Câu trên đề được viết lại —<br>từ điền là từ bạn nghe</h2>
+  <p class="lead" style="margin-bottom:5mm">Câu và đoạn tóm tắt trên đề <b>diễn đạt lại</b> nội dung bài nghe. Riêng chỗ trống thì bạn phải điền <b>đúng từ người nói dùng</b>, sao cho câu hoàn chỉnh đúng ngữ pháp.</p>
+
+  <div class="three" style="margin-bottom:5mm">
+    <div class="card" style="border-color:#9DB8DD;background:var(--n3)">
+      <div class="lab" style="color:var(--n)">SENTENCE</div>
+      <p style="margin-top:8px">Các <b>câu rời</b>, mỗi câu một ô, đi theo thứ tự bài nghe.</p>
+    </div>
+    <div class="card" style="border-color:#F7C796;background:var(--o3)">
+      <div class="lab" style="color:var(--o)">SUMMARY</div>
+      <p style="margin-top:8px">Một <b>đoạn văn liền mạch</b> tóm tắt một phần bài nghe, hay gặp ở Part 4. Ô trống vẫn theo thứ tự.</p>
+    </div>
+    <div class="card g">
+      <div class="lab">BIẾN THỂ</div>
+      <p style="margin-top:8px">Summary kèm <b>hộp từ A, B, C…</b>: chọn trong hộp và viết <b>chữ cái</b>, không viết từ.</p>
+    </div>
+  </div>
+
+  <div class="formula" style="margin-bottom:5mm">
+    <h3 style="margin-bottom:4px">Công thức 4 khối cho một đáp án</h3>
+    <div class="row"><span class="blk bS">Đúng nghĩa</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Đúng ngữ pháp</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Đúng số từ</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Đúng chính tả</span><span class="op" style="color:var(--n)">→</span><span class="blk bT">1 điểm</span></div>
+    <p style="font-size:10.5pt;color:var(--mut)">Sai <b>một khối</b> là mất trọn điểm câu đó — không có điểm một phần. Hai khối cam là nơi người học band 5.5–6.5 mất điểm nhiều nhất.</p>
+  </div>
+
+  <h3 style="margin-bottom:5px">Đọc đúng yêu cầu giới hạn số từ</h3>
+  <table class="tbl">
+    <tr><th style="width:36%">Yêu cầu trên đề</th><th style="width:24%">Được viết tối đa</th><th>Ví dụ đúng</th><th>Ví dụ sai</th></tr>
+    <tr><td><b>ONE WORD ONLY</b></td><td>1 từ</td><td class="ok">straw</td><td class="no">fresh straw</td></tr>
+    <tr><td><b>ONE WORD AND/OR A NUMBER</b></td><td>1 từ + 1 số</td><td class="ok">25 · Tuesday · 3 hours</td><td class="no">every Tuesday</td></tr>
+    <tr><td><b>NO MORE THAN TWO WORDS</b></td><td>2 từ</td><td class="ok">tennis court</td><td class="no">a tennis court</td></tr>
+    <tr><td><b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b></td><td>2 từ + 1 số</td><td class="ok">15 May · 2 large rooms</td><td class="no">the 15th of May</td></tr>
+    <tr><td><b>NO MORE THAN THREE WORDS</b></td><td>3 từ</td><td class="ok">fresh fruit juice</td><td class="no">a glass of juice</td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div><b>Cách đếm:</b> mạo từ <i>a / an / the</i> cũng là 1 từ · từ có gạch nối (<i>first-year</i>, <i>well-known</i>) tính là 1 từ · viết hoa hay viết thường đều được · chính tả Anh – Anh hay Anh – Mỹ (<i>colour / color</i>) đều được, miễn là viết đúng · số nên viết bằng <b>chữ số</b> cho nhanh và khỏi sai chính tả.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Làm theo thứ tự, không đoán mò</div>
+  <h2>Quy trình 4 bước</h2>
+
+  <div class="steps" style="margin-bottom:3mm">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Khoanh giới hạn số từ đầu tiên</h3><p>Đọc dòng hướng dẫn trước cả câu hỏi. Mỗi nhóm câu có thể có giới hạn khác nhau.</p><span class="chip">ONE WORD ONLY</span><span class="chip">NO MORE THAN TWO WORDS</span><span class="chip">AND/OR A NUMBER</span></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Đọc câu, đoán loại từ cho từng ô</h3><p>Danh từ, động từ, tính từ hay số? Số ít hay số nhiều? Nghĩa đại khái là gì? Dùng bảng tín hiệu bên dưới.</p></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Nghe paraphrase của phần chữ quanh ô</h3><p>Phần in sẵn sẽ được nói khác đi, còn <b>từ cần điền</b> gần như luôn giữ nguyên. Ghi nhanh, viết tắt cũng được — chép sạch lại sau.</p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Đọc lại cả câu với từ vừa điền</h3><p>Kiểm tra 4 khối: nghĩa, ngữ pháp, số từ, chính tả — đặc biệt là đuôi <b>-s</b> và mạo từ thừa.</p></div></div>
+  </div>
+
+  <h3 style="margin-bottom:5px">Nhìn trước – sau ô trống để đoán loại từ</h3>
+  <table class="tbl">
+    <tr><th style="width:30%">Tín hiệu quanh ô</th><th style="width:32%">Dự đoán</th><th>Ví dụ</th></tr>
+    <tr><td><b>a / an</b> + ____</td><td>danh từ số ít (hoặc tính từ + danh từ)</td><td>They need <b>an</b> ____ . → <i>assistant</i></td></tr>
+    <tr><td><b>several / many / two</b> + ____</td><td>danh từ <b>số nhiều</b> (-s)</td><td><b>several</b> ____ → <i>volunteers</i></td></tr>
+    <tr><td><b>to</b> / <b>can</b> + ____</td><td>động từ nguyên mẫu</td><td>It helps <b>to</b> ____ costs. → <i>reduce</i></td></tr>
+    <tr><td><b>the most / very</b> + ____</td><td>tính từ</td><td><b>the most</b> ____ factor → <i>important</i></td></tr>
+    <tr><td>____ + danh từ</td><td>tính từ hoặc danh từ ghép</td><td>____ students → <i>first-year</i></td></tr>
+    <tr><td><b>about / over</b> + ____ + <b>per cent</b></td><td>số</td><td><b>about</b> ____ <b>per cent</b> → <i>40</i></td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">✓</div>
+    <div><b>Mẹo:</b> trong Summary, động từ ngay sau ô thường cho biết chủ ngữ số ít hay nhiều: <i>“local ____ <b>remove</b> weeds”</i> → chủ ngữ số nhiều → đáp án phải có <b>-s</b>.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — MISTAKES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · LỖI HAY GẶP</div>
+  </div>
+  <div class="kicker">Nghe đúng nhưng vẫn mất điểm</div>
+  <h2>6 lỗi kinh điển</h2>
+  <p class="lead" style="margin-bottom:5mm">Phần lớn câu sai ở dạng này không phải do nghe kém, mà do <b>viết sai</b> thứ mình đã nghe đúng.</p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Vượt giới hạn số từ</span></div><div class="c">
+      NO MORE THAN TWO WORDS · <i>It is about the size of a ____.</i><br>Nghe: <i>“…roughly the size of a tennis court.”</i>
+      <div class="xo"><div class="x"><b class="m">❌</b>a tennis court</div><div class="v"><b class="m">✅</b>tennis court</div></div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Quên đuôi -s số nhiều</span></div><div class="c">
+      <i>Visitors should bring their own ____.</i><br>Nghe: <i>“…please bring your own gloves.”</i>
+      <div class="xo"><div class="x"><b class="m">❌</b>glove</div><div class="v"><b class="m">✅</b>gloves</div></div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Lặp lại từ đã in sẵn</span></div><div class="c">
+      <i>The course is designed for ____ students.</i><br>Nghe: <i>“…it's aimed at first-year students.”</i>
+      <div class="xo"><div class="x"><b class="m">❌</b>first-year students</div><div class="v"><b class="m">✅</b>first-year</div></div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Dùng từ đồng nghĩa của mình</span></div><div class="c">
+      <i>The project failed mainly because of ____ planning.</i><br>Nghe: <i>“…the main cause was poor planning.”</i>
+      <div class="xo"><div class="x"><b class="m">❌</b>bad</div><div class="v"><b class="m">✅</b>poor</div></div></div></div>
+    <div class="trap"><div class="h"><b>5</b><span>Ghi thông tin trước khi bị sửa</span></div><div class="c">
+      <i>The talk will take place in Room ____.</i><br>Nghe: <i>“…in Room 14 — sorry, they've moved it to Room 40.”</i>
+      <div class="xo"><div class="x"><b class="m">❌</b>14</div><div class="v"><b class="m">✅</b>40</div></div></div></div>
+    <div class="trap"><div class="h"><b>6</b><span>Sai chính tả từ quen</span></div><div class="c">
+      Từ dễ nghe nhưng khó viết. Một chữ cái sai = 0 điểm.
+      <div class="xo"><div class="x"><b class="m">❌</b>accomodation</div><div class="v"><b class="m">✅</b>accommodation</div></div></div></div>
+  </div>
+
+  <div class="formula" style="margin-top:5mm;margin-bottom:0">
+    <h3 style="margin-bottom:5px">12 từ hay viết sai trong Listening — chép lại mỗi từ 3 lần</h3>
+    <span class="chip">accommodation</span><span class="chip">environment</span><span class="chip">government</span><span class="chip">necessary</span><span class="chip">restaurant</span><span class="chip">Wednesday</span><span class="chip">February</span><span class="chip">library</span><span class="chip">temperature</span><span class="chip">separate</span><span class="chip">equipment</span><span class="chip">maintenance</span>
+  </div>
+
+  <div class="note" style="margin-top:5mm">
+    <div class="ic">✓</div>
+    <div><b>Dùng đúng thời gian kiểm tra:</b> thi trên giấy có <b>10 phút</b> chép đáp án sang phiếu — hãy dùng để soát đuôi <b>-s</b>, mạo từ thừa và chính tả. Thi trên máy chỉ có <b>2 phút</b> soát lại, nên gõ đúng ngay từ khi nghe.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — PRACTICE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian đọc đề: 45 giây · Chỉ nghe 1 lần</div>
+  <h2>Bài luyện: Tiny forests in cities</h2>
+  <p class="lead" style="margin-bottom:4mm">Một giảng viên nói về các “khu rừng tí hon” trong thành phố (dạng Part 4).</p>
+
+  <div class="info"><div class="ic">i</div><div>Tài liệu chưa có file audio. Transcript nằm ở <b>trang 6 — đừng lật trước</b>. Nhờ người đọc to <b>một lần</b>, hoặc tự đọc một lần trong 2 phút rồi che lại và làm bài từ trí nhớ.</div></div>
+
+  <h3>Questions 1–4</h3>
+  <p class="instr">Complete the sentences below. Write <b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b> for each answer.</p>
+  <div class="sent"><span class="n">1</span><span>A tiny forest is roughly the size of a <span class="gap"><span class="gl"></span></span> .</span></div>
+  <div class="sent"><span class="n">2</span><span>Only <span class="gap"><span class="gl"></span></span> species of trees and shrubs are planted.</span></div>
+  <div class="sent"><span class="n">3</span><span>Volunteers plant about <span class="gap"><span class="gl"></span></span> young trees in each square metre.</span></div>
+  <div class="sent" style="margin-bottom:5mm"><span class="n">4</span><span>After planting, a layer of <span class="gap"><span class="gl"></span></span> is spread over the site to keep the soil moist.</span></div>
+
+  <h3>Questions 5–9</h3>
+  <p class="instr">Complete the summary below. Write <b>ONE WORD ONLY</b> for each answer.</p>
+  <div class="sumbox">
+    <h3>Why tiny forests succeed</h3>
+    Because the young trees are planted so close together, they <span class="gap"><span class="gn">5</span><span class="gl"></span></span> for light and grow upwards quickly. For the first two or three years, local <span class="gap"><span class="gn">6</span><span class="gl"></span></span> remove weeds and water the trees, but after that the forest can survive without any <span class="gap"><span class="gn">7</span><span class="gl"></span></span> . Within a short time, tiny forests attract many kinds of <span class="gap"><span class="gn">8</span><span class="gl"></span></span> , such as bees and butterflies. They also absorb rainwater, which lowers the risk of <span class="gap"><span class="gn">9</span><span class="gl"></span></span> in the surrounding streets.
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — TRANSCRIPT ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">TRANSCRIPT</div>
+  </div>
+  <div class="kicker">Chỉ lật trang này sau khi làm xong</div>
+  <h2>Transcript có đánh dấu bẫy</h2>
+  <p class="legend"><span class="hr">đỏ</span> thông tin gây nhiễu &nbsp; <span class="ho">cam</span> tín hiệu đảo chiều / paraphrase của câu hỏi &nbsp; <span class="hg">xanh</span> từ cần điền</p>
+
+  <div class="dlg mono">
+    <div class="ln"><span class="sp">Lecturer</span><span class="tx">
+      <p>Good afternoon. Today I want to talk about a type of urban green space that has become popular in many cities over the past decade: the tiny forest.</p>
+      <p>So, how tiny is tiny? People sometimes say a tiny forest is <span class="hr">no bigger than a garden</span>, but <span class="ho">a better comparison would be</span> a <span class="hg">tennis court</span>. <span class="qn">[Q1]</span> The approach is based on a planting method first developed by a Japanese botanist. Parks often use <span class="hr">fast-growing imported</span> species, but here the rule is to use <span class="ho">only</span> <span class="hg">native</span> species — trees and shrubs that would grow naturally in the area. <span class="qn">[Q2]</span></p>
+      <p>Planting is extremely dense. In a conventional plantation, trees are usually planted at least <span class="hr">two metres</span> apart. In a tiny forest, volunteers plant around <span class="hg">three</span> <span class="ho">saplings in every square metre</span>. <span class="qn">[Q3]</span> <span class="hr">Compost</span> is mixed into the soil first, and <span class="ho">once the saplings are in</span>, the whole site is covered with <span class="hg">straw</span>, which <span class="ho">stops the ground from drying out</span>. <span class="qn">[Q4]</span></p>
+      <p>Why do these forests grow so fast? Packed this closely, the saplings <span class="hg">compete</span> with each other for light, so they grow upwards much faster than a tree standing on its own. <span class="qn">[Q5]</span> For the first two or three years, the site does need some care. You might think <span class="hr">the council's gardeners</span> handle this, <span class="ho">but in most projects</span> it's local <span class="hg">volunteers</span> who pull out weeds and water the trees in dry spells. <span class="qn">[Q6]</span> After that, the forest is left to look after itself — no further <span class="hg">maintenance</span> is needed. <span class="qn">[Q7]</span></p>
+      <p>The benefits appear quickly. Within two years, one monitoring project recorded dozens of different <span class="hg">insects</span>, including bees and butterflies, compared with only a handful on a nearby lawn. <span class="qn">[Q8]</span> <span class="hr">Birds</span> took rather longer to arrive. And because the soil beneath a tiny forest soaks up rain like a sponge, it can help to prevent <span class="hg">flooding</span> in the streets around it. <span class="qn">[Q9]</span></p>
+    </span></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đọc giải thích, đừng chỉ dò đáp án</div>
+  <h2>Đáp án &amp; giải thích</h2>
+
+  <div class="ansrow"><span class="n">1</span><span class="k bT">tennis court</span><span class="e">Đề đã có sẵn <i>a</i> → viết <i>a tennis court</i> là lặp mạo từ và vượt 2 từ (lỗi 1). <i>garden</i> bị loại vì <i>a better comparison would be…</i></span></div>
+  <div class="ansrow"><span class="n">2</span><span class="k bT">native</span><span class="e"><i>only native species</i>. <i>imported</i> là loại dùng ở công viên, không phải ở tiny forest.</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="k bT">3 / three</span><span class="e"><i>saplings in every square metre</i> = <i>young trees in each square metre</i>. <i>two metres</i> là khoảng cách ở rừng trồng thông thường.</span></div>
+  <div class="ansrow"><span class="n">4</span><span class="k bT">straw</span><span class="e"><i>once the saplings are in</i> = <i>after planting</i>; <i>stops the ground from drying out</i> = <i>keep the soil moist</i>. <i>compost</i> được trộn vào đất <b>trước</b> khi trồng.</span></div>
+  <div class="ansrow"><span class="n">5</span><span class="k bT">compete</span><span class="e">Sau <i>they</i> cần <b>động từ</b> chia hiện tại: <i>they compete for light</i>. Viết <i>competition</i> là sai ngữ pháp.</span></div>
+  <div class="ansrow"><span class="n">6</span><span class="k bT">volunteers</span><span class="e">Động từ <i>remove</i> (không có -s) → chủ ngữ số nhiều → phải có <b>-s</b> (lỗi 2). <i>gardeners</i> bị loại vì <i>but in most projects…</i></span></div>
+  <div class="ansrow"><span class="n">7</span><span class="k bT">maintenance</span><span class="e"><i>no further maintenance is needed</i> = <i>survive without any maintenance</i>. Hay viết sai thành <i>maintainance</i> (lỗi 6).</span></div>
+  <div class="ansrow"><span class="n">8</span><span class="k bT">insects</span><span class="e"><i>many kinds of</i> → danh từ số nhiều; <i>bees and butterflies</i> là ví dụ. <i>birds</i> đến muộn hơn → sai.</span></div>
+  <div class="ansrow"><span class="n">9</span><span class="k bT">flooding</span><span class="e"><i>help to prevent flooding</i> = <i>lowers the risk of flooding</i>. Hãy điền đúng từ người nói dùng, đừng tự đổi dạng từ (lỗi 4).</span></div>
+
+  <div class="score" style="margin-top:5mm">
+    <div style="background:var(--t2)"><div class="hd" style="color:var(--t)">9/9</div>Rất vững — chuyển sang đề thật có file nghe</div>
+    <div style="background:var(--o3)"><div class="hd" style="color:var(--o)">6–8</div>Ổn — đối chiếu câu sai với 6 lỗi ở trang 4</div>
+    <div style="background:var(--f2)"><div class="hd" style="color:var(--f)">0–5</div>Đọc lại trang 2–3, nghe lại và chép chính tả</div>
+  </div>
+
+  <div class="cta" style="margin-top:5mm">
+    <svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Form Completion · Multiple Choice · Map Labelling · Matching · Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Listening · Sentence &amp; Summary Completion</span><span>7</span></div>
+</section>
+
+</body>
+</html>

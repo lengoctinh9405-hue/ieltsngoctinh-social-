@@ -1,0 +1,59 @@
+{
+ "num": "14",
+ "slug": "14-listening-table-flowchart",
+ "skill": "Listening",
+ "title": "Table & Flow-chart Completion",
+ "pages": 8,
+ "keyword": "TABLE",
+ "hook_h1": "Đọc bảng<br>bằng <span>toạ độ</span>",
+ "hook_p": "Tiêu đề cột cho loại từ, mũi tên cho thứ tự: đoán trước từng ô trống trước khi băng chạy.",
+ "stats": [
+  [
+   "8",
+   "trang PDF"
+  ],
+  [
+   "11",
+   "câu luyện tập"
+  ],
+  [
+   "5",
+   "bẫy kinh điển"
+  ],
+  [
+   "2",
+   "bài nghe có bẫy"
+  ]
+ ],
+ "preview": [
+  {
+   "p": 2,
+   "h": "Công thức <span>toạ độ</span> ô trống",
+   "li": [
+    "Tiêu đề cột → loại từ",
+    "Mũi tên → thứ tự",
+    "Ví dụ đoán trước"
+   ]
+  },
+  {
+   "p": 4,
+   "h": "5 bẫy <span>kinh điển</span>",
+   "li": [
+    "Mắt lạc hàng",
+    "Lệch dạng so với cột",
+    "Thừa từ ONE WORD ONLY"
+   ]
+  }
+ ],
+ "caption_title": "TABLE & FLOW-CHART COMPLETION – ĐIỀN BẢNG VÀ SƠ ĐỒ KHI NGHE",
+ "caption_pain": "Nghe ra đáp án rồi mà vẫn điền nhầm ô? Với bảng và sơ đồ quy trình, các bạn thường không mất điểm vì tai mà vì mắt: nhìn lạc hàng, nhầm bước, hoặc viết sai dạng từ so với cả cột. Trong khi chính tiêu đề cột và mũi tên đã gợi ý gần hết đáp án.",
+ "caption_bullets": [
+  "Công thức “toạ độ”: tiêu đề cột + tiêu đề hàng + ô mẫu → đoán loại từ",
+  "Quy trình 4 bước + sơ đồ đường đi của mắt trong bảng và flow-chart",
+  "5 bẫy kinh điển: lạc hàng, chép lại phần in sẵn, lệch dạng từ, người nói quay lại bước trước, thừa từ",
+  "Bài luyện 11 câu (1 bảng + 1 flow-chart) + transcript đánh dấu từng bẫy"
+ ],
+ "band": "Phù hợp với bạn đang ở khoảng band 5.5 và muốn lên 7.0 Listening.",
+ "tip": "Gợi ý học: đọc trang 2–4 trước, rồi nhờ người đọc transcript trang 7 để làm bài ở trang 5–6 mà không nhìn trước.",
+ "cheer": "Làm xong 11 câu, bạn được mấy câu? Comment điểm của bạn nhé 🎧"
+}

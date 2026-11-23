@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Writing Task 2 – Concession, Rebuttal &amp; Conclusion | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:6mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== extra classes (same style family) ===== */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:10.5pt;line-height:1.38;margin-bottom:5mm;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden}
+.tbl th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:7px 10px;letter-spacing:.02em}
+.tbl td{padding:6px 10px;border-top:1px solid var(--n2);vertical-align:top}
+.tbl tr:nth-child(even) td{background:var(--n3)}
+.tbl td b.o{color:#B85E0B}
+.tbl .c1{font-family:"Inter";font-weight:800;color:var(--n);font-size:9.5pt;white-space:nowrap}
+.lv{display:inline-block;font-family:"Inter";font-weight:900;font-size:8.5pt;color:#fff;padding:2px 7px;border-radius:5px;margin-right:6px;vertical-align:1px}
+.wr{border-radius:10px;padding:7px 12px;margin-bottom:2.5mm;font-size:10.8pt;line-height:1.42}
+.wr.bad{background:var(--f2);border-left:4px solid var(--f)}
+.wr.good{background:var(--t2);border-left:4px solid var(--t)}
+.wr .why{display:block;color:var(--mut);font-size:10pt;margin-top:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.lines{border-bottom:1.3px dashed #B9C4D4;height:8mm}
+.prompt{background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 13px;margin-bottom:2mm;font-size:10.8pt;line-height:1.42}
+.prompt .ty{display:inline-block;font-family:"Inter";font-weight:800;font-size:8.5pt;color:#fff;background:var(--o);padding:1px 8px;border-radius:5px;margin-right:6px}
+.chartbox{background:#fff;border:1.5px solid var(--n2);border-radius:14px;padding:10px 12px;margin-bottom:4mm}
+.chartbox .cap{font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt}
+.chartbox .demo{font-family:"Inter";font-weight:700;font-size:8pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);padding:1px 7px;border-radius:5px;margin-left:6px}
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:5mm}
+.score div{border-radius:12px;padding:9px;text-align:center;font-size:10.3pt}
+.score .hd{font-weight:900;font-size:18pt}
+.sample{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 13px;margin-bottom:3mm;font-size:10.6pt;line-height:1.45}
+.sample .lab{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--n);display:block;margin-bottom:2px}
+.sample .t1{background:#FFE3C4;border-radius:3px;padding:0 2px}
+.sample .t2{background:#CFE3FA;border-radius:3px;padding:0 2px}
+
+/* ===== doc 19–20 additions (same style family) ===== */
+.sg{border-radius:3px;padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.sg sup{font-family:"Inter";font-weight:900;font-size:7pt;color:#fff;border-radius:50%;display:inline-block;width:4.2mm;height:4.2mm;line-height:4.2mm;text-align:center;margin-right:3px;vertical-align:2px}
+.sg1{background:#FFE3C4} .sg1 sup{background:var(--o)}
+.sg2{background:#CFE3FA} .sg2 sup{background:var(--n)}
+.sg3{background:#DDE9F8} .sg3 sup{background:#2F6DB5}
+.sg4{background:#D6F0E2} .sg4 sup{background:var(--t)}
+.sg5{background:#FFE3C4} .sg5 sup{background:#B85E0B}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:2mm 0 4mm}
+.legend span{font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;color:#fff}
+.opt{display:grid;grid-template-columns:1fr;gap:1.5mm;margin:1mm 0 3mm 0;font-size:10.6pt;line-height:1.38}
+.opt div{background:#fff;border:1.2px solid var(--n2);border-radius:8px;padding:4px 10px}
+.opt b{font-family:"Inter";color:var(--n);margin-right:6px}
+.ex-h{font-family:"Inter";font-weight:800;color:var(--n);font-size:11.5pt;margin:3mm 0 1.5mm}
+.ex-h span{display:inline-block;background:var(--o);color:#fff;border-radius:6px;padding:1px 8px;margin-right:6px;font-size:9.5pt}
+.ckl{display:grid;grid-template-columns:1fr 1fr;gap:2mm 5mm;background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:9px 13px;font-size:10.4pt;line-height:1.35}
+.ckl div{display:flex;gap:7px;align-items:flex-start}
+.ckl div:before{content:"";flex:0 0 4mm;height:4mm;border:1.5px solid var(--n);border-radius:3px;margin-top:1px;background:#fff}
+.mini2{font-size:10.3pt;line-height:1.4}
+.sm{font-size:10pt;color:var(--mut)}
+.opt div{padding:3px 10px}
+.ex-h{margin:2.5mm 0 1.2mm}
+</style>
+</head>
+<body>
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Writing Task 2 · Chiến lược từng dạng bài · Số 20</div>
+    <h1 style="line-height:1.12">NHƯỢNG BỘ<br>PHẢN BIỆN<br><span class="o">KẾT LUẬN</span></h1>
+    <div class="sub">Thừa nhận ý kiến trái chiều mà không làm yếu quan điểm của mình, phản biện có lý lẽ và viết kết luận gọn, đúng — kèm lỗi hay gặp, bài tập và đáp án gợi ý.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Bản chất của nhượng bộ</div>
+      <div><b>02</b>Mẫu câu nhượng bộ &amp; phản biện</div>
+      <div><b>03</b>Công thức kết luận</div>
+      <div><b>04</b>Lỗi hay gặp + bài tập</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — ESSENCE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · BẢN CHẤT</div>
+  </div>
+  <div class="kicker">Hiểu đúng bản chất</div>
+  <h2>Thừa nhận để phản bác mạnh hơn</h2>
+  <p class="lead">Ở band 7, giám khảo cần thấy bạn có <b>quan điểm rõ ràng xuyên suốt bài</b>. Nhượng bộ (concession) cho thấy bạn hiểu vấn đề nhiều chiều — nhưng chỉ có giá trị khi ngay sau đó là <b>phản biện</b> (rebuttal) đưa người đọc quay về quan điểm của bạn.</p>
+
+  <div class="three">
+    <div class="card g">
+      <div class="lab" style="font-size:14pt">1 · THỪA NHẬN</div>
+      <div class="eq"><span class="blk bG">Admittedly, …</span></div>
+      <p>Nêu <b>ý kiến phía bên kia</b> một cách công bằng, có giới hạn phạm vi.</p>
+    </div>
+    <div class="card f">
+      <div class="lab" style="font-size:14pt">2 · PHẢN BIỆN</div>
+      <div class="eq"><span class="blk bF">However, …</span></div>
+      <p>Chỉ ra <b>điểm yếu</b> của ý kiến đó: bị bỏ sót, quá chung, hoặc có cách giải quyết.</p>
+    </div>
+    <div class="card t">
+      <div class="lab" style="font-size:14pt">3 · KHẲNG ĐỊNH</div>
+      <div class="eq"><span class="blk bT">Therefore, …</span></div>
+      <p>Đưa người đọc <b>quay về quan điểm</b> của bạn — không để ý đối lập “thắng”.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:2mm">Ví dụ: cùng đề “University education should be free for all students” (đồng ý)</h3>
+  <div class="sample" style="font-size:11pt;line-height:1.62;margin-bottom:5mm">
+    <span class="sg" style="background:var(--g2)"><sup style="background:var(--g)">1</sup>Admittedly, abolishing tuition fees would place a heavy burden on public finances, at least in the short term.</span>
+    <span class="sg" style="background:var(--f2)"><sup style="background:var(--f)">2</sup>However, this argument overlooks the long-term returns on such an investment: graduates tend to earn higher salaries and therefore pay more tax over their working lives.</span>
+    <span class="sg sg4"><sup>3</sup>For this reason, I believe the cost of free university education is justified.</span>
+  </div>
+
+  <h3 style="margin-bottom:2mm">Đặt nhượng bộ ở đâu trong bài?</h3>
+  <table class="tbl">
+    <tr><th style="width:52mm">Vị trí</th><th>Cách dùng</th></tr>
+    <tr><td class="c1">Trong đoạn thân bài</td><td>1 câu nhượng bộ + 1–2 câu phản biện, thường ở cuối đoạn thân bài thứ hai.</td></tr>
+    <tr><td class="c1">Một đoạn thân bài riêng</td><td>Mở đầu bằng ý đối lập, phần lớn đoạn dành cho phản biện — hợp với đề <i>To what extent do you agree or disagree?</i></td></tr>
+    <tr><td class="c1">Mở bài / kết luận</td><td>Gói gọn trong một mệnh đề: <i>Although …, I believe that …</i></td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div><b>Nhượng bộ không bắt buộc.</b> Một bài nêu và chứng minh tốt quan điểm vẫn có thể đạt band 7 mà không cần nó. Với đề <b>Discuss both views and give your opinion</b>, quan điểm bên kia phải được trình bày thành một đoạn đầy đủ, công bằng — không chỉ là một câu nhượng bộ rồi bác bỏ ngay.</div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — CONCESSION STRUCTURES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · NHƯỢNG BỘ</div>
+  </div>
+  <div class="kicker">Mỗi cấu trúc một quy tắc ngữ pháp</div>
+  <h2>Cấu trúc câu nhượng bộ</h2>
+  <p class="lead" style="margin-bottom:5mm">Phần lớn lỗi ở đây là lỗi <b>ngữ pháp</b> chứ không phải lỗi ý. Hãy nhìn kỹ cột “Theo sau là”.</p>
+
+  <table class="tbl">
+    <tr><th style="width:44mm">Cấu trúc</th><th style="width:33mm">Theo sau là</th><th>Ví dụ</th></tr>
+    <tr><td class="c1">Admittedly, …</td><td>mệnh đề</td><td><b>Admittedly,</b> online learning offers greater flexibility.</td></tr>
+    <tr><td class="c1">It is true that …</td><td>mệnh đề</td><td><b>It is true that</b> tourism can damage historic sites.</td></tr>
+    <tr><td class="c1">While it is true that …, …</td><td>mệnh đề phụ <b>,</b> mệnh đề chính</td><td><b>While it is true that</b> cars are convenient, they are a major source of air pollution.</td></tr>
+    <tr><td class="c1">Although / Even though</td><td>mệnh đề <b>,</b> mệnh đề chính<br><span style="color:var(--f)">(không thêm <i>but</i>)</span></td><td><b>Although</b> electric cars are expensive, they are cheaper to run.</td></tr>
+    <tr><td class="c1">Despite / In spite of</td><td>danh từ / V-ing</td><td><b>Despite</b> its high cost, space research has practical benefits.</td></tr>
+    <tr><td class="c1">Despite the fact that</td><td>mệnh đề</td><td><b>Despite the fact that</b> it is expensive, space research has practical benefits.</td></tr>
+    <tr><td class="c1">Critics argue that …</td><td>mệnh đề</td><td><b>Critics argue that</b> homework puts too much pressure on children.</td></tr>
+    <tr><td class="c1">X may …, but …</td><td>động từ nguyên mẫu</td><td>Online courses <b>may</b> be cheaper, <b>but</b> they rarely offer the same level of support.</td></tr>
+  </table>
+
+  <h3 style="margin:2mm 0 1.5mm">Giới hạn phạm vi khi nhượng bộ</h3>
+  <p style="font-size:11pt;margin-bottom:2mm">Thêm một cụm “thu hẹp” để ý đối lập chỉ <b>đúng một phần</b> — quan điểm của bạn vẫn đứng vững.</p>
+  <div style="margin-bottom:3mm"><span class="chip">to some extent</span><span class="chip">in some cases</span><span class="chip">at least in the short term</span><span class="chip">for some people</span><span class="chip">in certain situations</span></div>
+  <div class="wr bad"><span class="lv bF">5.5</span>Some people think free university is bad because it costs a lot of money. This is true.<span class="why">Thừa nhận trọn vẹn, không giới hạn → người đọc tự hỏi: vậy bạn có còn đồng ý với đề không?</span></div>
+  <div class="wr good"><span class="lv bT">7.0</span>It is true that free university education would be costly for taxpayers, <b>at least in the short term</b>.<span class="why">Thừa nhận có giới hạn → mở đường cho câu phản biện về lợi ích dài hạn.</span></div>
+
+  <div class="note" style="margin-top:4mm">
+    <div class="ic">!</div>
+    <div><b>Although</b> và <b>However</b> khác nhau về ngữ pháp. <b>Although</b> nối hai mệnh đề <b>trong cùng một câu</b>: <i>Although X, Y.</i> — <b>However</b> là trạng từ nối <b>hai câu</b>: <i>X. However, Y.</i> (hoặc <i>X; however, Y.</i>). Viết <i>X, however, Y</i> để nối hai mệnh đề là lỗi dấu câu rất phổ biến.</div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — REBUTTAL ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · PHẢN BIỆN</div>
+  </div>
+  <div class="kicker">Câu quan trọng nhất của cặp nhượng bộ</div>
+  <h2>Phản biện: 4 cách “lật” lại vấn đề</h2>
+  <p class="lead" style="margin-bottom:4mm">Phản biện không phải là nói “Tôi không đồng ý”. Bạn phải đưa ra <b>lý do</b> khiến ý kiến đối lập yếu hơn ý kiến của mình.</p>
+
+  <div class="formula" style="margin-bottom:5mm">
+    <h3 style="margin-bottom:3px">Mẫu câu mở đầu phản biện</h3>
+    <div style="font-size:10.8pt;line-height:1.55">
+      <b>However, this argument overlooks</b> + danh từ / <i>the fact that</i> + mệnh đề<br>
+      <b>However, this view fails to take into account</b> + danh từ / <i>the fact that</i> + mệnh đề<br>
+      <b>Nevertheless,</b> … &nbsp;·&nbsp; <b>Even so,</b> … &nbsp;·&nbsp; <b>This argument is not entirely convincing because</b> …
+    </div>
+  </div>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Chỉ ra điều bị bỏ sót</span></div><div class="c">
+      <div class="w"><em>overlooks</em><em>fails to take into account</em></div>
+      <i>Admittedly, working from home can make employees feel isolated.</i>
+      <div class="mini" style="margin-top:4px"><b>However, this argument overlooks the fact that</b> many companies now use video calls and regular team meetings to keep staff connected.</div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Thu hẹp phạm vi</span></div><div class="c">
+      <div class="w"><em>only true for</em><em>mainly a problem in</em></div>
+      <i>It is true that tourism can damage historic sites.</i>
+      <div class="mini" style="margin-top:4px"><b>However, this is mainly a problem in</b> places that receive large numbers of visitors without proper management.</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Đưa ra cách khắc phục</span></div><div class="c">
+      <div class="w"><em>could be solved by</em><em>could be addressed through</em></div>
+      <i>Critics argue that electric cars are too expensive for ordinary families.</i>
+      <div class="mini" style="margin-top:4px"><b>However, this problem could be addressed through</b> government subsidies and tax incentives.</div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>So sánh mức độ quan trọng</span></div><div class="c">
+      <div class="w"><em>outweigh</em><em>far more significant</em></div>
+      <i>Learning a foreign language takes years of effort.</i>
+      <div class="mini" style="margin-top:4px"><b>Even so, the benefits far outweigh this drawback</b>, as a second language opens up wider career opportunities.</div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:5mm">
+    <div class="ic">!</div>
+    <div><b>Quy tắc độ dài:</b> phần phản biện nên <b>dài hơn hoặc ít nhất bằng</b> phần nhượng bộ. Nếu bạn viết 3 câu về ý đối lập và chỉ 1 câu “However, I disagree”, người đọc sẽ nhớ ý đối lập nhiều hơn quan điểm của bạn.</div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — CONCLUSION ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · KẾT LUẬN</div>
+  </div>
+  <div class="kicker">2–3 câu, khoảng 40–60 từ</div>
+  <h2>Kết luận: nhắc lại, không thêm ý mới</h2>
+  <p class="lead" style="margin-bottom:4mm">Kết luận giúp bài văn <b>khép lại trọn vẹn</b> — giám khảo kiểm tra xem quan điểm cuối bài có khớp với mở bài và thân bài không.</p>
+
+  <div class="steps" style="margin-bottom:2mm">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Từ nối kết luận</h3><p>Dùng <b>In conclusion,</b> / <b>To conclude,</b> / <b>To sum up,</b>. Tránh <i>Finally</i> (dùng để liệt kê ý cuối) và <i>In a nutshell</i> (quá thân mật).</p></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Nhắc lại quan điểm — bằng từ khác</h3><p>Quan điểm phải <b>giống hệt</b> mở bài; chỉ đổi cách diễn đạt, không chép lại câu đề.</p></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Tóm tắt các lý do chính</h3><p>Gói luận điểm của từng đoạn thân bài thành cụm ngắn. <b>Không</b> ví dụ, không số liệu, không lý do mới.</p></div></div>
+  </div>
+
+  <table class="tbl" style="margin-bottom:4mm">
+    <tr><th style="width:38mm">Dạng đề</th><th>Khung câu kết luận</th></tr>
+    <tr><td class="c1">Agree / Disagree</td><td>In conclusion, I <b>strongly agree / disagree</b> that … because … and …</td></tr>
+    <tr><td class="c1">Discuss both views</td><td>In conclusion, while there are valid arguments on both sides, I believe that …</td></tr>
+    <tr><td class="c1">Advantages vs<br>disadvantages</td><td>To conclude, although X has some drawbacks, I believe its advantages <b>outweigh</b> them because …</td></tr>
+    <tr><td class="c1">Problem – Solution</td><td>In conclusion, [vấn đề] is mainly caused by …, but it can be tackled through … and …</td></tr>
+  </table>
+
+  <div class="wr bad"><span class="lv bF">5.5</span>In conclusion, I agree that university should be free for all students. Free university has many advantages. Also, the government should give students free laptops so they can study better.<span class="why">Câu 1 gần như chép đề · câu 2 quá chung · câu 3 đưa ra một <b>ý mới</b> (laptop) chưa từng được bàn.</span></div>
+  <div class="wr good"><span class="lv bT">7.0</span>In conclusion, while making university free would be costly for the government, I firmly believe that the benefits justify the expense. Free tuition would give talented students from all backgrounds an equal opportunity and strengthen the economy by producing a more skilled workforce.<span class="why">Nhượng bộ ngắn · quan điểm rõ · tóm đúng 2 luận điểm của 2 đoạn thân bài (số 19) · không có ý mới.</span></div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — MISTAKES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LỖI HAY GẶP</div>
+  </div>
+  <div class="kicker">Lỗi ngữ pháp và lỗi lập luận</div>
+  <h2>6 lỗi hay gặp</h2>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Although … but …</span></div><div class="c">
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>Although online learning is flexible, but it lacks interaction.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>Although online learning is flexible, it lacks interaction.<span class="why">Chỉ dùng <b>một</b> liên từ: although <b>hoặc</b> but.</span></div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Despite + mệnh đề</span></div><div class="c">
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>Despite it is expensive, space research is worthwhile.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>Despite its high cost, … / Despite the fact that it is expensive, …</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Câu cụt với While / Although</span></div><div class="c">
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>While it is true that cars are convenient. They cause pollution.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>While it is true that cars are convenient, they cause pollution.<span class="why">Mệnh đề “While …” phải đi cùng mệnh đề chính.</span></div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Nhượng bộ quá mạnh</span></div><div class="c">
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>It is completely true that free university is a waste of money. However, I still agree with it.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>It is true that free university would be costly, at least in the short term.</div></div></div>
+    <div class="trap"><div class="h"><b>5</b><span>Phản biện không có lý do</span></div><div class="c">
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>Some people say homework is stressful. However, I do not think so.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>…However, this view overlooks the fact that a moderate amount of homework helps children develop good study habits.</div></div></div>
+    <div class="trap"><div class="h"><b>6</b><span>Kết luận đổi quan điểm</span></div><div class="c">
+      Thân bài <b>hoàn toàn đồng ý</b>, nhưng kết luận:
+      <div class="wr bad mini2"><span class="lv bF">SAI</span>In conclusion, there are both advantages and disadvantages, so I partly agree.</div>
+      <div class="wr good mini2" style="margin-bottom:0"><span class="lv bT">SỬA</span>Giữ đúng mức độ đã nêu: <i>I fully agree that …</i></div></div></div>
+  </div>
+
+  <div class="note" style="margin-top:5mm">
+    <div class="ic">✓</div>
+    <div><b>Mẹo tự kiểm tra:</b> trước khi nộp, đọc liền <b>câu thesis ở mở bài</b> và <b>câu đầu của kết luận</b>. Nếu hai câu không cùng một quan điểm và cùng một mức độ (strongly / partly) → sửa ngay.</div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — PRACTICE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian gợi ý: 25 phút</div>
+  <h2 style="margin-bottom:0">Bài tập</h2>
+
+  <div class="ex-h" style="margin-top:1mm"><span>BÀI 1</span>Mỗi câu có một lỗi. Tìm và sửa.</div>
+  <div class="qs" style="font-size:10.6pt">
+    <div class="q" style="padding:4px 0"><span class="n">1</span><span class="s">Although public transport is cheap, but many people still prefer to drive.</span></div>
+    <div class="q" style="padding:4px 0"><span class="n">2</span><span class="s">Despite it has many benefits, social media can be addictive.</span></div>
+    <div class="q" style="padding:4px 0"><span class="n">3</span><span class="s">While it is true that tourism creates jobs. It can also damage the environment.</span></div>
+    <div class="q" style="padding:4px 0"><span class="n">4</span><span class="s">Admittedly, working from home saves time, however, it can make people feel isolated.</span></div>
+    <div class="q" style="padding:4px 0"><span class="n">5</span><span class="s">In spite of the government spends a lot on education, many schools still lack teachers.</span></div>
+  </div>
+
+  <div class="ex-h" style="margin-top:3mm"><span>BÀI 2</span>Viết một cặp câu nhượng bộ + phản biện</div>
+  <div style="font-size:10.5pt;line-height:1.4">
+    <b>a.</b> Đề: <i>Students should wear school uniforms.</i> Quan điểm: <b>đồng ý</b>. Ý đối lập: <i>uniforms limit self-expression</i>.<div class="lines"></div><div class="lines" style="margin-bottom:2mm"></div>
+    <b>b.</b> Đề: <i>The advantages of living in a big city outweigh the disadvantages.</i> Quan điểm: <b>đồng ý</b>. Ý đối lập: <i>high cost of living</i>.<div class="lines"></div><div class="lines" style="margin-bottom:2mm"></div>
+    <b>c.</b> Đề: <i>Governments should spend money on space exploration.</i> Quan điểm: <b>đồng ý</b>. Ý đối lập: <i>the money should be used to reduce poverty</i>.<div class="lines"></div><div class="lines"></div>
+  </div>
+
+  <div class="ex-h" style="margin-top:3mm"><span>BÀI 3</span>Chọn kết luận tốt nhất — và giải thích vì sao 3 phương án còn lại chưa đạt</div>
+  <div class="sm" style="margin-bottom:1.5mm">Đề: <i>Children should start learning a foreign language at primary school rather than secondary school. To what extent do you agree?</i> Thesis ở mở bài: <i>“I completely agree, because young children learn languages more easily and starting early gives them more time to reach a high level.”</i></div>
+  <div class="opt" style="gap:1mm;font-size:10.2pt">
+    <div><b>A</b>In conclusion, there are both advantages and disadvantages of learning a foreign language early, and everyone should decide for themselves.</div>
+    <div><b>B</b>In conclusion, I completely agree that children should begin learning a foreign language at primary school, because young learners pick up languages more naturally and have more years to develop their skills.</div>
+    <div><b>C</b>In conclusion, I agree that children should learn languages early. In addition, schools should hire more native-speaking teachers and use more technology in the classroom.</div>
+    <div><b>D</b>In conclusion, some people think that children should start learning a foreign language at primary school rather than secondary school, and I agree.</div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>7</span></div>
+</section>
+
+<!-- ============ PAGE 8 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Đáp án gợi ý — có nhiều cách viết đúng</div>
+  <h2>Đáp án &amp; giải thích</h2>
+
+  <h3 style="margin:1mm 0 0">Bài 1</h3>
+  <div class="ansrow"><span class="n">1</span><span class="e">Bỏ <b>but</b>: <i>Although public transport is cheap, many people still prefer to drive.</i></span></div>
+  <div class="ansrow"><span class="n">2</span><span class="e"><i><b>Despite its many benefits,</b> social media can be addictive.</i> (hoặc <i>Although it has many benefits, …</i>)</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="e">Nối thành một câu: <i>While it is true that tourism creates jobs<b>,</b> it can also damage the environment.</i></span></div>
+  <div class="ansrow"><span class="n">4</span><span class="e">Lỗi nối hai mệnh đề bằng dấu phẩy: <i>…saves time<b>. However,</b> it can…</i> hoặc <i>…saves time<b>; however,</b> it can…</i></span></div>
+  <div class="ansrow"><span class="n">5</span><span class="e"><i><b>In spite of the fact that</b> the government spends…</i> hoặc <i><b>Although</b> the government spends…</i></span></div>
+
+  <h3 style="margin:2mm 0 0">Bài 2 — gợi ý</h3>
+  <div class="ansrow"><span class="n">a</span><span class="e"><i>Admittedly, school uniforms may limit students' ability to express their individuality through clothing. However, this argument overlooks the fact that students can express themselves in many other ways, such as through their hobbies and the clubs they join.</i></span></div>
+  <div class="ansrow"><span class="n">b</span><span class="e"><i>It is true that the cost of living in large cities is considerably higher than in rural areas. Even so, city residents generally have access to better-paid jobs, which can compensate for these higher expenses.</i></span></div>
+  <div class="ansrow"><span class="n">c</span><span class="e"><i>Critics argue that the money spent on space exploration should instead be used to tackle poverty. However, this view fails to take into account the fact that space research has led to technologies, such as satellite communication and weather forecasting, that benefit people all over the world.</i></span></div>
+
+  <h3 style="margin:2mm 0 0">Bài 3 — Đáp án B</h3>
+  <div class="ansrow" style="border-bottom:none"><span class="n bT" style="background:var(--t)">B</span><span class="e">Giữ đúng mức độ <b>completely agree</b> và tóm đủ 2 lý do của thesis. <b>A</b> đổi quan điểm thành trung lập · <b>C</b> thêm ý mới (giáo viên bản ngữ, công nghệ) · <b>D</b> chép lại đề, không có lý do.</span></div>
+
+  <div class="sm" style="margin:2mm 0 1mm"><b>Tự chấm (tối đa 10):</b> Bài 1 = 5 điểm · Bài 3: chọn đúng B = 2 điểm, giải thích đúng mỗi phương án sai +1. Bài 2 tự đối chiếu: nhượng bộ có giới hạn? phản biện có lý do?</div>
+  <div class="score" style="margin-top:0">
+    <div style="background:var(--t2);padding:6px"><div class="hd" style="color:var(--t);font-size:15pt">9–10</div>Rất vững — áp dụng vào bài viết trọn vẹn</div>
+    <div style="background:var(--o3);padding:6px"><div class="hd" style="color:var(--o);font-size:15pt">6–8</div>Xem lại bảng ngữ pháp trang 3 và lỗi trang 6</div>
+    <div style="background:var(--f2);padding:6px"><div class="hd" style="color:var(--f);font-size:15pt">0–5</div>Đọc lại trang 2–5 rồi làm lại</div>
+  </div>
+
+  <div class="cta" style="margin-top:3mm">
+    <svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big">Còn nhiều tài liệu trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Writing Task 2: Mở bài &amp; thesis · Câu triển khai luận điểm · Nhượng bộ &amp; kết luận … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Nhượng bộ, phản biện &amp; kết luận</span><span>8</span></div>
+</section>
+
+</body>
+</html>

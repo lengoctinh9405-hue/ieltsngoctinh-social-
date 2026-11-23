@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Writing Task 2 – Introduction & Thesis | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:6mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== extra classes (same style family) ===== */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:10.5pt;line-height:1.38;margin-bottom:5mm;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden}
+.tbl th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:7px 10px;letter-spacing:.02em}
+.tbl td{padding:6px 10px;border-top:1px solid var(--n2);vertical-align:top}
+.tbl tr:nth-child(even) td{background:var(--n3)}
+.tbl td b.o{color:#B85E0B}
+.tbl .c1{font-family:"Inter";font-weight:800;color:var(--n);font-size:9.5pt;white-space:nowrap}
+.lv{display:inline-block;font-family:"Inter";font-weight:900;font-size:8.5pt;color:#fff;padding:2px 7px;border-radius:5px;margin-right:6px;vertical-align:1px}
+.wr{border-radius:10px;padding:7px 12px;margin-bottom:2.5mm;font-size:10.8pt;line-height:1.42}
+.wr.bad{background:var(--f2);border-left:4px solid var(--f)}
+.wr.good{background:var(--t2);border-left:4px solid var(--t)}
+.wr .why{display:block;color:var(--mut);font-size:10pt;margin-top:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.lines{border-bottom:1.3px dashed #B9C4D4;height:8mm}
+.prompt{background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 13px;margin-bottom:2mm;font-size:10.8pt;line-height:1.42}
+.prompt .ty{display:inline-block;font-family:"Inter";font-weight:800;font-size:8.5pt;color:#fff;background:var(--o);padding:1px 8px;border-radius:5px;margin-right:6px}
+.chartbox{background:#fff;border:1.5px solid var(--n2);border-radius:14px;padding:10px 12px;margin-bottom:4mm}
+.chartbox .cap{font-family:"Inter";font-weight:800;color:var(--n);font-size:10pt}
+.chartbox .demo{font-family:"Inter";font-weight:700;font-size:8pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);padding:1px 7px;border-radius:5px;margin-left:6px}
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:5mm}
+.score div{border-radius:12px;padding:9px;text-align:center;font-size:10.3pt}
+.score .hd{font-weight:900;font-size:18pt}
+.sample{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 13px;margin-bottom:3mm;font-size:10.6pt;line-height:1.45}
+.sample .lab{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--n);display:block;margin-bottom:2px}
+.sample .t1{background:#FFE3C4;border-radius:3px;padding:0 2px}
+.sample .t2{background:#CFE3FA;border-radius:3px;padding:0 2px}
+.steps.tight .step .body{padding:6px 12px;margin-bottom:2.5mm}
+.steps.tight .step .num{flex:0 0 11mm}
+.steps.tight .step .num span{width:11mm;height:11mm;font-size:13pt}
+.tbl.sm{font-size:10pt;line-height:1.33}
+.tbl.sm td{padding:5px 9px}
+.answ .ansrow{padding:4px 0}
+.answ .ansrow .k{flex:0 0 33mm}
+.sample.in{padding:6px 12px;margin-bottom:2mm}
+.sample.in .lab{display:inline-block;background:var(--n);color:#fff;border-radius:5px;padding:0 7px;margin:0 6px 0 0}
+.score.sm div{padding:5px 8px}
+.score.sm .hd{font-size:15pt;line-height:1.2}
+.qs.tight .q{padding:3px 0;font-size:11pt;line-height:1.38}
+.lines.s{height:6.4mm}
+.answ.sm .ansrow{font-size:10.3pt;line-height:1.35;padding:3px 0}
+</style>
+</head>
+<body>
+<!-- ============ PAGE 1 — COVER ============ -->
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff">
+      <svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+      <span style="font-size:13pt">IELTS Ngọc Tỉnh</span>
+    </div>
+    <div class="series">IELTS Writing Task 2 · Chiến lược từng dạng bài · Số 18</div>
+    <h1>MỞ BÀI 2 CÂU<br>&amp; <span class="o">THESIS</span></h1>
+    <div class="sub">Công thức mở bài 2 câu, cách paraphrase đề mà không đổi nghĩa, mẫu thesis cho 5 dạng đề và 6 lỗi khiến mở bài mất điểm — kèm bài luyện và mở bài mẫu.</div>
+    <div class="pill">Dành cho Band 5.5 → 7.0</div>
+    <div class="toc">
+      <div><b>01</b>Công thức mở bài 2 câu</div>
+      <div><b>02</b>Paraphrase + quy trình</div>
+      <div><b>03</b>Thesis 5 dạng đề + 6 lỗi</div>
+      <div><b>04</b>Luyện tập + bài mẫu</div>
+    </div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — FORMULA ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">01 · CÔNG THỨC</div>
+  </div>
+  <div class="kicker">Hiểu đúng bản chất</div>
+  <h2>Mở bài = 2 câu, mỗi câu 1 việc</h2>
+  <p class="lead" style="margin-bottom:4mm">Mở bài Task 2 không cần hay, cần <b>rõ</b>. Giám khảo đọc mở bài để biết bạn đã hiểu đề chưa và bài viết sẽ đi theo hướng nào. Độ dài hợp lý: <b>khoảng 40–60 từ</b>, viết trong 3–4 phút.</p>
+
+  <svg viewBox="0 0 640 214" width="100%" style="display:block;margin-bottom:5mm">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#003D82"/></marker></defs>
+    <rect x="2" y="2" width="636" height="92" rx="14" fill="#F1F6FC" stroke="#DCE8F7" stroke-width="2"/>
+    <text x="18" y="22" font-family="Inter" font-weight="800" font-size="10" fill="#7A869A" letter-spacing="1">ĐỀ BÀI</text>
+    <text x="18" y="44" font-family="Carlito" font-style="italic" font-size="15" fill="#B85E0B" font-weight="700">Some people believe that children should start learning a foreign language at primary</text>
+    <text x="18" y="63" font-family="Carlito" font-style="italic" font-size="15" fill="#B85E0B" font-weight="700">school rather than at secondary school.</text>
+    <text x="18" y="84" font-family="Carlito" font-style="italic" font-size="15" fill="#003D82" font-weight="700">To what extent do you agree or disagree?</text>
+    <text x="400" y="63" font-family="Inter" font-weight="800" font-size="10" fill="#B85E0B">◀ TOPIC + QUAN ĐIỂM</text>
+    <text x="300" y="84" font-family="Inter" font-weight="800" font-size="10" fill="#003D82">◀ TASK (yêu cầu)</text>
+    <path d="M160 96 V124" fill="none" stroke="#003D82" stroke-width="2.5" marker-end="url(#ar)"/>
+    <path d="M480 96 V124" fill="none" stroke="#003D82" stroke-width="2.5" marker-end="url(#ar)"/>
+    <rect x="4" y="130" width="306" height="80" rx="14" fill="#FB8F2C"/>
+    <text x="157" y="156" text-anchor="middle" font-family="Inter" font-weight="900" font-size="15" fill="#fff">CÂU 1 · PARAPHRASE</text>
+    <text x="157" y="178" text-anchor="middle" font-family="Carlito" font-size="13.5" fill="#fff">Viết lại Topic + quan điểm trong đề</text>
+    <text x="157" y="196" text-anchor="middle" font-family="Carlito" font-size="13.5" fill="#fff">bằng từ ngữ của bạn, giữ nguyên nghĩa</text>
+    <rect x="330" y="130" width="306" height="80" rx="14" fill="#003D82"/>
+    <text x="483" y="156" text-anchor="middle" font-family="Inter" font-weight="900" font-size="15" fill="#FB8F2C">CÂU 2 · THESIS</text>
+    <text x="483" y="178" text-anchor="middle" font-family="Carlito" font-size="13.5" fill="#fff">Trả lời thẳng Task: đồng ý bao nhiêu,</text>
+    <text x="483" y="196" text-anchor="middle" font-family="Carlito" font-size="13.5" fill="#fff">kèm lý do chính rút gọn (nếu có)</text>
+  </svg>
+
+  <h3 style="margin-bottom:5px">Cùng một đề — 3 mức band</h3>
+  <div class="wr bad"><span class="lv bF">BAND 5</span>Nowadays, foreign languages are very important in our life. Some people believe that children should start learning a foreign language at primary school rather than at secondary school. I will discuss this in this essay.<span class="why">Câu mở chung chung · chép nguyên đề · không trả lời “To what extent”.</span></div>
+  <div class="wr" style="background:var(--o3);border-left:4px solid var(--o)"><span class="lv bP">BAND 6</span>Some people think children should learn a foreign language at primary school instead of secondary school. I agree with this idea because it has many benefits.<span class="why">Có quan điểm nhưng paraphrase còn sát đề, lý do mơ hồ (“many benefits”).</span></div>
+  <div class="wr good"><span class="lv bT">BAND 7</span>It is sometimes argued that children would benefit more from starting to learn a second language in primary school than from waiting until secondary school. I completely agree with this view, since younger learners tend to pick up pronunciation more naturally and have more years in which to develop their skills.<span class="why">Paraphrase đúng nghĩa · thesis rõ mức độ đồng ý · hai lý do = hai đoạn thân bài.</span></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>2</span></div>
+</section>
+
+<!-- ============ PAGE 3 — PARAPHRASE + PROCESS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">02 · QUY TRÌNH</div>
+  </div>
+  <div class="kicker">Đổi chữ, không đổi nghĩa</div>
+  <h2>4 kỹ thuật paraphrase đề</h2>
+  <p class="lead" style="margin-bottom:4mm">Không cần đổi <b>mọi</b> từ. Chỉ cần 2–3 thay đổi tự nhiên; giữ nguyên những từ không có từ thay thế chính xác (<i>university, the internet, public transport</i>…).</p>
+
+  <table class="tbl sm" style="margin-bottom:5mm">
+    <tr><th style="width:24%">Kỹ thuật</th><th style="width:38%">Đề gốc</th><th>Viết lại</th></tr>
+    <tr><td class="c1">1. Từ đồng nghĩa</td><td>children · a foreign language</td><td><b class="o">young learners</b> · <b class="o">a second language</b></td></tr>
+    <tr><td class="c1">2. Đổi dạng từ</td><td>Governments should <b>invest</b> more in parks.</td><td>There should be greater government <b class="o">investment</b> in parks.</td></tr>
+    <tr><td class="c1">3. Đổi cấu trúc</td><td>Some people believe that …<br>more and more people …</td><td><b class="o">It is sometimes argued that</b> …<br><b class="o">an increasing number of</b> people …</td></tr>
+    <tr><td class="c1">4. Đổi trật tự ý</td><td>… shop online rather than in physical stores.</td><td>… prefer buying goods online <b class="o">to</b> visiting physical shops.</td></tr>
+  </table>
+
+  <h3 style="margin-bottom:5px">Quy trình 4 bước (3–4 phút)</h3>
+  <div class="steps tight" style="margin-bottom:2mm">
+    <div class="step"><div class="num"><span>1</span><i></i></div><div class="body"><h3>Gạch 2 phần của đề</h3><p>Gạch <b style="color:#B85E0B">Topic + quan điểm</b> (để paraphrase) và <b style="color:var(--n)">Task</b> (để trả lời). Đếm xem Task có <b>mấy câu hỏi</b>.</p></div></div>
+    <div class="step"><div class="num"><span>2</span><i></i></div><div class="body"><h3>Gọi tên dạng đề</h3><p>Dựa vào câu hỏi cuối đề, không dựa vào chủ đề.</p><span class="chip">Opinion</span><span class="chip">Discussion</span><span class="chip">Advantages–Disadvantages</span><span class="chip">Problem–Solution</span><span class="chip">Two-part question</span></div></div>
+    <div class="step"><div class="num"><span>3</span><i></i></div><div class="body"><h3>Viết câu 1: paraphrase</h3><p>Dùng 2–3 kỹ thuật ở bảng trên. Tự hỏi: <i>câu của mình có còn đúng nghĩa đề không?</i> (đừng đổi <i>should</i> thành <i>can</i>, <i>some</i> thành <i>all</i>).</p></div></div>
+    <div class="step"><div class="num"><span>4</span><i></i></div><div class="body"><h3>Viết câu 2: thesis, rồi đối chiếu</h3><p>Trả lời <b>đủ mọi phần</b> của Task (trang 4). Đọc lại thesis cạnh câu hỏi — nếu giám khảo chỉ đọc câu này, họ có biết câu trả lời của bạn không?</p></div></div>
+  </div>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div><b>Thesis là “lời hứa” của cả bài:</b> mỗi lý do trong thesis nên trở thành một đoạn thân bài, và kết bài phải nhắc lại <b>đúng</b> quan điểm này — không đổi ý giữa chừng.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>3</span></div>
+</section>
+
+<!-- ============ PAGE 4 — THESIS BY TYPE ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · THESIS 5 DẠNG ĐỀ</div>
+  </div>
+  <div class="kicker">Đọc câu hỏi → chọn khung thesis</div>
+  <h2>Thesis cho từng dạng đề</h2>
+  <p class="lead" style="margin-bottom:4mm">Mỗi dạng đề “đòi” một câu trả lời khác nhau. Thesis đúng dạng = bạn đã làm đúng phần <b>Task Response</b> ngay từ câu thứ hai.</p>
+
+  <table class="tbl sm" style="margin-bottom:4mm">
+    <tr><th style="width:24%">Dạng · câu hỏi</th><th style="width:22%">Thesis phải…</th><th>Ví dụ thesis (câu 2 của mở bài)</th></tr>
+    <tr><td><span class="c1">1. Opinion</span><br><i>To what extent do you agree or disagree?</i></td><td>Nêu rõ <b>mức độ</b> đồng ý (hoàn toàn / phần lớn / một phần).</td><td><span style="color:var(--mut)">Đề: Working from home is better for employees than working in an office.</span><br>I <b class="o">largely agree</b> with this view, as remote work saves commuting time, although some roles still require face-to-face contact.</td></tr>
+    <tr><td><span class="c1">2. Discussion</span><br><i>Discuss both views and give your own opinion.</i></td><td>Nhắc <b>cả hai</b> quan điểm + <b>ý kiến của bạn</b>.</td><td><span style="color:var(--mut)">Đề: Some say university should be free; others say students should pay.</span><br><b class="o">While</b> some people believe university should be free for everyone, <b class="o">I would argue that</b> students should contribute part of the cost.</td></tr>
+    <tr><td><span class="c1">3a. Adv–Disadv</span><br><i>What are the advantages and disadvantages?</i></td><td>Nêu <b>cả</b> lợi và hại; <b>không bắt buộc</b> chọn bên.</td><td><span style="color:var(--mut)">Đề: More students are taking courses online.</span><br>This trend <b class="o">offers</b> greater flexibility, <b class="o">but it also has drawbacks</b>, notably less interaction with teachers and classmates.</td></tr>
+    <tr><td><span class="c1">3b. Adv–Disadv</span><br><i>Do the advantages outweigh the disadvantages?</i></td><td><b>Phải chọn bên</b> nặng hơn.</td><td>In my view, the benefits of online learning, particularly its flexibility, <b class="o">clearly outweigh</b> its drawbacks.</td></tr>
+    <tr><td><span class="c1">4. Problem–Solution</span><br><i>What problems does this cause? What can be done?</i></td><td>Gọi tên ngắn <b>vấn đề</b> + <b>giải pháp</b>.</td><td><span style="color:var(--mut)">Đề: Many children now eat too much fast food.</span><br>This <b class="o">can lead to</b> obesity and poor concentration at school, <b class="o">but these problems could be tackled through</b> food education and healthier school meals.</td></tr>
+    <tr><td><span class="c1">5. Two-part</span><br><i>Why is this happening? Is it positive or negative?</i></td><td>Trả lời <b>từng câu hỏi</b>, đúng thứ tự.</td><td><span style="color:var(--mut)">Đề: More adults are choosing to live alone.</span><br>This trend <b class="o">is mainly driven by</b> higher incomes and changing attitudes to marriage, <b class="o">and I believe it is a largely positive development</b>.</td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">✓</div>
+    <div><b>Mẹo nhận dạng:</b> đếm dấu “?” và các động từ yêu cầu (<i>discuss, give your opinion, what problems, what solutions</i>). Có bao nhiêu yêu cầu thì thesis phải có bấy nhiêu “câu trả lời”.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>4</span></div>
+</section>
+
+<!-- ============ PAGE 5 — MISTAKES ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">03 · LỖI HAY GẶP</div>
+  </div>
+  <div class="kicker">Mất điểm từ câu đầu tiên</div>
+  <h2>6 lỗi mở bài hay gặp</h2>
+  <p class="lead" style="margin-bottom:5mm">Đọc dòng ❌, tự sửa trước khi nhìn dòng ✅. Các ví dụ dùng chung đề: <i>“Some people believe that all students should be required to study a science subject until they finish school. To what extent do you agree or disagree?”</i></p>
+
+  <div class="traps">
+    <div class="trap"><div class="h"><b>1</b><span>Chép nguyên văn đề</span></div><div class="c">
+      Phần chép nguyên văn từ đề <b>không được tính</b> vào số từ và không thể hiện được vốn từ của bạn.
+      <div class="mini" style="margin-top:5px">❌ Some people believe that all students should be required to study a science subject until they finish school.<br>✅ It is sometimes argued that science should be a <b>compulsory subject</b> for students <b>throughout their school years</b>.</div></div></div>
+    <div class="trap"><div class="h"><b>2</b><span>Câu mở đầu chung chung</span></div><div class="c">
+      Câu “dùng cho mọi đề” không thêm thông tin, chỉ tốn thời gian.
+      <div class="mini" style="margin-top:5px">❌ Nowadays, with the development of society, education is a hot topic.<br>✅ Đi thẳng vào chủ đề bằng câu paraphrase như ở lỗi 1.</div></div></div>
+    <div class="trap"><div class="h"><b>3</b><span>Thesis không trả lời đề</span></div><div class="c">
+      “Giới thiệu” thay vì “trả lời” — giám khảo không biết bạn đứng ở đâu.
+      <div class="mini" style="margin-top:5px">❌ This essay will discuss this issue.<br>✅ I <b>partly agree</b> with this idea: basic science should be compulsory, but older students should be free to specialise.</div></div></div>
+    <div class="trap"><div class="h"><b>4</b><span>Thesis lưng chừng, mâu thuẫn</span></div><div class="c">
+      <div class="w"><em>I agree and disagree</em><em>both have pros and cons</em></div>
+      <div class="mini">❌ I both agree and disagree with this statement.<br>✅ I <b>disagree</b> with this view, as forcing every student to study science may reduce time for subjects that suit their talents.</div></div></div>
+    <div class="trap"><div class="h"><b>5</b><span>Paraphrase làm đổi nghĩa</span></div><div class="c">
+      <div class="w"><em>should be required → can</em><em>all → some</em></div>
+      <div class="mini">❌ Some people think students <b>can</b> study science at school.<br>✅ … students should be <b>obliged</b> to study science until they leave school.</div></div></div>
+    <div class="trap"><div class="h"><b>6</b><span>Mở bài quá dài, lan sang thân bài</span></div><div class="c">
+      Ví dụ, số liệu, giải thích chi tiết thuộc về <b>thân bài</b>. Mở bài trên ~70 từ là dấu hiệu cần cắt.
+      <div class="mini" style="margin-top:5px">❌ … For example, my cousin hated chemistry and failed his exams, so …<br>✅ Dừng sau thesis, để ví dụ cho đoạn thân bài.</div></div></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>5</span></div>
+</section>
+
+<!-- ============ PAGE 6 — PRACTICE A ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian gợi ý: 6 phút</div>
+  <h2>Phần A · Chọn thesis tốt nhất</h2>
+  <p class="lead" style="margin-bottom:4mm">Mỗi đề có 3 thesis. Khoanh chữ cái của thesis <b>trả lời đúng và đủ</b> yêu cầu của đề.</p>
+
+  <div class="prompt"><span class="ty">1</span><i>Some people think that schools should teach students how to manage money. To what extent do you agree or disagree?</i></div>
+  <div class="qs tight" style="margin-bottom:3mm">
+    <div class="q"><span class="n">A</span><span class="s">There are many advantages and disadvantages of teaching money management at school.</span></div>
+    <div class="q"><span class="n">B</span><span class="s">I strongly agree that financial skills should be part of the school curriculum, as they help young people avoid debt and make sensible decisions as adults.</span></div>
+    <div class="q"><span class="n">C</span><span class="s">This essay will talk about money and schools.</span></div>
+  </div>
+
+  <div class="prompt"><span class="ty">2</span><i>Some people believe that top athletes are paid too much, while others think their high salaries are justified. Discuss both views and give your own opinion.</i></div>
+  <div class="qs tight" style="margin-bottom:3mm">
+    <div class="q"><span class="n">A</span><span class="s">Both views have their own merits, and this essay will examine each of them.</span></div>
+    <div class="q"><span class="n">B</span><span class="s">Top athletes are paid too much money, which is unfair to other workers such as nurses.</span></div>
+    <div class="q"><span class="n">C</span><span class="s">Although some argue that top athletes earn excessive amounts, I believe their salaries are largely justified, given their short careers and the revenue they generate.</span></div>
+  </div>
+
+  <div class="prompt"><span class="ty">3</span><i>In many countries, more people are now working from home. Do the advantages of this trend outweigh the disadvantages?</i></div>
+  <div class="qs tight" style="margin-bottom:3mm">
+    <div class="q"><span class="n">A</span><span class="s">In my opinion, the benefits of remote work, particularly the time saved on commuting, outweigh drawbacks such as feelings of isolation.</span></div>
+    <div class="q"><span class="n">B</span><span class="s">Working from home has both advantages and disadvantages for employees and companies.</span></div>
+    <div class="q"><span class="n">C</span><span class="s">I think working from home is good, so the government should build more offices.</span></div>
+  </div>
+
+  <div class="prompt"><span class="ty">4</span><i>Many young people are moving from rural areas to cities. Why is this happening? What effects does this have on the countryside?</i></div>
+  <div class="qs tight">
+    <div class="q"><span class="n">A</span><span class="s">Young people move to cities because there are more jobs there.</span></div>
+    <div class="q"><span class="n">B</span><span class="s">This is mainly due to better job and education opportunities in cities, and it has left many villages with ageing populations and labour shortages.</span></div>
+    <div class="q"><span class="n">C</span><span class="s">Cities are becoming more crowded, which causes many problems for the people who live there.</span></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>6</span></div>
+</section>
+
+<!-- ============ PAGE 7 — PRACTICE B ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">04 · LUYỆN TẬP</div>
+  </div>
+  <div class="kicker">Thời gian gợi ý: 4 phút / đề</div>
+  <h2>Phần B · Viết mở bài 2 câu</h2>
+  <p class="lead" style="margin-bottom:4mm">Mỗi đề một dạng. Gạch Topic và Task trước khi viết. Mục tiêu: <b>40–60 từ</b>, không chép quá vài từ liền nhau từ đề.</p>
+
+  <div class="prompt"><span class="ty">5 · Opinion</span><i>Some people believe that all secondary school students should be required to learn how to cook. To what extent do you agree or disagree?</i></div>
+  <div class="lines s"></div><div class="lines s"></div><div class="lines s" style="margin-bottom:2.5mm"></div>
+  <div class="prompt"><span class="ty">6 · Discussion</span><i>Some people think that the best way to reduce traffic congestion is to build more roads, while others believe that improving public transport is more effective. Discuss both views and give your own opinion.</i></div>
+  <div class="lines s"></div><div class="lines s"></div><div class="lines s" style="margin-bottom:2.5mm"></div>
+  <div class="prompt"><span class="ty">7 · Adv–Disadv</span><i>Many people now choose to work for themselves rather than for a company. What are the advantages and disadvantages of this?</i></div>
+  <div class="lines s"></div><div class="lines s"></div><div class="lines s" style="margin-bottom:2.5mm"></div>
+  <div class="prompt"><span class="ty">8 · Problem–Solution</span><i>In many cities, the number of elderly people who live alone is increasing. What problems does this cause, and what can be done to solve them?</i></div>
+  <div class="lines s"></div><div class="lines s"></div><div class="lines s" style="margin-bottom:2.5mm"></div>
+  <div class="prompt"><span class="ty">9 · Two-part</span><i>Nowadays, many people prefer to shop online rather than in physical stores. Why is this the case? Is this a positive or negative development?</i></div>
+  <div class="lines s"></div><div class="lines s"></div><div class="lines s"></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>7</span></div>
+</section>
+
+<!-- ============ PAGE 8 — ANSWERS ============ -->
+<section class="page">
+  <div class="top">
+    <div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div>
+    <div class="tag">ĐÁP ÁN</div>
+  </div>
+  <div class="kicker">Mở bài mẫu chỉ là gợi ý · nền cam = paraphrase · nền xanh = thesis</div>
+  <h2 style="margin-bottom:1mm">Đáp án &amp; mở bài mẫu</h2>
+
+  <div class="answ sm">
+  <div class="ansrow"><span class="n">1</span><span class="k bT">B</span><span class="e">Nêu rõ mức độ (<i>strongly agree</i>) + lý do. A là khung của dạng Adv–Disadv; C không trả lời.</span></div>
+  <div class="ansrow"><span class="n">2</span><span class="k bT">C</span><span class="e">Có cả hai quan điểm + ý kiến riêng. A thiếu ý kiến (lỗi 3); B chỉ nói một phía.</span></div>
+  <div class="ansrow"><span class="n">3</span><span class="k bT">A</span><span class="e">Đề hỏi “outweigh” → phải chọn bên. B lưng chừng (lỗi 4); C lạc đề.</span></div>
+  <div class="ansrow"><span class="n">4</span><span class="k bT">B</span><span class="e">Trả lời <b>cả hai</b> câu hỏi. A thiếu câu hỏi 2; C nói về thành phố chứ không phải nông thôn.</span></div>
+  </div>
+
+  <div class="sample in" style="margin-top:2mm"><span class="lab">5</span><span class="t1">It is sometimes suggested that cooking should be a compulsory subject for every secondary school student.</span> <span class="t2">I largely agree with this view, as basic cooking skills encourage healthier eating habits, although these lessons should not take time away from core academic subjects.</span></div>
+  <div class="sample in"><span class="lab">6</span><span class="t1">There is some debate about whether traffic congestion is best tackled by building more roads or by improving public transport.</span> <span class="t2">While new roads may bring short-term relief, I believe that investing in public transport is the more effective long-term solution.</span></div>
+  <div class="sample in"><span class="lab">7</span><span class="t1">Self-employment has become an increasingly popular alternative to working for an employer.</span> <span class="t2">This choice offers greater freedom and flexibility, but it also has significant drawbacks, notably an unstable income and a lack of benefits such as paid leave.</span></div>
+  <div class="sample in"><span class="lab">8</span><span class="t1">A growing number of older people in urban areas are living on their own.</span> <span class="t2">This trend can lead to loneliness and delays in getting help during medical emergencies, but these problems could be addressed through community visiting schemes and better home-care services.</span></div>
+  <div class="sample in"><span class="lab">9</span><span class="t1">Many consumers now prefer buying goods online to visiting physical shops.</span> <span class="t2">This is mainly due to the convenience and lower prices that online retailers offer, and I believe it is a largely positive development, despite its impact on some local businesses.</span></div>
+
+  <div class="score sm" style="margin-top:2mm">
+    <div style="background:var(--t2)"><div class="hd" style="color:var(--t)">4/4 + ✓</div>Phần A đúng hết, mở bài đạt cả 4 tiêu chí bên dưới</div>
+    <div style="background:var(--o3)"><div class="hd" style="color:var(--o)">3/4</div>Xem lại trang 4 — khung thesis theo dạng đề</div>
+    <div style="background:var(--f2)"><div class="hd" style="color:var(--f)">0–2</div>Đọc lại trang 2–5 rồi viết lại Phần B</div>
+  </div>
+  <p style="font-size:10pt;color:#3A4456;margin-top:2mm"><b>Tự chấm Phần B:</b> ☐ không chép nguyên câu của đề · ☐ câu 1 giữ đúng nghĩa đề · ☐ thesis trả lời đủ mọi phần · ☐ 40–60 từ.</p>
+
+  <div class="cta" style="margin-top:3mm;padding:9px 16px">
+    <svg width="42" height="42" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>
+    <div><div class="big" style="font-size:14pt">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div>
+    <p>Reading · Listening · Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 2 · Mở bài &amp; thesis</span><span>8</span></div>
+</section>
+
+</body>
+</html>

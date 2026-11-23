@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Writing Task 1 – Câu mô tả xu hướng | IELTS Ngọc Tỉnh</title>
+<style>
+@page { size: A4; margin: 0; }
+:root{
+  --o:#FB8F2C; --o2:#FFE9D4; --o3:#FFF6EC;
+  --n:#003D82; --n2:#DCE8F7; --n3:#F1F6FC;
+  --ink:#1D2433; --mut:#5B6577;
+  --t:#1E9E62; --t2:#E1F5EA;
+  --f:#D9433B; --f2:#FBE4E2;
+  --g:#7A869A; --g2:#ECEFF4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Carlito","Calibri",sans-serif;color:var(--ink);font-size:12pt;line-height:1.5}
+h1,h2,h3,.hd{font-family:"Inter",sans-serif;letter-spacing:-0.01em}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;padding:20mm 18mm 22mm}
+.page:last-child{page-break-after:auto}
+
+/* header / footer */
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9mm}
+.brand{display:flex;align-items:center;gap:8px;font-family:"Inter";font-weight:800;color:var(--n);font-size:10.5pt}
+.tag{font-family:"Inter";font-weight:700;font-size:8.5pt;color:var(--o);background:var(--o3);border:1px solid var(--o2);padding:3px 10px;border-radius:20px}
+.foot{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;font-size:9pt;color:var(--mut);border-top:1px solid var(--g2);padding-top:6px}
+.foot b{color:var(--n)}
+
+.kicker{font-family:"Inter";font-weight:800;font-size:9pt;color:var(--o);letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:22pt;font-weight:800;color:var(--n);line-height:1.2;margin:2mm 0 2mm}
+.lead{color:var(--mut);font-size:12pt;margin-bottom:7mm}
+h3{font-size:12.5pt;font-weight:800;color:var(--n)}
+
+/* cover */
+.cover{background:var(--n);color:#fff;padding:0}
+.cover .band{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;border-radius:50%;background:var(--o);opacity:.95}
+.cover .band2{position:absolute;right:30mm;top:85mm;width:46mm;height:46mm;border-radius:50%;border:6mm solid rgba(255,255,255,.08)}
+.cover .inner{position:absolute;left:20mm;right:20mm;top:22mm;bottom:20mm}
+.cover .series{font-family:"Inter";font-weight:700;font-size:10pt;letter-spacing:.16em;text-transform:uppercase;color:#BFD3EE;margin-top:58mm}
+.cover h1{font-size:44pt;line-height:1.02;font-weight:900;margin-top:4mm}
+.cover h1 .o{color:var(--o)}
+.cover .sub{font-size:15pt;color:#DCE6F4;margin-top:6mm;max-width:140mm;line-height:1.45}
+.pill{display:inline-block;font-family:"Inter";font-weight:800;font-size:11pt;background:var(--o);color:#fff;padding:6px 16px;border-radius:30px;margin-top:8mm}
+.cover .toc{position:absolute;left:0;right:0;bottom:22mm;display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.cover .toc div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px;font-size:10.5pt;color:#E6EDF7;line-height:1.3}
+.cover .toc b{display:block;font-family:"Inter";font-weight:900;color:var(--o);font-size:16pt;margin-bottom:2px}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:10pt;color:#9FB6D8}
+
+/* 3 cards */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-bottom:7mm}
+.card{border-radius:14px;padding:14px 14px 16px;border:1.5px solid}
+.card .lab{font-family:"Inter";font-weight:900;font-size:17pt;line-height:1}
+.card .eq{margin:10px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.blk{font-family:"Inter";font-weight:700;font-size:9pt;padding:5px 9px;border-radius:7px;color:#fff;white-space:nowrap}
+.op{font-family:"Inter";font-weight:900;font-size:14pt}
+.card p{font-size:11pt;line-height:1.4}
+.card.t{border-color:#A9DFC3;background:var(--t2)} .card.t .lab,.card.t .op{color:var(--t)}
+.card.f{border-color:#F3B7B2;background:var(--f2)} .card.f .lab,.card.f .op{color:var(--f)}
+.card.g{border-color:#CDD3DD;background:var(--g2)} .card.g .lab,.card.g .op{color:var(--g)}
+.bS{background:var(--n)} .bP{background:var(--o)} .bT{background:var(--t)} .bF{background:var(--f)} .bG{background:var(--g)}
+
+.formula{background:var(--n3);border:1.5px dashed #9DB8DD;border-radius:14px;padding:12px 16px;margin-bottom:7mm}
+.formula .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.formula .row .blk{font-size:10pt;padding:6px 11px}
+
+.ex{border-left:4px solid var(--o);background:var(--o3);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:4mm;font-size:11pt}
+.ex .p{font-style:italic;color:#3A4456}
+.ex .ans{font-family:"Inter";font-weight:800;font-size:9.5pt;padding:2px 8px;border-radius:5px;color:#fff;margin-right:6px}
+
+.note{display:flex;gap:12px;background:var(--n);color:#fff;border-radius:14px;padding:13px 16px;font-size:11pt}
+.note .ic{font-family:"Inter";font-weight:900;font-size:20pt;color:var(--o);line-height:1}
+.note b{color:#FFD3A8}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:5mm}
+.step{display:flex;gap:12px;align-items:stretch}
+.step .num{flex:0 0 13mm;display:flex;flex-direction:column;align-items:center}
+.step .num span{width:13mm;height:13mm;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:15pt;display:flex;align-items:center;justify-content:center}
+.step .num i{flex:1;width:3px;background:var(--o2);margin:2px 0}
+.step:last-child .num i{display:none}
+.step .body{flex:1;background:#fff;border:1.5px solid var(--n2);border-radius:12px;padding:9px 14px;margin-bottom:4mm}
+.step .body h3{margin-bottom:2px}
+.step .body p{font-size:11pt;color:#3A4456}
+.chip{display:inline-block;background:var(--n2);color:var(--n);font-family:"Inter";font-weight:700;font-size:8.5pt;padding:2px 8px;border-radius:5px;margin:3px 3px 0 0}
+
+/* traps */
+.traps{display:grid;grid-template-columns:1fr 1fr;gap:4.5mm}
+.trap{border:1.5px solid var(--n2);border-radius:14px;overflow:hidden;background:#fff}
+.trap .h{background:var(--n);color:#fff;padding:7px 12px;display:flex;gap:8px;align-items:center}
+.trap .h b{font-family:"Inter";font-weight:900;color:var(--o);font-size:13pt}
+.trap .h span{font-family:"Inter";font-weight:800;font-size:10.5pt}
+.trap .c{padding:9px 12px;font-size:10.5pt;line-height:1.4}
+.trap .c .w{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}
+.trap .c .w em{font-style:normal;font-family:"Inter";font-weight:700;font-size:8.5pt;background:var(--o3);color:#B85E0B;border:1px solid var(--o2);padding:1px 7px;border-radius:5px}
+.trap .c .mini{background:var(--n3);border-radius:8px;padding:6px 9px;font-size:10pt}
+.trap.wide{grid-column:1 / span 2}
+
+/* practice */
+.passage{background:var(--n3);border-radius:14px;padding:13px 17px;font-size:11.5pt;line-height:1.55;margin-bottom:5mm;border:1.5px solid var(--n2)}
+.passage h3{margin-bottom:4px}
+.qs{counter-reset:q}
+.q{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--g2);padding:6px 0;font-size:11.5pt}
+.q .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center}
+.q .s{flex:1}
+.q .box{flex:0 0 26mm;height:7mm;border:1.5px solid #B9C4D4;border-radius:6px}
+
+/* answers */
+.ansrow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--g2);font-size:10.8pt;line-height:1.42}
+.ansrow .n{flex:0 0 7mm;height:7mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9.5pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.ansrow .k{flex:0 0 25mm;text-align:center;font-family:"Inter";font-weight:900;font-size:9pt;color:#fff;border-radius:6px;padding:4px 0;margin-top:2px}
+.ansrow .e{flex:1}
+.ansrow .e i{color:#3A4456}
+.cta{margin-top:5mm;background:linear-gradient(0deg,var(--n),var(--n));border-radius:16px;color:#fff;padding:14px 18px;display:flex;align-items:center;gap:16px}
+.cta .big{font-family:"Inter";font-weight:900;font-size:15pt;line-height:1.2}
+.cta .big span{color:var(--o)}
+.cta p{font-size:10.5pt;color:#DCE6F4;margin-top:3px}
+
+/* ===== added for Writing Task 1 (same style) ===== */
+.tb{width:100%;border-collapse:separate;border-spacing:0;font-size:10.5pt;line-height:1.38;border:1.5px solid var(--n2);border-radius:12px;overflow:hidden;margin-bottom:5mm}
+.tb th{background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;text-align:left;padding:7px 10px}
+.tb td{padding:6px 10px;border-top:1px solid var(--n2);vertical-align:top}
+.tb tr:nth-child(even) td{background:var(--n3)}
+.tb td.k{font-family:"Inter";font-weight:800;font-size:9.5pt;color:var(--n);white-space:nowrap}
+.tb .g{color:var(--t);font-weight:700}
+.tb .r{color:var(--f);font-weight:700}
+.tb .o{color:#B85E0B;font-weight:700}
+.tb .m{color:var(--mut)}
+.fix{border:1.5px solid var(--n2);border-radius:12px;overflow:hidden;margin-bottom:3.2mm;background:#fff}
+.fix .h{background:var(--n);color:#fff;padding:5px 12px;font-family:"Inter";font-weight:800;font-size:9.8pt;display:flex;gap:8px;align-items:center}
+.fix .h b{color:var(--o);font-weight:900;font-size:11.5pt}
+.fix .pair{display:grid;grid-template-columns:1fr 1fr}
+.fix .bad,.fix .good{padding:6px 11px;font-size:10.4pt;line-height:1.38}
+.fix .bad{background:var(--f2)} .fix .good{background:var(--t2)}
+.fix .bad:before{content:"✗ ";color:var(--f);font-weight:900}
+.fix .good:before{content:"✓ ";color:var(--t);font-weight:900}
+.fix .why{padding:5px 11px;font-size:9.8pt;color:#3A4456;border-top:1px solid var(--n2)}
+.cmp{display:flex;gap:10px;align-items:flex-start;padding:7px 12px;border-radius:10px;margin-bottom:2.5mm;font-size:10.8pt;line-height:1.4}
+.cmp .bd{flex:0 0 19mm;font-family:"Inter";font-weight:900;font-size:8.5pt;color:#fff;border-radius:6px;text-align:center;padding:3px 0;margin-top:1px}
+.cmp.lo{background:var(--f2)} .cmp.lo .bd{background:var(--f)}
+.cmp.mid{background:var(--o3)} .cmp.mid .bd{background:var(--o)}
+.cmp.hi{background:var(--t2)} .cmp.hi .bd{background:var(--t)}
+.cmp .c2{flex:1}
+.cmp .c2 small{display:block;color:var(--mut);font-size:9.6pt}
+.chartbox{border:1.5px solid var(--n2);border-radius:14px;padding:9px 12px 6px;margin-bottom:4mm;background:#fff}
+.chartbox .cap{display:flex;justify-content:space-between;align-items:baseline;font-family:"Inter";font-weight:800;font-size:9.8pt;color:var(--n);margin-bottom:2px}
+.demo{font-family:"Inter";font-weight:700;font-size:7.8pt;color:#B85E0B;background:var(--o3);border:1px solid var(--o2);padding:1px 7px;border-radius:10px;white-space:nowrap}
+.task{background:var(--n3);border:1.5px solid var(--n2);border-radius:12px;padding:8px 13px;font-size:10.8pt;margin-bottom:3mm}
+.task b.t{font-family:"Inter";font-weight:900;color:var(--o);font-size:9.5pt;letter-spacing:.06em;text-transform:uppercase;margin-right:6px}
+.exh{display:flex;align-items:center;gap:8px;margin:2mm 0 2mm}
+.exh span{font-family:"Inter";font-weight:900;font-size:9pt;background:var(--o);color:#fff;border-radius:6px;padding:3px 9px}
+.exh h3{font-size:12pt}
+.wi{font-size:10.8pt;padding:4px 0 0}
+.wi .pr{display:flex;gap:8px}
+.wi .pr .n{flex:0 0 6.5mm;height:6.5mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.wl{height:7.5mm;border-bottom:1.2px dashed #B9C4D4;margin-left:8.5mm}
+.bank{display:flex;gap:6px;flex-wrap:wrap;margin:1mm 0 2mm}
+.bank em{font-style:normal;font-family:"Inter";font-weight:800;font-size:10pt;background:var(--o3);color:#B85E0B;border:1.5px solid var(--o2);padding:2px 12px;border-radius:7px}
+.gap{display:inline-block;min-width:16mm;border-bottom:1.5px solid var(--n);margin:0 2px}
+.opt{display:flex;gap:10px;padding:6px 10px;border:1.5px solid var(--n2);border-radius:10px;margin-bottom:2.2mm;font-size:10.6pt;line-height:1.4}
+.opt b{font-family:"Inter";font-weight:900;color:var(--o);flex:0 0 5mm}
+.sa{font-size:10.4pt;line-height:1.42;padding:5px 0;border-bottom:1px solid var(--g2);display:flex;gap:9px}
+.sa .n{flex:0 0 6.5mm;height:6.5mm;border-radius:50%;background:var(--n);color:#fff;font-family:"Inter";font-weight:800;font-size:9pt;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.sa .e{flex:1}
+.sa .e .m{color:var(--mut);font-size:9.8pt}
+.ah{font-family:"Inter";font-weight:900;font-size:10.5pt;color:var(--n);margin:3mm 0 1mm}
+.ah span{color:var(--o)}
+.check{display:grid;grid-template-columns:1fr 1fr;gap:2mm 6mm;background:var(--o3);border:1.5px solid var(--o2);border-radius:12px;padding:9px 14px;font-size:10.4pt}
+.check div:before{content:"☐ ";color:var(--o);font-weight:900}
+.steps-c .step .body{padding:6px 13px;margin-bottom:2.6mm}
+.steps-c .step .num span{width:11mm;height:11mm;font-size:13pt}
+.steps-c .step .num{flex:0 0 11mm}
+.tight .sa{padding:3.2px 0}
+.tight .ah{margin:2.4mm 0 .6mm}
+.tb-s td{padding:4.5px 9px}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.grid4 div{position:relative;border:1.5px solid var(--n2);border-radius:12px;padding:7px 12px 8px 44px;background:#fff}
+.grid4 span{position:absolute;left:10px;top:9px;width:26px;height:26px;border-radius:50%;background:var(--o);color:#fff;font-family:"Inter";font-weight:900;font-size:12pt;display:flex;align-items:center;justify-content:center}
+.grid4 h3{font-size:11pt}
+.grid4 p{font-size:10.3pt;color:#3A4456;line-height:1.38}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="band"></div>
+  <div class="band2"></div>
+  <div class="inner">
+    <div class="brand" style="color:#fff"><svg width="34" height="34" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg><span style="font-size:13pt">IELTS Ngọc Tỉnh</span></div>
+    <div class="series">IELTS Writing Task 1 · Chiến lược từng dạng bài · Số 16</div>
+    <h1>CÂU MÔ TẢ<br><span class="o">XU HƯỚNG</span></h1>
+    <div class="sub">Tăng, giảm, dao động, ổn định, đạt đỉnh — 2 cấu trúc câu, bảng từ vựng mức độ &amp; tốc độ, giới từ đi kèm số liệu và bài luyện với biểu đồ.</div>
+    <div class="pill">Dành cho Band 5.0 → 6.5</div>
+    <div class="toc"><div><b>01</b>2 cấu trúc + quy trình 4 bước</div><div><b>02</b>Từ vựng xu hướng, mức độ, tốc độ</div><div><b>03</b>Giới từ &amp; 7 lỗi hay gặp</div><div><b>04</b>Luyện tập + đáp án</div></div>
+    <div class="bottom"><span>ielts-ngoctinh.com</span><span>Sincere • Simple • Smart</span></div>
+  </div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">01 · CẤU TRÚC</div></div>
+
+  <div class="kicker">Một dữ liệu – hai cách viết</div>
+  <h2>2 cấu trúc mô tả xu hướng</h2>
+  <p class="lead" style="margin-bottom:4mm">Ví dụ: số khách du lịch tăng nhanh từ 2 triệu (2010) lên 5 triệu (2015). Biết cả 2 cấu trúc giúp bạn <b>đổi cách viết</b> và tránh lặp câu — một điểm cộng cho tiêu chí ngữ pháp.</p>
+
+  <div class="formula" style="margin-bottom:4mm">
+    <h3 style="margin-bottom:2px">Cấu trúc 1 · Động từ + trạng từ</h3>
+    <div class="row" style="flex-wrap:wrap"><span class="blk bS">Chủ thể</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Động từ</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Trạng từ</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Số liệu</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Thời gian</span></div>
+    <div class="ex" style="margin:4px 0 8px;background:#fff">The number of tourists <b>rose sharply</b> from 2 million in 2010 to 5 million in 2015.</div>
+    <h3 style="margin-bottom:2px">Cấu trúc 2 · There was a + tính từ + danh từ</h3>
+    <div class="row" style="flex-wrap:wrap"><span class="blk bG">There was a/an</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Tính từ</span><span class="op" style="color:var(--n)">+</span><span class="blk bP">Danh từ</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">in + chủ thể</span><span class="op" style="color:var(--n)">+</span><span class="blk bS">Số liệu / thời gian</span></div>
+    <div class="ex" style="margin:4px 0 2px;background:#fff">There was <b>a sharp rise</b> in the number of tourists, from 2 million in 2010 to 5 million in 2015.</div>
+  </div>
+
+  <div class="cmp lo"><span class="bd">BAND 5</span><div class="c2">The tourists increased very much from 2010 to 2015.<small>“Khách” không tăng — <b>số lượng</b> khách mới tăng; <i>very much</i> mơ hồ; thiếu số liệu.</small></div></div>
+  <div class="cmp mid"><span class="bd">BAND 6</span><div class="c2">The number of tourists increased a lot, from 2 million in 2010 to 5 million in 2015.<small>Đúng ý, có số liệu, nhưng <i>a lot</i> chưa chính xác về mức độ.</small></div></div>
+  <div class="cmp hi"><span class="bd">BAND 7</span><div class="c2">The number of tourists rose sharply, from 2 million in 2010 to 5 million in 2015.<small>Chủ ngữ đúng, động từ + trạng từ chính xác, số liệu đi kèm đúng giới từ <i>from … to</i>.</small></div></div>
+
+  <h3 style="margin:3mm 0 2mm">Quy trình 4 bước: từ đường kẻ đến câu văn</h3>
+  <div class="grid4">
+    <div><span>1</span><h3>Nhìn hướng</h3><p>Tăng · giảm · dao động · ổn định · đạt đỉnh / chạm đáy → chọn <b>động từ / danh từ</b> (trang 3).</p></div>
+    <div><span>2</span><h3>Đo mức độ &amp; tốc độ</h3><p>So số đầu – số cuối, nhìn độ dốc → chọn <b>trạng từ / tính từ</b> khớp với số liệu.</p></div>
+    <div><span>3</span><h3>Chọn cấu trúc 1 hoặc 2</h3><p>Luân phiên 2 cấu trúc giữa các câu để bài không lặp.</p></div>
+    <div><span>4</span><h3>Gắn số liệu &amp; thời gian</h3><p><b>from … to / by / at / of</b> (trang 4). Quá khứ → quá khứ đơn; dự báo → <i>is expected to</i>.</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>2</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">02 · TỪ VỰNG</div></div>
+
+  <div class="kicker">Chọn từ theo hình dáng đường kẻ</div>
+  <h2>Bảng từ vựng xu hướng</h2>
+  <table class="tb tb-s" style="margin-top:3mm">
+    <tr><th style="width:19%">Xu hướng</th><th style="width:31%">Động từ (cấu trúc 1)</th><th style="width:24%">Danh từ (cấu trúc 2)</th><th>Ghi chú</th></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,26 16,18 26,20 40,6" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Tăng</td><td class="g">rise · increase · grow · climb</td><td class="g">a rise · an increase · growth</td><td class="m"><i>growth</i> thường không đi với <i>a</i>: <i>There was strong growth in…</i></td></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,6 16,12 26,10 40,26" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Giảm</td><td class="g">fall · decrease · decline · drop</td><td class="g">a fall · a decrease · a decline · a drop</td><td class="m">rise – rose – risen · fall – fell – fallen</td></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,16 11,7 18,24 25,9 32,22 40,13" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Dao động</td><td class="g">fluctuate (between … and …)</td><td class="g">fluctuations in …</td><td class="m">Fuel prices fluctuated between $1.2 and $1.5.</td></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,24 14,14 40,14" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Ổn định</td><td class="g">remain stable · stay the same · level off (sau khi tăng / giảm)</td><td class="g">little change in … · a period of stability</td><td class="m">Không dùng trạng từ: <b class="r">remained stably</b> ✗</td></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,26 22,5 40,22" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Đạt đỉnh</td><td class="g">peak at · reach a peak of · hit a high of</td><td class="g">a peak of …</td><td class="m">Sales peaked at 900 units in May.</td></tr>
+    <tr><td class="k"><svg width="30" height="20" viewBox="0 0 44 30" style="vertical-align:middle;margin-right:5px"><polyline points="4,6 22,26 40,12" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>Chạm đáy</td><td class="g">hit a low of · reach a low of · bottom out at</td><td class="g">a low of …</td><td class="m">Prices hit a low of $20 in 2009.</td></tr>
+  </table>
+
+  <h3 style="margin-bottom:1.5mm">Mức độ (thay đổi nhiều hay ít) &amp; tốc độ (nhanh hay chậm)</h3>
+  <table class="tb tb-s">
+    <tr><th style="width:16%">Nhóm</th><th style="width:27%">Tính từ (cấu trúc 2)</th><th style="width:30%">Trạng từ (cấu trúc 1)</th><th>Dùng khi</th></tr>
+    <tr><td class="k">Mức độ lớn</td><td class="g">dramatic</td><td class="g">dramatically</td><td>Thay đổi rất lớn, gây chú ý</td></tr>
+    <tr><td></td><td class="g">significant · considerable · substantial</td><td class="g">significantly · considerably · substantially</td><td>Thay đổi lớn, đáng kể</td></tr>
+    <tr><td class="k">Mức độ vừa</td><td class="g">moderate</td><td class="g">moderately</td><td>Thay đổi vừa phải</td></tr>
+    <tr><td class="k">Mức độ nhỏ</td><td class="g">slight · marginal</td><td class="g">slightly · marginally</td><td>Thay đổi rất ít</td></tr>
+    <tr><td class="k">Nhanh</td><td class="g">sharp · rapid · steep</td><td class="g">sharply · rapidly · steeply</td><td>Thay đổi nhanh, đường kẻ dốc</td></tr>
+    <tr><td class="k">Đều</td><td class="g">steady</td><td class="g">steadily</td><td>Thay đổi đều qua nhiều mốc liên tiếp</td></tr>
+    <tr><td class="k">Chậm</td><td class="g">gradual · slow</td><td class="g">gradually · slowly</td><td>Thay đổi từ từ, đường kẻ thoải</td></tr>
+  </table>
+
+  <div class="note">
+    <div class="ic">!</div>
+    <div>Từ phải <b>khớp với số liệu</b>: tăng từ 50 lên 52 mà viết <i>dramatically</i> là sai nội dung, dù ngữ pháp đúng. Khi phân vân, chọn từ “an toàn” như <b>significantly</b> hoặc <b>slightly</b>.</div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>3</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">03 · GIỚI TỪ</div></div>
+
+  <div class="kicker">Sai một giới từ = sai cả con số</div>
+  <h2>Giới từ đi kèm số liệu</h2>
+  <div class="chartbox" style="margin-top:3mm">
+    <div class="cap"><span>Coffee exports from Country X (thousand tonnes)</span><span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 250" width="100%" style="display:block"><defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#B85E0B"/></marker></defs><line x1="52" x2="610" y1="216.0" y2="216.0" stroke="#E3E8F0"/><text x="44" y="220.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">0</text><line x1="52" x2="610" y1="150.7" y2="150.7" stroke="#E3E8F0"/><text x="44" y="154.7" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">20</text><line x1="52" x2="610" y1="85.3" y2="85.3" stroke="#E3E8F0"/><text x="44" y="89.3" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">40</text><line x1="52" x2="610" y1="20.0" y2="20.0" stroke="#E3E8F0"/><text x="44" y="24.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">60</text><text x="12" y="118.0" transform="rotate(-90 12 118.0)" text-anchor="middle" font-family="Carlito" font-size="11.5" fill="#5B6577">nghìn tấn</text><line x1="52" x2="610" y1="216.0" y2="216.0" stroke="#7A869A" stroke-width="1.5"/><text x="92.0" y="234.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2010</text><text x="251.3" y="234.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2015</text><text x="410.7" y="234.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2020</text><text x="570.0" y="234.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2025</text><polyline points="92.0,150.7 251.3,101.7 410.7,52.7 570.0,69.0" fill="none" stroke="#003D82" stroke-width="3.5" stroke-linejoin="round"/><circle cx="92.0" cy="150.7" r="5" fill="#fff" stroke="#003D82" stroke-width="3"/><text x="92.0" y="172.7" text-anchor="middle" font-family="Inter" font-weight="900" font-size="12.5" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">20</text><circle cx="251.3" cy="101.7" r="5" fill="#fff" stroke="#003D82" stroke-width="3"/><text x="251.3" y="123.7" text-anchor="middle" font-family="Inter" font-weight="900" font-size="12.5" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">35</text><circle cx="410.7" cy="52.7" r="5" fill="#fff" stroke="#003D82" stroke-width="3"/><text x="410.7" y="74.7" text-anchor="middle" font-family="Inter" font-weight="900" font-size="12.5" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">50</text><circle cx="570.0" cy="69.0" r="5" fill="#fff" stroke="#003D82" stroke-width="3"/><text x="570.0" y="91.0" text-anchor="middle" font-family="Inter" font-weight="900" font-size="12.5" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">45</text><line x1="92.0" y1="150.7" x2="235.3" y2="150.7" stroke="#B85E0B" stroke-dasharray="4 3" stroke-width="1.5"/><line x1="235.3" y1="150.7" x2="235.3" y2="105.7" stroke="#B85E0B" stroke-width="2" marker-end="url(#a2)"/><text x="229.3" y="130.2" text-anchor="end" font-family="Inter" font-weight="800" font-size="12" fill="#B85E0B">by 15</text><text x="161.7" y="100.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="12" fill="#B85E0B">rose from 20 to 35</text><text x="410.7" y="38.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="12" fill="#B85E0B">peaked at 50</text><text x="516.3" y="53.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="12" fill="#B85E0B">fell to 45</text><text x="88.0" y="136.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="12" fill="#B85E0B">stood at 20</text></svg>
+  </div>
+  <table class="tb">
+    <tr><th style="width:15%">Giới từ</th><th style="width:30%">Ý nghĩa</th><th>Ví dụ (theo biểu đồ trên)</th></tr>
+    <tr><td class="k">from … to</td><td>Điểm đầu → điểm cuối</td><td>Exports rose <b class="o">from</b> 20 <b class="o">to</b> 35 thousand tonnes between 2010 and 2015.</td></tr>
+    <tr><td class="k">to</td><td>Đạt <b>tới mức</b> (số cuối)</td><td>Exports fell <b class="o">to</b> 45 thousand tonnes in 2025.</td></tr>
+    <tr><td class="k">by</td><td>Thay đổi <b>một lượng</b> (chênh lệch)</td><td>Between 2010 and 2015, exports rose <b class="o">by</b> 15 thousand tonnes.</td></tr>
+    <tr><td class="k">at</td><td>Đứng ở / đạt đỉnh <b>tại mức</b></td><td>Exports stood <b class="o">at</b> 20 thousand tonnes in 2010 and peaked <b class="o">at</b> 50 in 2020.</td></tr>
+    <tr><td class="k">of</td><td>Sau <b>danh từ</b>, chỉ lượng</td><td>There was a rise <b class="o">of</b> 15 thousand tonnes. · Exports reached a peak <b class="o">of</b> 50.</td></tr>
+    <tr><td class="k">in</td><td>Sau danh từ, chỉ <b>cái gì</b> thay đổi</td><td>There was a slight fall <b class="o">in</b> coffee exports after 2020.</td></tr>
+  </table>
+  <div class="two">
+    <div class="card t" style="padding:10px 13px"><p><b>Cặp hay nhầm:</b> “rose <b>to</b> 35” = lên mức 35 · “rose <b>by</b> 35” = tăng thêm 35. Hai câu cho ra hai con số hoàn toàn khác nhau.</p></div>
+    <div class="card g" style="padding:10px 13px"><p><b>Số liệu %:</b> 20% → 30% nên viết “rose <b>by 10 percentage points</b>”, vì “rose by 10%” có thể hiểu là 20% → 22%.</p></div>
+  </div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>4</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">04 · LỖI HAY GẶP</div></div>
+
+  <div class="kicker">Lỗi nhỏ, mất điểm lớn</div>
+  <h2>7 lỗi hay gặp</h2>
+  <div class="fix"><div class="h"><b>1</b>Chủ ngữ sai</div><div class="pair"><div class="bad"><b>The tourists</b> increased sharply.</div><div class="good"><b>The number of tourists</b> increased sharply.</div></div><div class="why">Con người không “tăng” — <b>số lượng / tỉ lệ / lượng</b> mới tăng.</div></div>
+  <div class="fix"><div class="h"><b>2</b>Dùng bị động</div><div class="pair"><div class="bad">The number of students <b>was increased</b> in 2015.</div><div class="good">The number of students <b>increased</b> in 2015.</div></div><div class="why"><i>increase, rise, fall</i> khi mô tả xu hướng là nội động từ — không có ai “làm cho” nó tăng.</div></div>
+  <div class="fix"><div class="h"><b>3</b>Nhầm rise / raise</div><div class="pair"><div class="bad">Sales <b>raised</b> to 50,000 units.</div><div class="good">Sales <b>rose</b> to 50,000 units.</div></div><div class="why"><i>raise</i> cần tân ngữ (<i>raise prices</i>); <i>rise – rose – risen</i> không cần.</div></div>
+  <div class="fix"><div class="h"><b>4</b>Trạng từ đứng trước danh từ</div><div class="pair"><div class="bad">There was a <b>sharply</b> increase in sales.</div><div class="good">There was a <b>sharp</b> increase in sales.</div></div><div class="why">Trước danh từ → <b>tính từ</b> (cấu trúc 2).</div></div>
+  <div class="fix"><div class="h"><b>5</b>Tính từ sau động từ thường</div><div class="pair"><div class="bad">Sales increased <b>significant</b>. · Prices remained <b>stably</b>.</div><div class="good">Sales increased <b>significantly</b>. · Prices remained <b>stable</b>.</div></div><div class="why">Sau động từ thường → <b>trạng từ</b>; sau <i>remain / stay</i> → <b>tính từ</b>.</div></div>
+  <div class="fix"><div class="h"><b>6</b>Nhầm in / of sau danh từ</div><div class="pair"><div class="bad">There was a rise <b>of sales</b> of 10,000 units.</div><div class="good">There was a rise <b>of 10,000 units in sales</b>.</div></div><div class="why"><b>in</b> + cái thay đổi · <b>of</b> + lượng thay đổi.</div></div>
+  <div class="fix"><div class="h"><b>7</b>Thiếu / sai giới từ với số</div><div class="pair"><div class="bad">The figure increased <b>15 to 30</b>. · It reached <b>the peak at</b> 80.</div><div class="good">The figure increased <b>from 15 to 30</b>. · It <b>peaked at</b> 80 / reached <b>a peak of</b> 80.</div></div><div class="why"><i>peak at</i> + số, nhưng <i>reach a peak of</i> + số.</div></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>5</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">05 · LUYỆN TẬP</div></div>
+
+  <div class="kicker">Thời gian gợi ý: 12 phút</div>
+  <h2>Luyện tập (phần 1)</h2>
+  <div class="chartbox" style="margin-top:2mm">
+    <div class="cap"><span>International students at a university, 2000–2020</span><span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 200" width="100%" style="display:block"><line x1="52" x2="620" y1="166.0" y2="166.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="170.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">0</text><line x1="52" x2="620" y1="128.0" y2="128.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="132.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">4</text><line x1="52" x2="620" y1="90.0" y2="90.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="94.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">8</text><line x1="52" x2="620" y1="52.0" y2="52.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="56.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">12</text><line x1="52" x2="620" y1="14.0" y2="14.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="18.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">16</text><text x="12" y="90.0" transform="rotate(-90 12 90.0)" text-anchor="middle" font-family="Carlito" font-size="11.5" fill="#5B6577">nghìn sinh viên</text><line x1="52" x2="620" y1="166.0" y2="166.0" stroke="#7A869A" stroke-width="1.5"/><text x="78.0" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2000</text><text x="207.0" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2005</text><text x="336.0" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2010</text><text x="465.0" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2015</text><text x="542.4" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2018</text><text x="594.0" y="184.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2020</text><polyline points="78.0,128.0 207.0,118.5 336.0,61.5 465.0,61.5 542.4,33.0 594.0,80.5" fill="none" stroke="#003D82" stroke-width="3" stroke-linejoin="round"/><circle cx="78.0" cy="128.0" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="78.0" y="118.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">4</text><circle cx="207.0" cy="118.5" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="207.0" y="108.5" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">5</text><circle cx="336.0" cy="61.5" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="336.0" y="51.5" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">11</text><circle cx="465.0" cy="61.5" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="465.0" y="51.5" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">11</text><circle cx="542.4" cy="33.0" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="542.4" y="23.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">14</text><circle cx="594.0" cy="80.5" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="594.0" y="100.5" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">9</text></svg>
+  </div>
+  <div class="exh"><span>BÀI 1</span><h3>Điền giới từ — mỗi từ dùng đúng 1 lần</h3></div>
+  <div class="bank"><em>from</em><em>to</em><em>by</em><em>at</em><em>of</em><em>in</em></div>
+  <div class="qs">
+    <div class="q"><span class="n">1</span><span class="s">The number of international students rose slightly <span class="gap"></span> 4,000 in 2000 to 5,000 in 2005.</span></div>
+    <div class="q"><span class="n">2</span><span class="s">Between 2005 and 2010, the figure climbed sharply <span class="gap"></span> 11,000.</span></div>
+    <div class="q"><span class="n">3</span><span class="s">This was an increase <span class="gap"></span> 6,000 students in just five years.</span></div>
+    <div class="q"><span class="n">4</span><span class="s">After a period of stability, the number peaked <span class="gap"></span> 14,000 in 2018.</span></div>
+    <div class="q"><span class="n">5</span><span class="s">There was then a sharp drop <span class="gap"></span> the number of international students.</span></div>
+    <div class="q"><span class="n">6</span><span class="s">Between 2018 and 2020, the figure fell <span class="gap"></span> 5,000.</span></div>
+  </div>
+  <div class="exh" style="margin-top:4mm"><span>BÀI 2</span><h3>Viết lại câu bằng cấu trúc còn lại</h3></div>
+  <div class="wi"><div class="pr"><span class="n">a</span><span>Sales of electric cars rose dramatically between 2015 and 2020.</span></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">b</span><span>There was a slight decrease in the price of rice in 2019.</span></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">c</span><span>The unemployment rate fell steadily over the decade.</span></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">d</span><span>There was a gradual increase in the number of cyclists from 2010 to 2020.</span></div><div class="wl"></div></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>6</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">05 · LUYỆN TẬP</div></div>
+
+  <div class="kicker">Thời gian gợi ý: 15 phút</div>
+  <h2>Luyện tập (phần 2)</h2>
+  <div class="task" style="margin-top:2mm">The line graph below shows the number of trips made by bus, metro and taxi in one city between 2010 and 2025.</div>
+  <div class="chartbox">
+    <div class="cap"><span>Trips per year (millions)</span><span class="demo">Số liệu minh hoạ</span></div>
+    <svg viewBox="0 0 640 260" width="100%" style="display:block"><line x1="52" x2="620" y1="204.0" y2="204.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="208.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">0</text><line x1="52" x2="620" y1="172.3" y2="172.3" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="176.3" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">10</text><line x1="52" x2="620" y1="140.7" y2="140.7" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="144.7" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">20</text><line x1="52" x2="620" y1="109.0" y2="109.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="113.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">30</text><line x1="52" x2="620" y1="77.3" y2="77.3" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="81.3" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">40</text><line x1="52" x2="620" y1="45.7" y2="45.7" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="49.7" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">50</text><line x1="52" x2="620" y1="14.0" y2="14.0" stroke="#E3E8F0" stroke-width="1"/><text x="44" y="18.0" text-anchor="end" font-family="Carlito" font-size="12" fill="#5B6577">60</text><text x="12" y="109.0" transform="rotate(-90 12 109.0)" text-anchor="middle" font-family="Carlito" font-size="11.5" fill="#5B6577">triệu lượt / năm</text><line x1="52" x2="620" y1="204.0" y2="204.0" stroke="#7A869A" stroke-width="1.5"/><text x="78.0" y="222.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2010</text><text x="250.0" y="222.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2015</text><text x="422.0" y="222.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2020</text><text x="594.0" y="222.0" text-anchor="middle" font-family="Inter" font-weight="700" font-size="11.5" fill="#1D2433">2025</text><polyline points="78.0,45.7 250.0,71.0 422.0,93.2 594.0,109.0" fill="none" stroke="#003D82" stroke-width="3" stroke-linejoin="round"/><circle cx="78.0" cy="45.7" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="78.0" y="35.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">50</text><circle cx="250.0" cy="71.0" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="250.0" y="61.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">42</text><circle cx="422.0" cy="93.2" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="422.0" y="83.2" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">35</text><circle cx="594.0" cy="109.0" r="4" fill="#fff" stroke="#003D82" stroke-width="2.5"/><text x="594.0" y="129.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#003D82" stroke="#fff" stroke-width="3.5" paint-order="stroke">30</text><polyline points="78.0,188.2 250.0,188.2 422.0,140.7 594.0,83.7" fill="none" stroke="#FB8F2C" stroke-width="3" stroke-linejoin="round"/><circle cx="78.0" cy="188.2" r="4" fill="#fff" stroke="#FB8F2C" stroke-width="2.5"/><text x="78.0" y="179.2" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#FB8F2C" stroke="#fff" stroke-width="3.5" paint-order="stroke">5</text><circle cx="250.0" cy="188.2" r="4" fill="#fff" stroke="#FB8F2C" stroke-width="2.5"/><text x="250.0" y="179.2" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#FB8F2C" stroke="#fff" stroke-width="3.5" paint-order="stroke">5</text><circle cx="422.0" cy="140.7" r="4" fill="#fff" stroke="#FB8F2C" stroke-width="2.5"/><text x="422.0" y="130.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#FB8F2C" stroke="#fff" stroke-width="3.5" paint-order="stroke">20</text><circle cx="594.0" cy="83.7" r="4" fill="#fff" stroke="#FB8F2C" stroke-width="2.5"/><text x="594.0" y="73.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#FB8F2C" stroke="#fff" stroke-width="3.5" paint-order="stroke">38</text><polyline points="78.0,166.0 250.0,156.5 422.0,169.2 594.0,159.7" fill="none" stroke="#1E9E62" stroke-width="3" stroke-linejoin="round"/><circle cx="78.0" cy="166.0" r="4" fill="#fff" stroke="#1E9E62" stroke-width="2.5"/><text x="78.0" y="156.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#1E9E62" stroke="#fff" stroke-width="3.5" paint-order="stroke">12</text><circle cx="250.0" cy="156.5" r="4" fill="#fff" stroke="#1E9E62" stroke-width="2.5"/><text x="250.0" y="146.5" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#1E9E62" stroke="#fff" stroke-width="3.5" paint-order="stroke">15</text><circle cx="422.0" cy="169.2" r="4" fill="#fff" stroke="#1E9E62" stroke-width="2.5"/><text x="422.0" y="189.2" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#1E9E62" stroke="#fff" stroke-width="3.5" paint-order="stroke">11</text><circle cx="594.0" cy="159.7" r="4" fill="#fff" stroke="#1E9E62" stroke-width="2.5"/><text x="594.0" y="179.7" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#1E9E62" stroke="#fff" stroke-width="3.5" paint-order="stroke">14</text><rect x="52" y="241" width="18" height="5" rx="2" fill="#003D82"/><text x="76" y="248" font-family="Carlito" font-size="12.5" font-weight="700" fill="#1D2433">Bus</text><rect x="105.8" y="241" width="18" height="5" rx="2" fill="#FB8F2C"/><text x="129.8" y="248" font-family="Carlito" font-size="12.5" font-weight="700" fill="#1D2433">Metro</text><rect x="172.8" y="241" width="18" height="5" rx="2" fill="#1E9E62"/><text x="196.8" y="248" font-family="Carlito" font-size="12.5" font-weight="700" fill="#1D2433">Taxi</text></svg>
+  </div>
+  <div class="exh"><span>BÀI 3</span><h3>Viết câu theo yêu cầu</h3></div>
+  <div class="wi"><div class="pr"><span class="n">1</span><span><b>Bus</b> — dùng <b>cấu trúc 1</b> (động từ + trạng từ), có số đầu và số cuối.</span></div><div class="wl"></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">2</span><span><b>Bus</b> — viết lại câu 1 bằng <b>cấu trúc 2</b> (There was a + tính từ + danh từ).</span></div><div class="wl"></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">3</span><span><b>Metro</b> — mô tả 2 giai đoạn: 2010–2015 và 2015–2025 trong 1 câu (gợi ý: <i>before</i>).</span></div><div class="wl"></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">4</span><span><b>Metro</b> — dùng giới từ <b>by</b> cho giai đoạn 2015–2025.</span></div><div class="wl"></div></div>
+  <div class="wi"><div class="pr"><span class="n">5</span><span><b>Taxi</b> — dùng động từ <b>fluctuate</b>.</span></div><div class="wl"></div></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>7</span></div>
+</section><section class="page">
+  <div class="top"><div class="brand"><svg width="22" height="22" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#003D82"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg>IELTS Ngọc Tỉnh</div><div class="tag">ĐÁP ÁN</div></div>
+
+  <div class="tight">
+  <div class="kicker">Bài 1 có đáp án duy nhất · Bài 2–3 là đáp án gợi ý</div>
+  <h2 style="margin-bottom:1mm">Đáp án &amp; giải thích</h2>
+  <div class="ah"><span>Bài 1</span> · Giới từ</div>
+  <div class="sa"><span class="n">1</span><span class="e"><b>from</b> — cặp <i>from … to</i> (4,000 → 5,000).</span></div>
+  <div class="sa"><span class="n">2</span><span class="e"><b>to</b> — đạt tới mức 11,000. <span class='m'>(<i>by</i> sai vì mức tăng là 6,000)</span></span></div>
+  <div class="sa"><span class="n">3</span><span class="e"><b>of</b> — danh từ <i>an increase</i> + <b>of</b> + lượng thay đổi (11,000 − 5,000 = 6,000).</span></div>
+  <div class="sa"><span class="n">4</span><span class="e"><b>at</b> — <i>peak at</i> + số.</span></div>
+  <div class="sa"><span class="n">5</span><span class="e"><b>in</b> — danh từ <i>a drop</i> + <b>in</b> + cái thay đổi.</span></div>
+  <div class="sa"><span class="n">6</span><span class="e"><b>by</b> — giảm một lượng 5,000 (14,000 → 9,000). <span class='m'>(<i>to</i> sai vì mức cuối là 9,000)</span></span></div>
+  <div class="ah"><span>Bài 2</span> · Đổi cấu trúc</div>
+  <div class="sa"><span class="n">a</span><span class="e">There was a <b>dramatic rise</b> in sales of electric cars between 2015 and 2020.</span></div>
+  <div class="sa"><span class="n">b</span><span class="e">The price of rice <b>decreased slightly</b> in 2019.</span></div>
+  <div class="sa"><span class="n">c</span><span class="e">There was a <b>steady fall</b> in the unemployment rate over the decade.</span></div>
+  <div class="sa"><span class="n">d</span><span class="e">The number of cyclists <b>increased gradually</b> from 2010 to 2020.</span></div>
+  <div class="ah"><span>Bài 3</span> · Câu mẫu</div>
+  <div class="sa"><span class="n">1</span><span class="e">The number of bus trips <b>fell steadily</b> from 50 million in 2010 to 30 million in 2025.</span></div>
+  <div class="sa"><span class="n">2</span><span class="e">There was a <b>steady decline</b> in the number of bus trips, from 50 million in 2010 to 30 million in 2025.</span></div>
+  <div class="sa"><span class="n">3</span><span class="e">The number of metro trips <b>remained stable at</b> 5 million between 2010 and 2015, <b>before rising sharply to</b> 38 million in 2025.</span></div>
+  <div class="sa"><span class="n">4</span><span class="e">Between 2015 and 2025, the number of metro trips <b>rose by</b> 33 million.</span></div>
+  <div class="sa"><span class="n">5</span><span class="e">The number of taxi trips <b>fluctuated between</b> 11 and 15 million over the period.</span></div>
+
+  <div class="ah" style="margin-top:3mm">Tự đánh giá</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4mm">
+    <div style="background:var(--t2);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:17pt;color:var(--t)">6/6</div><div style="font-size:10pt">Bài 1 đúng hết — chuyển sang viết đoạn thân bài</div></div>
+    <div style="background:var(--o3);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:17pt;color:var(--o)">4–5</div><div style="font-size:10pt">Ổn — xem lại bảng giới từ trang 4</div></div>
+    <div style="background:var(--f2);border-radius:12px;padding:8px;text-align:center"><div class="hd" style="font-weight:900;font-size:17pt;color:var(--f)">0–3</div><div style="font-size:10pt">Đọc lại trang 2–4 rồi làm lại</div></div>
+  </div>
+  </div>
+  <div class="cta"><svg width="46" height="46" viewBox="0 0 40 40" style="flex:0 0 auto"><rect width="40" height="40" rx="9" fill="#fff"/><rect x="7" y="8" width="26" height="7" rx="3.5" fill="#FB8F2C"/><rect x="16.5" y="15" width="7" height="18" rx="3.5" fill="#FB8F2C"/></svg><div><div class="big">Còn nhiều dạng bài khác trong series <span>IELTS Ngọc Tỉnh</span></div><p>Số 15: Mở bài &amp; Overview · Cấu trúc câu Writing Task 1 &amp; 2 … Theo dõi để nhận tài liệu tiếp theo · ielts-ngoctinh.com</p></div></div>
+
+  <div class="foot"><span><b>IELTS Ngọc Tỉnh</b> · Writing Task 1 · Câu mô tả xu hướng</span><span>8</span></div>
+</section>
+</body>
+</html>

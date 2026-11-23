@@ -1,0 +1,59 @@
+{
+ "num": "12",
+ "slug": "12-listening-matching",
+ "skill": "Listening",
+ "title": "Listening Matching",
+ "pages": 7,
+ "keyword": "MATCHING",
+ "hook_h1": "Nghe thấy hết<br><span>vẫn nối sai?</span>",
+ "hook_p": "Công thức “mốc + ý được khẳng định” cho dạng Matching, 5 bẫy kinh điển và bài luyện có transcript.",
+ "stats": [
+  [
+   "7",
+   "trang PDF"
+  ],
+  [
+   "5",
+   "bẫy kinh điển"
+  ],
+  [
+   "4",
+   "bước làm bài"
+  ],
+  [
+   "6",
+   "câu luyện tập"
+  ]
+ ],
+ "preview": [
+  {
+   "p": 2,
+   "h": "Hai danh sách, <span>một trục thời gian</span>",
+   "li": [
+    "Mục đi theo thứ tự",
+    "Lựa chọn bị xáo trộn",
+    "Luôn có phương án thừa"
+   ]
+  },
+  {
+   "p": 4,
+   "h": "<span>5 bẫy</span> kinh điển",
+   "li": [
+    "Nghe trùng từ ≠ đúng",
+    "Used to = thông tin cũ",
+    "Ý của người khác"
+   ]
+  }
+ ],
+ "caption_title": "LISTENING MATCHING – NỐI ĐÚNG KHI LỰA CHỌN NHIỀU HƠN CÂU HỎI",
+ "caption_pain": "Các bạn nghe thấy gần như mọi lựa chọn trong hộp A–H, nhưng nối xong vẫn sai một nửa? Lý do là người nói hiếm khi lặp lại đúng từ trong đề, còn các phương án sai thì vẫn được nhắc tới — chỉ là bị phủ định, đã cũ hoặc là ý của người khác.",
+ "caption_bullets": [
+  "Bản chất dạng Matching: mục theo thứ tự, lựa chọn xáo trộn, luôn có phương án thừa",
+  "Quy trình 4 bước + sơ đồ nối, cách bắt “mốc” chuyển câu",
+  "5 bẫy kinh điển: trùng từ, đảo chiều, used to, ý người khác, lỡ câu",
+  "Bài luyện 6 câu (8 lựa chọn) kèm transcript đánh dấu bẫy và giải thích"
+ ],
+ "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+ "tip": "Gợi ý học: đọc kỹ 5 bẫy ở trang 4, làm bài trang 5 khi nhờ người đọc to transcript, rồi mới lật trang 6–7 để đối chiếu.",
+ "cheer": "Làm xong comment số câu đúng /6 để thầy biết nhé 👇"
+}

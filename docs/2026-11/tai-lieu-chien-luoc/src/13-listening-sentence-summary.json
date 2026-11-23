@@ -1,0 +1,59 @@
+{
+ "num": "13",
+ "slug": "13-listening-sentence-summary",
+ "skill": "Listening",
+ "title": "Sentence & Summary Completion",
+ "pages": 7,
+ "keyword": "GAPFILL",
+ "hook_h1": "Nghe đúng<br><span>vẫn mất điểm?</span>",
+ "hook_p": "Bảng giới hạn số từ, công thức 4 khối kiểm tra đáp án, 6 lỗi mất điểm oan và bài luyện 9 câu có transcript.",
+ "stats": [
+  [
+   "7",
+   "trang PDF"
+  ],
+  [
+   "6",
+   "lỗi mất điểm"
+  ],
+  [
+   "5",
+   "mức giới hạn từ"
+  ],
+  [
+   "9",
+   "câu luyện tập"
+  ]
+ ],
+ "preview": [
+  {
+   "p": 2,
+   "h": "Bảng <span>giới hạn số từ</span>",
+   "li": [
+    "ONE WORD ONLY",
+    "a tennis court = sai",
+    "Gạch nối = 1 từ"
+   ]
+  },
+  {
+   "p": 4,
+   "h": "<span>6 lỗi</span> mất điểm oan",
+   "li": [
+    "Quên đuôi -s",
+    "Lặp từ đã in sẵn",
+    "12 từ hay sai chính tả"
+   ]
+  }
+ ],
+ "caption_title": "LISTENING SENTENCE & SUMMARY COMPLETION – HẾT MẤT ĐIỂM OAN",
+ "caption_pain": "Các bạn nghe ra đáp án rồi mà vẫn bị chấm sai — vì thừa một chữ “a”, quên một chữ “s” hay viết nhầm một chữ cái? Ở dạng điền câu và đoạn tóm tắt, phần lớn điểm bị mất không phải do nghe kém mà do viết sai thứ mình đã nghe đúng.",
+ "caption_bullets": [
+  "Bảng 5 mức giới hạn số từ (ONE WORD ONLY, NO MORE THAN TWO WORDS…) kèm ví dụ đúng/sai",
+  "Công thức 4 khối kiểm tra đáp án + bảng tín hiệu đoán loại từ trước khi nghe",
+  "6 lỗi kinh điển ❌ → ✅ và 12 từ hay sai chính tả trong Listening",
+  "Bài luyện 9 câu (Sentence + Summary) kèm transcript đánh dấu bẫy và giải thích"
+ ],
+ "band": "Phù hợp với bạn đang ở khoảng band 5.5 → 7.0",
+ "tip": "Gợi ý học: học thuộc bảng giới hạn số từ ở trang 2, làm bài trang 5, rồi đối chiếu đáp án trang 7 với 6 lỗi ở trang 4.",
+ "cheer": "Làm xong comment số câu đúng /9 nhé, thầy chờ kết quả của các bạn ✍️"
+}
